@@ -11,7 +11,7 @@
 - [Passing Arguments to Functions](#arguments)
 - [Return](#return)
 - [main( )](#main)
-- [Test Your Understanding](#exercise)
+- [Exercise 2](#exercise)
 - [Lab 2](#lab)
 
 ---
