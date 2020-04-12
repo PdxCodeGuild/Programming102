@@ -9,8 +9,8 @@
 - [Dictionaries](#dictionaries)
 - [Dictionary Methods](#methods)
 - [Looping with Dictionaries](#loops)
-- [Exercise 3](#exercise)
-- [Lab 3](#lab)
+- [Exercise 4](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise4.md)
+- [Lab 4](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab4.md)
 
 ---
 
@@ -121,8 +121,8 @@ There are two was to loop over a dictionary:
 > "al" ["Mon", "Wed", "Fri"]
 > "anthony" ["Mon", "Tues", "Wed", "Thurs", "Fri"]
 
-### [Exercise 4]()
+### [Exercise 4](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise4.md)
 
-### [Lab 4]()
+### [Lab 4](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab4.md)
 
 [Back to top](#top)

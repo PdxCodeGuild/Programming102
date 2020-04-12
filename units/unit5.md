@@ -7,8 +7,8 @@
 ### Table of Contents
 
 - [Final Project](#final)
-- [Exercise 3](#exercise)
-- [Lab 3](#lab)
+- [Exercise 5](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise5.md)
+- [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 ---
 
@@ -18,8 +18,8 @@
 
 ## <a id="dictionaries"></a>Final Project
 
-### [Exercise 5]()
+### [Exercise 5](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise5.md)
 
-### [Lab 5]()
+### [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 [Back to top](#top)

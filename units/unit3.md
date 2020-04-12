@@ -9,8 +9,8 @@
 - [What is a Module](#whatis)
 - [Importing Modules](#import)
 - [Creating our own Module](#create)
-- [Exercise 3](#exercise)
-- [Lab 3](#lab)
+- [Exercise 3](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise3.md)
+- [Lab 3](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab3.md)
 
 ---
 
@@ -66,8 +66,8 @@
 
 ## <a id="whatis"></a>Let's create our own module!
 
-### [Exercise 3]()
+### [Exercise 3](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise3.md)
 
-### [Lab 3]()
+### [Lab 3](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab3.md)
 
 [Back to top](#top)
