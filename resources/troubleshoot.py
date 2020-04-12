@@ -1,15 +1,3 @@
-# <a id="top"></a>Exercise 1 - Troubleshooting
-
----
-
-[Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
-
-### Exercise:
-
-- We are going to take an existing lab and try to solve all of the mistakes by looking at the error messages.
-- Copy and paste the following code into your own python file
-
-```python
 """
     Title: Rock, Paper, Scissors
     Description: Let's play rock, paper scissors
@@ -78,7 +66,3 @@ while True:
         # check losing case
         elif computer == "rock":
             Print("Sorry, You lose.")
-
-```
-
-- Once your version is working without errors, your done!

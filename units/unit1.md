@@ -12,6 +12,8 @@
 - [For / While Loops](#loops)
 - [Troubleshooting](#troubleshooting)
 - [REPL](#repl)
+- [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
+- [Lab 1](#lab)
 
 ---
 
@@ -101,5 +103,9 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 ### <a id="troubleshooting"></a> Troubleshooting
 
 ### <a id="repl"></a> Read, Evaluate, Print, Loop
+
+### [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
+
+### [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
 
 [Back to top](#top)
