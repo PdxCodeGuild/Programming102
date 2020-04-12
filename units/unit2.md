@@ -9,6 +9,10 @@
 - [What is a Function](#whatis)
 - [Defining a Function](#define)
 - [Passing Arguments to Functions](#arguments)
+- [Return](#return)
+- [main( )](#main)
+- [Test Your Understanding](#exercise)
+- [Lab 2](#lab)
 
 ---
 
@@ -80,3 +84,74 @@
         '''This function will print a message'''
         print(message)
 ```
+
+- Now we can see what the output would look like if we do not pass in any data:
+
+```python
+    my_func()
+```
+
+> "Hello"
+
+- And if we do pass in data:
+
+```python
+    my_func("Nice day today!")
+```
+
+> "Nice day today!"
+
+---
+
+## <a id="return"></a>Return
+
+- Variables and data used inside a function are unique to that function.
+- If I declare a variable inside a function, it will only exist inside that function.
+- So how do we get the data back out? We use the `return` keyword
+
+```python
+    def add(num1, num2):
+        '''This function will add two numbers together and return the result'''
+        num = num1 + num2
+        return num
+
+    added_nums = add(3, 4)
+    print(added_nums)
+```
+
+In this case our output would be:
+
+> 7
+
+---
+
+## <a id="define"></a>main( )
+
+- It is good practice to use a main function. This is where the core functionality of your code will live.
+- Using a main function also helps us keep code clean and helps us avoid using global variables
+- Using a main function is similar to using any other function
+- First we define the function:
+
+```python
+    def main():
+        '''This is our main function'''
+
+        # All of our code goes here
+
+```
+
+- Then we just need to call that main function
+
+```python
+    main()
+```
+
+- Just keep in mind if you define other functions, you define them before your main function.
+
+---
+
+### [Exercise 2]()
+
+### [Lab 2]()
+
+[Back to top](#top)
