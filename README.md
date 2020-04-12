@@ -6,13 +6,13 @@ Welcome to the five day course focused on strengthening your programming fundame
 
 While we don't expect you to complete all the advanced versions of the labs, we expect you to give it a try and ask questions if you are stuck.
 
-| Unit    | Concepts                                     | Excercises | Labs     | Video           |
-| ------- | -------------------------------------------- | ---------- | -------- | --------------- |
-| Unit 01 | Review 101, Troubleshooting & error messages | [Ex. 1]()  | [Lab1]() | [Coming Soon]() |
-| Unit 02 | Functions                                    | [Ex. 1]()  | [Lab2]() | [Coming Soon]() |
-| Unit 03 | Modules                                      | [Ex. 1]()  | [Lab3]() | [Coming Soon]() |
-| Unit 04 | Dictionaries, REPL                           | [Ex. 1]()  | [Lab4]() | [Coming Soon]() |
-| Unit 05 | Final Project                                | [Ex. 1]()  | [Lab5]() | [Coming Soon]() |
+| Unit        | Concepts                                     | Excercises | Labs     | Video           |
+| ----------- | -------------------------------------------- | ---------- | -------- | --------------- |
+| [Unit 01]() | Review 101, Troubleshooting & error messages | [Ex. 1]()  | [Lab1]() | [Coming Soon]() |
+| [Unit 02]() | Functions                                    | [Ex. 1]()  | [Lab2]() | [Coming Soon]() |
+| [Unit 03]() | Modules                                      | [Ex. 1]()  | [Lab3]() | [Coming Soon]() |
+| [Unit 04]() | Dictionaries, REPL                           | [Ex. 1]()  | [Lab4]() | [Coming Soon]() |
+| [Unit 05]() | Final Project                                | [Ex. 1]()  | [Lab5]() | [Coming Soon]() |
 
 ## Quick Links
 
