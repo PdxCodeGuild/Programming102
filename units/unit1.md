@@ -11,6 +11,7 @@
 - [Conditional Statements](#conditionals)
 - [For / While Loops](#loops)
 - [Troubleshooting](#troubleshooting)
+- [REPL](#repl)
 
 ---
 
@@ -98,5 +99,7 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 ```
 
 ### <a id="troubleshooting"></a> Troubleshooting
+
+### <a id="repl"></a> Read, Evaluate, Print, Loop
 
 [Back to top](#top)
