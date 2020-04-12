@@ -1,4 +1,4 @@
-# <a id="top"></a>Unit 3 - Modules
+# <a id="top"></a>Unit 4 - Dictionaries
 
 ---
 
@@ -81,16 +81,16 @@
 
 Methods give datatypes more functionality, and just like [string methods](https://www.w3schools.com/python/python_ref_string.asp) and [list methods](https://www.w3schools.com/python/python_ref_list.asp), we also have [dictionary methods](https://www.w3schools.com/python/python_ref_dictionary.asp).
 
-| method    | description                                                               | example                                    |
-| --------- | ------------------------------------------------------------------------- | ------------------------------------------ |
-| clear( )  | Removes all elements from a dictionary                                    | dictionary_name.clear( )                   |
-| copy( )   | Returns a copy of the dictionary                                          | new_dictionary = dictionary_name.copy( )   |
-| get( )    | Returns the value of a specified key, or a default value if key not found | data = dictionary_name.get("key", False)   |
-| items( )  | Returns a list containing key: value pairs                                | data = dictionary_name.items( )            |
-| keys( )   | Returns a list contianing a list of keys                                  | keys = dictionary_name.keys( )             |
-| pop( )    | Removes the element with the specified key                                | dictionary_name.pop("key")                 |
-| update( ) | Updates the dictionary with the specified key: value pairs                | dictionary_name.update("key", "new value") |
-| values( ) | Returns a list of all the values                                          | values = dictionary_name.values( )         |
+| method   | description                                                               | example                                    |
+| -------- | ------------------------------------------------------------------------- | ------------------------------------------ |
+| clear()  | Removes all elements from a dictionary                                    | dictionary_name.clear()                    |
+| copy()   | Returns a copy of the dictionary                                          | new_dictionary = dictionary_name.copy()    |
+| get()    | Returns the value of a specified key, or a default value if key not found | data = dictionary_name.get("key", False)   |
+| items()  | Returns a list containing key: value pairs                                | data = dictionary_name.items()             |
+| keys()   | Returns a list contianing a list of keys                                  | keys = dictionary_name.keys()              |
+| pop()    | Removes the element with the specified key                                | dictionary_name.pop("key")                 |
+| update() | Updates the dictionary with the specified key: value pairs                | dictionary_name.update("key", "new value") |
+| values() | Returns a list of all the values                                          | values = dictionary_name.values()          |
 
 ---
 
@@ -110,7 +110,7 @@ There are two was to loop over a dictionary:
 > "al"
 > "anthony"
 
-- The second is to loop over both the keys and values using the .items( ) method
+- The second is to loop over both the keys and values using the .items() method
 
 ```python
     for key, value in employee_availability.items():
