@@ -6,6 +6,7 @@
 
 ### Table of Contents
 
+- [REPL](#repl)
 - [What is a Function](#whatis)
 - [Defining a Function](#define)
 - [Passing Arguments to Functions](#arguments)
@@ -13,6 +14,22 @@
 - [main( )](#main)
 - [Exercise 2](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise2.md)
 - [Lab 2](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab2.md)
+
+---
+
+## <a id="repl"></a>REPL
+
+- **Read:** take user input
+- **Evaluate:** evaluate the input
+- **Print:** shows the output to user
+- **Loop:** repeat
+
+```python
+    play_again = "yes"
+    while play_again == "yes":
+        # Do some stuff
+        play_again = input("Would you like to play again? ")
+```
 
 ---
 
