@@ -6,24 +6,24 @@
 
 ### Table of Contents
 
-- [Variables](#variables)
-- [DataTypes](#datatypes)
-- [Conditional Statements](#conditionals)
-- [For / While Loops](#loops)
-- [Troubleshooting](#troubleshooting)
-- [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
-- [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
+-   [Variables](#variables)
+-   [DataTypes](#datatypes)
+-   [Conditional Statements](#conditionals)
+-   [For / While Loops](#loops)
+-   [Troubleshooting](#troubleshooting)
+-   [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
+-   [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
 
 ---
 
 ### <a id="variables"></a> Variables
 
-- Variables in python are used to reference data. They make our code more readable if used correctly.
-- Variables are declared when you give them a name and assign them a value `name = "Anthony"`
-- Keep in mind there are a few rules when choosing your variable name:
-  - Variables names are case sensitive (name and NAME are different variables)
-  - Must start with a letter or underscore
-  - Can have numbers but can not start with one
+-   Variables in python are used to reference data. They make our code more readable if used correctly.
+-   Variables are declared when you give them a name and assign them a value `name = "Anthony"`
+-   Keep in mind there are a few rules when choosing your variable name:
+    -   Variables names are case sensitive (name and NAME are different variables)
+    -   Must start with a letter or underscore
+    -   Can have numbers but can not start with one
 
 ---
 
@@ -103,7 +103,7 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 
 ![troubleshooting](https://github.com/PdxCodeGuild/Programming102/blob/master/resources/troubleshooting.jpeg)
 
-### [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
+### [Quiz 1](https://forms.gle/CZcvDzegTWyq6quPA)
 
 ### [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
 
