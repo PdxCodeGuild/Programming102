@@ -1,4 +1,6 @@
-# Lab 3: Anagram Checker
+# <a id="top"></a>Lab 3 - Anagram Checker
+
+[Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
 Let's write an anagram checker.
 
