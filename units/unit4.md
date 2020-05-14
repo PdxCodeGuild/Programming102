@@ -6,26 +6,26 @@
 
 ### Table of Contents
 
-- [Dictionaries](#dictionaries)
-- [Dictionary Methods](#methods)
-- [Looping with Dictionaries](#loops)
-- [Exercise 4](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise4.md)
-- [Lab 4](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab4.md)
+-   [Dictionaries](#dictionaries)
+-   [Dictionary Methods](#methods)
+-   [Looping with Dictionaries](#loops)
+-   [Exercise 4](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise4.md)
+-   [Lab 4](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab4.md)
 
 ---
 
 ## <a id="dictionaries"></a>Dictionaries
 
-- Dictionaries are one of the most powerful datatypes in Python.
-- They can be used to store large amounts of data and make working with data easy.
-- Dictionaries are a collection of `key: value` pairs
-- We can start with an empty dictionary:
+-   Dictionaries are one of the most powerful datatypes in Python.
+-   They can be used to store large amounts of data and make working with data easy.
+-   Dictionaries are a collection of `key: value` pairs
+-   We can start with an empty dictionary:
 
 ```python
     employee_availability = {}
 ```
 
-- Or we can start with some pre defined data:
+-   Or we can start with some pre defined data:
 
 ```python
     employee_availability = {
@@ -35,10 +35,10 @@
     }
 ```
 
-- The keys in our employee_availability dictionary are `lisa, al, and anthony`
-- The values in our employee_availability dictionary are `"Mon", ["Tues", "Wed", "Thurs"], ["Mon", "Tues", "Wed", "Thurs", "Fri"]`
+-   The keys in our employee_availability dictionary are `lisa, al, and anthony`
+-   The values in our employee_availability dictionary are `"Mon", ["Tues", "Wed", "Thurs"], ["Mon", "Tues", "Wed", "Thurs", "Fri"]`
 
-- To access a value in our dictionary we just need to use the key
+-   To access a value in our dictionary we just need to use the key
 
 ```python
     schedule = employee_availability["al"]
@@ -47,7 +47,7 @@
 
 > ["Tues", "Wed", "Thurs"]
 
-- We can change a value by also using a key:
+-   We can change a value by also using a key:
 
 ```python
     employee_availability["al"] = ["Mon", "Wed", "Fri"]
@@ -57,7 +57,7 @@
 
 > ["Mon", "Wed", "Fri"]
 
-- To add a new value, we just need to give our dictionary a new key, then assign it a value:
+-   To add a new value, we just need to give our dictionary a new key, then assign it a value:
 
 ```python
     employee_availability["bill"] = ["Mon", "Wed", "Fri"]
@@ -66,7 +66,7 @@
 
 > {"lisa": "Mon", "al": ["Mon", "Wed", "Fri"], "anthony": ["Mon", "Tues", "Wed", "Thurs", "Fri"], "bill": ["Mon", "Wed", "Fri"]}
 
-- To remove a key value pair from a dictionary we use the `del` keyword
+-   To remove a key value pair from a dictionary we use the `del` keyword
 
 ```python
     del employee_availability["bill"]
@@ -99,27 +99,31 @@ Methods give datatypes more functionality, and just like [string methods](https:
 Since dictinaries can become quite large, Python allows us to loop over them.
 There are two was to loop over a dictionary:
 
-- The first is to loop over the keys
+-   The first is to loop over the keys
 
 ```python
     for key in employee_availability:
         print(key)
 ```
 
+```python
 > "lisa"
 > "al"
 > "anthony"
+```
 
-- The second is to loop over both the keys and values using the .items() method
+-   The second is to loop over both the keys and values using the .items() method
 
 ```python
     for key, value in employee_availability.items():
         print(key, value)
 ```
 
+```python
 > "lisa" "Mon"
 > "al" ["Mon", "Wed", "Fri"]
 > "anthony" ["Mon", "Tues", "Wed", "Thurs", "Fri"]
+```
 
 ### [Exercise 4](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise4.md)
 
