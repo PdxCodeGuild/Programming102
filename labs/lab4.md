@@ -15,9 +15,11 @@ You can get sample text [Here](/resources/countwords.txt)
 1. Once you have counted all your words, display the top 10 in the terminal. You can use the following code to accomplish this:
 
 ```python
-# word_dict is a dictionary where the key is the word and the value is the count
-words = list(word_dict.items()) # .items() returns a list of tuples
-words.sort(key=lambda tup: tup[1], reverse=True)  # sort largest to smallest, based on count
-for i in range(min(10, len(words))):  # print the top 10 words, or all of them, whichever is smaller
-    print(words[i]
+def sort_words(word_dict):
+    # word_dict is a dictionary where the key is the word and the value is the count
+    words = list(word_dict.items()) # .items() returns a list of tuples
+    words.sort(key=lambda tup: tup[1], reverse=True)  # sort largest to smallest, based on count
+    for i in range(min(10, len(words))):  # print the top 10 words, or all of them, whichever is smaller
+    print(words[i])
+
 ```
