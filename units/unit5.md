@@ -19,7 +19,7 @@
 
 Let's take a look at a python module called Turtle.
 
-Turtle is a python `module` that allows us to move a virtual turtle around the screen using programming statements. This turtle has a position and a heading. You can find out more information on the turtle module [here](https://docs.python.org/3/library/turtle.html) or on our [lab 5](labs/lab5.md) page.
+Turtle is a python `module` that allows us to move a virtual turtle around the screen using programming statements. This turtle has a position and a heading. You can find out more information on the turtle module [here](https://docs.python.org/3/library/turtle.html) or on our [lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md) page.
 
 Here is some code to get you started:
 
@@ -163,6 +163,6 @@ if __name__ == "__main__":
     main()
 ```
 
-### [Lab 5](labs/lab5.md)
+### [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 [Back to top](#top)
