@@ -1,4 +1,4 @@
-# Lab 12: Unit Converter
+# Lab 4: Unit Converter
 
 This lab will involve writing a program that allows the user to convert a number between units.
 
