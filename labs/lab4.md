@@ -1,44 +1,66 @@
-# <a id="top"></a>Lab 4 - Count Words
+# Lab 12: Unit Converter
 
-[Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
+This lab will involve writing a program that allows the user to convert a number between units.
 
-Let's write a python module to analyze a given text file and display the most frequently used words in the terminal.
+## Version 1
 
-You can get sample text [Here](/resources/countwords.txt)
+Ask the user for the number of feet, and print out the equivalent distance in meters. Hint: 1 ft is 0.3048 m. So we can get the output in meters by **multiplying the input distance by 0.3048**. Below is some sample input/output.
 
-1. Open your file using `with open()`.
-1. Make everything lowercase.
-1. Split your text file into a list of words.
-1. Use a dictionary to keep track of each word and how many times it occurs. You can use the word as a key, and the count as the value.
-1. As you loop over you list of words, if the word is not in your dictionary, add it with the value of 1.
-1. If the word already exists in your dictionary add 1 to the count.
-1. Once you have counted all your words, display the top 10 in the terminal. You can use the following code to accomplish this:
+```
+> what is the distance in feet? 12
+> 12 ft is 3.6576 m
+```
 
-```python
-def get_words():
-    '''
-        This function will read in the file 'countwords.txt'
-        and generate a list from all the words.
-    '''
-    with open("countwords.txt", "r") as file:
-        word_list = file.read().split("\n")
-    return word_list
+## Version 2
 
-def sort_words(word_dict):
-    '''
-        This function takes in a dictionary and sorts the words
-        by their value
-    '''
-    # word_dict is a dictionary where the key is the word and the value is the count
-    words = list(word_dict.items()) # .items() returns a list of tuples
-    words.sort(key=lambda tup: tup[1], reverse=True)  # sort largest to smallest, based on count
-    for i in range(min(10, len(words))):  # print the top 10 words, or all of them, whichever is smaller
-    print(words[i])
+Allow the user to also enter the units. Then depending on the units, convert the distance into meters. The units we'll allow are feet, miles, meters, and kilometers.
 
-def main():
-    # Your code goes here
+```
+1 ft is 0.3048 m
+1 mi is 1609.34 m
+1 m is 1 m
+1 km is 1000 m
+```
 
-if __name__ == "__main__":
-    main()
+Below is some sample input/output:
 
+```
+> what is the distance? 100
+> what are the units? mi
+> 100 mi is 160934 m
+```
+
+## Version 3
+
+Add support for yards, and inches.
+
+```
+1 yard is 0.9144 m
+1 inch is 0.0254 m
+```
+
+## Version 4
+
+Now we'll ask the user for the distance, the starting units, and the units to convert to.
+
+You can think of the values for the conversions as elements in a matrix, where the rows will be the units you're converting from, and the columns will be the units you're converting to. Along the horizontal, the values will be 1 (1 meter is 1 meter, 1 foot is 1 foot, etc).
+
+|     | ft       | mi        | m       | km     |
+| --- | -------- | --------- | ------- | ------ |
+| ft  | 1        |           | 0.3048  |        |
+| mi  |          | 1         | 1609.34 |        |
+| m   | 1/0.3048 | 1/1609.34 | 1       | 1/1000 |
+| km  |          |           | 1000    | 1      |
+
+But instead of filling out that matrix, and checking for each pair of units (`if from_units == 'mi' and to_units == 'km'`), we can just convert any unit to meters, then convert the distance in meters to any other unit.
+
+Furthermore you can convert them from meters by dividing a distance (in meters) by those same values used above. So first convert from the input units **_to_** meters, then convert **_from_** meters to the output units.
+
+Below is some sample input/output:
+
+```
+> what is the distance? 100
+> what are the input units? ft
+> what are the output units? mi
+100 ft is 0.0189394 mi
 ```
