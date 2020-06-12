@@ -89,7 +89,7 @@ Methods give datatypes more functionality, and just like [string methods](https:
 | items()  | Returns a list containing key: value pairs                                | data = dictionary_name.items()             |
 | keys()   | Returns a list contianing a list of keys                                  | keys = dictionary_name.keys()              |
 | pop()    | Removes the element with the specified key                                | dictionary_name.pop("key")                 |
-| update() | Updates the dictionary with the specified key: value pairs                | dictionary_name.update("key", "new value") |
+| update() | Updates the dictionary with the specified key: value pairs                | dictionary_name.update({"key": "new value"}) |
 | values() | Returns a list of all the values                                          | values = dictionary_name.values()          |
 
 ---
