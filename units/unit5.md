@@ -6,161 +6,41 @@
 
 ### Table of Contents
 
--   [Final Project](#final)
--   [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
+- [Final Project](#final)
+- [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 ---
 
 ### Congratulations, You made it!
 
--   The last day of class is finally here! We hope you've enjoyed yourself! Please help us make Programming 102 better by taking this [anonymous survey](https://forms.gle/D7vCyctcqUQFvSeA9).
+- The last day of class is finally here! We hope you've enjoyed yourself! Please help us make Programming 102 better by taking this [anonymous survey](https://forms.gle/D7vCyctcqUQFvSeA9).
 
 ## <a id="final"></a>Final Project
 
-Let's take a look at a python module called Turtle.
+Let's write a python module to analyze a given text file and display the most frequently used words in the terminal.
 
-Turtle is a python `module` that allows us to move a virtual turtle around the screen using programming statements. This turtle has a position and a heading. You can find out more information on the turtle module [here](https://docs.python.org/3/library/turtle.html) or on our [lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md) page.
+You can get sample text [Here](/resources/countwords.txt)
 
-Here is some code to get you started:
+1. Open your file using `with open()`.
+1. Make everything lowercase.
+1. Remove all punctuation
+1. Split your text file into a list of words.
+1. Use a dictionary to keep track of each word and how many times it occurs. You can use the word as a key, and the count as the value.
+1. As you loop over you list of words, if the word is not in your dictionary, add it with the value of 1.
+1. If the word already exists in your dictionary add 1 to the count.
+1. Once you have counted all your words, display the top 10 in the terminal. You can use the following code to accomplish this:
 
 ```python
-from turtle import *
-
-
-def draw_square():
-    forward(100)
-    left(90)
-    forward(100)
-    left(90)
-    forward(100)
-    left(90)
-    forward(100)
-    left(90)
-
-    done()
-
-def fill_square():
-    fillcolor('red')
-    begin_fill()
-
-    forward(100)
-    left(90)
-    forward(100)
-    left(90)
-    forward(100)
-    left(90)
-    forward(100)
-    left(90)
-
-    end_fill()
-
-    done()
-
-def draw_star():
-    forward(100)
-    right(144)
-    forward(100)
-    right(144)
-    forward(100)
-    right(144)
-    forward(100)
-    right(144)
-    forward(100)
-
-    done()
-
-def square_loop():
-    i = 0
-    while i < 4:
-        forward(100)
-        left(90)
-        i = i + 1
-
-    done()
-
-def staircase():
-    i = 0
-    while i < 4:
-        forward(100)
-        left(90)
-        forward(100)
-        right(90)
-        i = i + 1
-    done()
-
-def spiral():
-    fillcolor('blue')
-
-    n_sides = 8
-    edge_length = 0
-
-    i = 0
-    begin_fill()
-    while i < 150:
-        forward(edge_length)
-        right(360/n_sides)
-        i = i + 1
-        edge_length = edge_length + 1
-    end_fill()
-    done()
-
-def expanding_star():
-    edge_length = 0
-    i = 0
-    while i < 100:
-        forward(edge_length)
-        right(144)
-
-        edge_length += 4
-
-    done()
-
-def your_function_here():
-    pass
-
-
-def menu():
-    print("Welcome to turtle, select an option below: ")
-    choice = input('''
-        1) draw square
-        2) fill square
-        3) draw star
-        4) square loop
-        5) staircase
-        6) spiral
-        7) expanding star
-        8) your function goes here
-    ''')
-    return int(choice)
-
-
-def run_turtle(choice):
-    if choice == 1:
-        draw_square()
-    elif choice == 2:
-        fill_square()
-    elif choice == 3:
-        draw_star()
-    elif choice == 4:
-        square_loop()
-    elif choice == 5:
-        staircase()
-    elif choice == 6:
-        spiral()
-    elif choice == 7:
-        expanding_star()
-    elif choice == 8:
-        print('This is where you call your function')
-
-
-def main():
-    running = True
-    while running:
-        choice = menu()
-        run_turtle(choice)
-
-if __name__ == "__main__":
-    main()
+def sort_words(word_dict):
+    '''
+        This function takes in a dictionary and sorts the words
+        by their value
+    '''
+    # word_dict is a dictionary where the key is the word and the value is the count
+    words = list(word_dict.items()) # .items() returns a list of tuples
+    words.sort(key=lambda tup: tup[1], reverse=True)  # sort largest to smallest, based on count
+    for i in range(min(10, len(words))):  # print the top 10 words, or all of them, whichever is smaller
+    print(words[i])
 ```
 
 ### [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)

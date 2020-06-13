@@ -1,186 +1,45 @@
-# Lab 5: Turtle
+# <a id="top"></a>Lab 4 - Count Words
 
-## Explanation
+[Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
-Turtle is a python `module` that allows us to move a virtual turtle around the screen using programming statements. This turtle has a position and a heading. Below are a list of commands, you can more in the [turtle docs](https://docs.python.org/3.6/library/turtle.html).
+Let's write a python module to analyze a given text file and display the most frequently used words in the terminal.
 
--   `forward(distance)` moves the turtle forward the given number of pixels
--   `left(angle)` and `right(angle)` turns the turtle left or right by the given angle (in degrees)
--   `color(color_name)` sets the pen's color, which can be `penup()` `penup()` `penup()`
--   `penup()` raises the pen, a line won't be drawn when the turtle moves, `pendown()` lowers the pen again
+You can get sample text [Here](/resources/countwords.txt)
 
--   `setposition(x, y)` moves the turtle to the given position
-
--   `fillcolor(color_name)` sets the fill color, `begin_fill()` indicates you'd like to begin filling in whatever you draw, `end_fill()` actually fills the shape in.
-
-Use these functions to draw a stick figure with a head, body, two arms, and two legs. Once you're done, go through the examples below and create your own drawing.
-
-## Examples
-
-### Drawing a Square
+1. Open your file using `with open()`.
+1. Make everything lowercase.
+1. Remove all punctuation
+1. Split your text file into a list of words.
+1. Use a dictionary to keep track of each word and how many times it occurs. You can use the word as a key, and the count as the value.
+1. As you loop over you list of words, if the word is not in your dictionary, add it with the value of 1.
+1. If the word already exists in your dictionary add 1 to the count.
+1. Once you have counted all your words, display the top 10 in the terminal. You can use the following code to accomplish this:
 
 ```python
-from turtle import *
+def get_words():
+    '''
+        This function will read in the file 'countwords.txt'
+        and generate a list from all the words.
+    '''
+    with open("countwords.txt", "r") as file:
+        word_list = file.read().split("\n")
+    return word_list
 
-forward(100)
-left(90)
-forward(100)
-left(90)
-forward(100)
-left(90)
-forward(100)
-left(90)
+def sort_words(word_dict):
+    '''
+        This function takes in a dictionary and sorts the words
+        by their value
+    '''
+    # word_dict is a dictionary where the key is the word and the value is the count
+    words = list(word_dict.items()) # .items() returns a list of tuples
+    words.sort(key=lambda tup: tup[1], reverse=True)  # sort largest to smallest, based on count
+    for i in range(min(10, len(words))):  # print the top 10 words, or all of them, whichever is smaller
+    print(words[i])
 
-done()
+def main():
+    # Your code goes here
 
-```
+if __name__ == "__main__":
+    main()
 
-### Filling in a Square
-
-```python
-from turtle import *
-
-fillcolor('red')
-begin_fill()
-
-forward(100)
-left(90)
-forward(100)
-left(90)
-forward(100)
-left(90)
-forward(100)
-left(90)
-
-end_fill()
-
-done()
-
-```
-
-### Drawing a Star
-
-```python
-from turtle import *
-
-forward(100)
-right(144)
-forward(100)
-right(144)
-forward(100)
-right(144)
-forward(100)
-right(144)
-forward(100)
-
-done()
-
-```
-
-### Drawing a Square with a Loop
-
-```python
-from turtle import *
-
-i = 0
-while i < 4:
-    forward(100)
-    left(90)
-    i = i + 1
-
-done()
-```
-
-### Drawing a Staircase
-
-```python
-from turtle import *
-
-i = 0
-while i < 4:
-	forward(100)
-	left(90)
-	forward(100)
-	right(90)
-	i = i + 1
-done()
-```
-
-### Filling in a Square
-
-```python
-from turtle import *
-
-fillcolor('red')
-begin_fill()
-
-forward(100)
-left(90)
-forward(100)
-left(90)
-forward(100)
-left(90)
-forward(100)
-left(90)
-
-end_fill()
-
-done()
-
-```
-
-### Draw an N-Sided figure
-
-```python
-from turtle import *
-
-edge_length = 100
-n_sides = 5
-
-i = 0
-while i < n_sides:
-	forward(edge_length/n_sides)
-	right(360/n_sides)
-	i = i + 1
-
-done()
-
-```
-
-### 8-Sided Spiral
-
-```python
-from turtle import *
-
-fillcolor('blue')
-
-n_sides = 8
-edge_length = 0
-
-i = 0
-begin_fill()
-while i < 150:
-	forward(edge_length)
-	right(360/n_sides)
-	i = i + 1
-	edge_length = edge_length + 1
-end_fill()
-done()
-
-```
-
-### Expanding Star
-
-```python
-from turtle import *
-
-edge_length = 0
-i = 0
-while i < 100:
-	forward(edge_length)
-	right(144)
-
-	edge_length += 4
-
-done()
 ```
