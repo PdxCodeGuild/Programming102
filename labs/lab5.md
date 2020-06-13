@@ -1,4 +1,4 @@
-# <a id="top"></a>Lab 4 - Count Words
+# <a id="top"></a>Lab 5 - Count Words
 
 [Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
