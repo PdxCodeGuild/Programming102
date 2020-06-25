@@ -1,66 +1,34 @@
-# Lab 4: Unit Converter
+# <a id="top"></a>Lab 4 - Anagram Checker
 
-This lab will involve writing a program that allows the user to convert a number between units.
+[Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
-## Version 1
+Let's write an anagram checker.
 
-Ask the user for the number of feet, and print out the equivalent distance in meters. Hint: 1 ft is 0.3048 m. So we can get the output in meters by **multiplying the input distance by 0.3048**. Below is some sample input/output.
+## Anagram
 
-```
-> what is the distance in feet? 12
-> 12 ft is 3.6576 m
-```
+Two words are anagrams of each other if the letters of one can be rearranged to fit the other. e.g. `dormitory` and `dirtyroom`.
 
-## Version 2
+Write a program that lets the user enter two strings, and tells them if they are anagrams of each other.
 
-Allow the user to also enter the units. Then depending on the units, convert the distance into meters. The units we'll allow are feet, miles, meters, and kilometers.
-
-```
-1 ft is 0.3048 m
-1 mi is 1609.34 m
-1 m is 1 m
-1 km is 1000 m
-```
-
-Below is some sample input/output:
+1. Convert the strings into lists (`list`)
+2. Sort the letters of each word (`sort`)
+3. Check if the two are equal
 
 ```
-> what is the distance? 100
-> what are the units? mi
-> 100 mi is 160934 m
+>>> enter the first word: dormitory
+>>> enter the second word: dirtyroom
+>>> 'dormitory' and 'dirtyroom' are anagrams
 ```
 
-## Version 3
+# Advanced Version 1
 
-Add support for yards, and inches.
+1. Convert each word to lower case (`lower`)
+2. Remove all the spaces from each word by replacing them with empty strings (`replace`)
 
-```
-1 yard is 0.9144 m
-1 inch is 0.0254 m
-```
+# Advanced Version 2
 
-## Version 4
+Make your program ignore punctuation when checking anagrams.
 
-Now we'll ask the user for the distance, the starting units, and the units to convert to.
+# Advanced Version 3
 
-You can think of the values for the conversions as elements in a matrix, where the rows will be the units you're converting from, and the columns will be the units you're converting to. Along the horizontal, the values will be 1 (1 meter is 1 meter, 1 foot is 1 foot, etc).
-
-|     | ft       | mi        | m       | km     |
-| --- | -------- | --------- | ------- | ------ |
-| ft  | 1        |           | 0.3048  |        |
-| mi  |          | 1         | 1609.34 |        |
-| m   | 1/0.3048 | 1/1609.34 | 1       | 1/1000 |
-| km  |          |           | 1000    | 1      |
-
-But instead of filling out that matrix, and checking for each pair of units (`if from_units == 'mi' and to_units == 'km'`), we can just convert any unit to meters, then convert the distance in meters to any other unit.
-
-Furthermore you can convert them from meters by dividing a distance (in meters) by those same values used above. So first convert from the input units **_to_** meters, then convert **_from_** meters to the output units.
-
-Below is some sample input/output:
-
-```
-> what is the distance? 100
-> what are the input units? ft
-> what are the output units? mi
-100 ft is 0.0189394 mi
-```
+Let the user enter as many words as they choose. If every word is an anagram of every other word, let the user know.
