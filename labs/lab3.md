@@ -13,7 +13,7 @@ Ask the user for the number of feet, and print out the equivalent distance in me
 
 ## Version 2
 
-Allow the user to also enter the units. Then depending on the units, convert the distance into meters. The units we'll allow are feet, miles, meters, and kilometers.
+Allow the user to also enter the units. Then depending on the units, convert the distance into meters. The units we'll allow are feet, miles, meters, and kilometers. **Hint:** Try using the unit as the key and the conversion as the value.
 
 ```
 1 ft is 0.3048 m
@@ -39,7 +39,7 @@ Add support for yards, and inches.
 1 inch is 0.0254 m
 ```
 
-## Version 4
+## Advanced 1
 
 Now we'll ask the user for the distance, the starting units, and the units to convert to.
 
