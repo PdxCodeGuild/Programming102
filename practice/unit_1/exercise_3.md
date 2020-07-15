@@ -1,5 +1,6 @@
+# Unit 1 Practice
 
-### **1.3**
+## **Exercise 2**
 
     print 'The last letter of 'elephant' is: {'elephant'[8]}')
 
