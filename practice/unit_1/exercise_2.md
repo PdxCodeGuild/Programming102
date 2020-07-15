@@ -11,3 +11,7 @@ Output:
     The number is 1
     1 is less than three
     Thanks for playing! 
+
+---
+
+## [< Exercise 1](exercise_1.md) |  [Exercise 3 >](exercise_3.md)

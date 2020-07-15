@@ -8,3 +8,7 @@ Find and correct all errors in the following:
 Output:
 
     Hello World!
+
+---
+
+## [Exercise 2 >](exercise_2.md)
