@@ -16,4 +16,4 @@ Output:
 
 ## [Exercise 2 >](exercise_2.md)
 
-### [<< Back to Practice](/practice/unit_1/)
+### [<< Back to Unit 1 Practice](/practice/unit_1/)
