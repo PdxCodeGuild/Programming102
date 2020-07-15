@@ -6,7 +6,15 @@
 
 ---
 
-Let's write a simple REPL (read, evaluate, print, loop) calculator that can handle addition and subtraction. Ask the user for an operator and each operand. Don't forget that `input` returns a `string`, which you can convert to a float using `float(user_input)` where `user_input` is the string you got from `input`. Below is some sample input/output.
+Let's write a simple REPL (read, evaluate, print, loop) calculator that can handle addition and subtraction. 
+
+Ask the user for an `operator` and each `operand`. Don't forget that `input` returns a `string`, which you can convert to a float using `float(user_input)` where `user_input` is the string you got from `input`. 
+
+Create a separate function for each operation which takes in both `operands` and `returns` the `result` of its operation. 
+
+Pass the user's `operands` to the appropriate function based on the user's selected `operator` and use the value the function returns as your `result`.
+
+Below is some sample input/output.
 
 ```
 > what is the operation you would like to perform? +
@@ -16,16 +24,13 @@ Let's write a simple REPL (read, evaluate, print, loop) calculator that can hand
 > what is the operation you would like to perform? done
 > goodbye
 ```
-
-## Version 2
-
 ---
+## Version 2
 
 Add functionality for multiplication `*` and division `/`
 
-## Advanced Version 1
-
 ---
+## Advanced Version 1
 
 Allow the user to have a running total, each command will perform an operation on that number.
 
@@ -39,9 +44,8 @@ Allow the user to have a running total, each command will perform an operation o
 > Your total is 60. Goodbye.
 ```
 
-## Advanced Version 2
-
 ---
+## Advanced Version 2
 
 Allow the user to write an expression, alternating the numbers and operators. Evaluate the expression from left-to-right.
 
