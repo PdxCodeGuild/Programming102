@@ -14,7 +14,7 @@ For each of the Troubleshooting exercises:
 
     |Exercise|Solution
     |------------------|--------------------------------------|
-    [01](exercise_1.md)|[01](solutions/exercise_2_solution.md)| 
+    [01](exercise_1.md)|[01](solutions/exercise_1_solution.md)| 
     [02](exercise_2.md)|[02](solutions/exercise_2_solution.md)|
     [03](exercise_3.md)|[03](solutions/exercise_3_solution.md)|  
 
