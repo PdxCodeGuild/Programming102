@@ -54,3 +54,10 @@ Final output:
     The number is 1
     1 is less than three
     thanks for playing!
+
+---
+
+---
+## [< Exercise 2](../exercise_2.md)
+
+### [<< Back to Practice Problems](/)

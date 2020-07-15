@@ -23,3 +23,8 @@ Final code:
 Final output:
 
     Hello World!
+
+---
+## [< Exercise 1](../exercise_1.md)
+
+### [<< Back to Practice Problems](/)

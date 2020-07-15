@@ -37,3 +37,8 @@ Final code:
 Output: 
 
     The last letter of "elephant" is: t
+
+---
+## [< Exercise 3](../exercise_3.md)
+
+### [<< Back to Practice Problems](/)
