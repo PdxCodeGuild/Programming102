@@ -9,6 +9,11 @@ Output:
 
     Hello World!
 
+
+### Exercise 1 [solution](solutions/exercise_1_solution.md)
+
 ---
 
 ## [Exercise 2 >](exercise_2.md)
+
+### [<< Back to Practice](/)
