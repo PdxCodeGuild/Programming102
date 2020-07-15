@@ -93,6 +93,6 @@
 
 
 ---
-## [< Exercise 2](exercise_2.md)
+## [< Exercise 2](../exercise_2.md)
 
 ### [<< Back to Unit 2 Practice](/practice/unit_2/)
