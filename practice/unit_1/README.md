@@ -1,6 +1,6 @@
 # Programming 102 Practice
 
-## **Unit 1**
+## **Unit 1** - Troubleshooting
 
 ### **Copy the code**
 
@@ -15,3 +15,7 @@ Correct *one error message at a time* until the output matches that which is giv
 [01](exercise_1.md)|[01](solutions/exercise_2_solution.md)| 
 [02](exercise_2.md)|[02](solutions/exercise_2_solution.md)|
 [03](exercise_3.md)|[03](solutions/exercise_3_solution.md)|  
+
+## **Unit 1** - REPL / Functions
+
+
