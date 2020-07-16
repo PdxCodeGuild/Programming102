@@ -91,6 +91,7 @@
 
 
 
+Keep in mind that this is just one potential solution.
 
 ---
 ## [< Exercise 2](../exercise_2.md)
