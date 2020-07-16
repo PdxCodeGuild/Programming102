@@ -1,6 +1,6 @@
 # Unit 2 Practice
 
-## **Exercise 1**
+## **Exercise 1 - Count the loops**
 
 ### **1.1**
 

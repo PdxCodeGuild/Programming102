@@ -1,6 +1,6 @@
 # Unit 2 Practice
 
-## Exercise 2
+## Exercise 2 - Get Colors
 
 ### **2.1**
 
