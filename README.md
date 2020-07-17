@@ -12,7 +12,7 @@ While we don't expect you to complete all the advanced versions of the labs, we 
 | [Unit 02](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit2.md) | REPL, Functions                              | [Unit 02](practice/unit_2)| [Lab2](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab2.md) | [Coming Soon]() |
 | [Unit 03](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit3.md) | Dictionaries                                      | [Ex. 3](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise3.md) | [Lab3](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab3.md) | [Coming Soon]() |
 | [Unit 04](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit4.md) | Modules                                 | [Ex. 4](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise4.md) | [Lab4](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab4.md) | [Coming Soon]() |
-| [Unit 05](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit5.md) | Final Project                                | [Ex. 5](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise5.md) | [Lab5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md) | [Coming Soon]() |
+| [Unit 05](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit5.md) | Final Project                                | [Ex. 5](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise5.md) | [Lab5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md) | N/A |
 
 ## Quick Links
 
