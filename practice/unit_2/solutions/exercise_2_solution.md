@@ -2,7 +2,9 @@
 
 ## **Exercise 2**
 
-### **1.1 Solution**
+## **Solution**
+
+### **1.1**
 
     # create a blank list called colors
     colors = []

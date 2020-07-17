@@ -30,11 +30,11 @@
 
     'Elephant' is 8 letters long, but the positions of letters in a string start at 0. Therefore, the characters in 'elephant' are 0 - 7, making the last letter of 'elephant' at position 7.
 
-Final code:
+**Final code:**
 
     print (f'The last letter of "elephant" is: {"elephant"[7]}')
 
-Output: 
+**Output:** 
 
     The last letter of "elephant" is: t
 

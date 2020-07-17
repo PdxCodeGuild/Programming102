@@ -16,11 +16,11 @@
    
     A closing parenthesis is missing on `print()` 
 
-Final code:
+**Final code:**
 
     print("Hello World!")
 
-Final output:
+**Final output:**
 
     Hello World!
 

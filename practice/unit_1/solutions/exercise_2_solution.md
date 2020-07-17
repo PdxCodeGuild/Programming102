@@ -3,7 +3,11 @@
 ## **Exercise 2**
 
 **Problem:**
-
+    
+    if num < 3
+        print('The number is ' + num)
+        print(f'{num is less than three')
+         prin('thanks for playing!")
 
 **Solution:**
 
@@ -35,7 +39,7 @@
 
     A 't' is missing from the end of `print()`, preventing the function from being found.
 
-Final code:
+**Final code:**
         
        num = 1
        if num < 3:
@@ -49,7 +53,7 @@ Final code:
 
            print('thanks for playing!')
 
-Final output:
+**Final output:**
 
     The number is 1
     1 is less than three
@@ -57,7 +61,6 @@ Final output:
 
 ---
 
----
 ## [< Exercise 2](../exercise_2.md)
 
 ### [<< Back to Unit 1 Practice Problems](/practice/unit_1/)
