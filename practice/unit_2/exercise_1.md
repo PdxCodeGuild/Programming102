@@ -26,4 +26,4 @@ Construct a Read, Evaluate, Print, Loop (REPL) which performs the following on e
 
 ## [Exercise 2 >](exercise_2.md)
 
-### [<< Back to Unit 2 Practice](/practice/unit_1/)
+### [<< Back to Unit 2 Practice](/practice/unit_2/)
