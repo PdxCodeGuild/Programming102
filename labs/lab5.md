@@ -6,14 +6,16 @@ Let's write a python module to analyze a given text file and display the most fr
 
 You can get sample text [Here](/resources/countwords.txt)
 
-1. Open your file using `with open()`.
-1. Make everything lowercase.
-1. Remove all punctuation
-1. Split your text file into a list of words.
-1. Use a dictionary to keep track of each word and how many times it occurs. You can use the word as a key, and the count as the value.
-1. As you loop over you list of words, if the word is not in your dictionary, add it with the value of 1.
-1. If the word already exists in your dictionary add 1 to the count.
-1. Once you have counted all your words, display the top 10 in the terminal. You can use the following code to accomplish this:
+1. Pass your file name as a string to get_text(file_name).
+2. Using the string of text that's returned,
+   1. Replace all new line characters with single spaces `' '`
+   2. Make everything lowercase
+   3. Remove all punctuation
+   4. Split your text file at each space character into a list of words
+3. Use a dictionary to keep track of each word and how many times it occurs. You can use the word as a key, and the count as the value.
+4. As you loop over you list of words, if the word is not in your dictionary, add it with the value of 1.
+5. If the word already exists in your dictionary add 1 to the count.
+6. Once you have counted all your words, display the top 10 in the terminal. You can use the following code to accomplish this:
 
 ```python
 def get_text(file_name):
