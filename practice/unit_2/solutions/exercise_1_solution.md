@@ -2,7 +2,9 @@
 
 ## **Exercise 1**
 
-**Solution:**
+### **1.1**
+
+**Solution**
 
     # create a counter variable to 
     # to count loop iterations

@@ -2,9 +2,9 @@
 
 ## **Exercise 2**
 
-## **Solution**
+### **2.1**
 
-### **1.1**
+**Solution**
 
     # create a blank list called colors
     colors = []
@@ -42,7 +42,7 @@
     print(f'The color {color} was added to the list!')
     colors.append(color)
 
-### **1.2 Solution**
+### **2.2 Solution**
 
     # Define a function `get_color()` 
     # which prompts the user for a `color` 
