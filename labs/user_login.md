@@ -10,12 +10,10 @@
 
     - `username`
     - `password`
-    - `email`
 
 - Define a function called `login()` which will have parameters for:
   -  `username`
   -  `password`
-  -  `profile`
 
     The `login()` function will `return True` if the values passed to the function for `username` and `password` match the values for `username` and `password` found in the `profile`. 
     
@@ -23,7 +21,7 @@
 
 - Create variables for a `username` and `password` which will emulate a user's login attempt. 
 
-- Pass the `username` and `password` to `login()` along with the `profile` and tell the user whether their login attempt was successful.
+- Pass the `username` and `password` to `login()` and tell the user whether their login attempt was successful.
 
 Output:
     
@@ -92,6 +90,8 @@ A few things will need to change:
 
 - Instead of one `profile`, you will need a ***list*** of `profiles`, which will be a **list** of `profile` **dictionaries**. Each dictionary will represent a `profile` and will contain **key : value** pairs for `username` and `password`.
   
+- The `login()` function will need a parameter called `profile` to receive each `profile` as we loop through `profiles`.
+
 - Define a function called `user_exists()` which will:
   - loop through each `profile` in the `profiles` list
   - check to see if the `username` the user entered already exists within one of the `profile` dictionaries.
