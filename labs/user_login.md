@@ -2,8 +2,6 @@
 
 [Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
-## Lab 5 - User Login
-
 Create a REPL which allows a user to 'login'. 
 
 ### **5.1**
