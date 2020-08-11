@@ -44,6 +44,6 @@ Use `get_color()` in your REPL to get the colors from the user.
 
 ---
 
-## [< Exercise 1](exercise_1.md) 
+## [< Exercise 1](exercise_1.md) | [Exercise 3 >](exercise_3.md)
 
 ### [<< Back to Unit 2 Practice](/practice/unit_2/)
