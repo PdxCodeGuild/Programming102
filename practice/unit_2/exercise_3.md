@@ -25,6 +25,10 @@ If the user enters less than 8 for the character count, display a message and te
 
 **Output**
 
+    Enter desired password length: 6
+
+    ** Your password must be at least 8 characters long **
+
     Enter desired password length: 15
 
     Your password:
@@ -43,6 +47,12 @@ You may want to define another function, `get_random_chars()`, to choose from ea
 
     
 **Output**
+
+    Number of letters: 2
+    Number of digits: 2
+    Number of special characters: 2
+
+    ** Your password must be at least 8 characters long **
 
     Number of letters: 6
     Number of digits: 10
