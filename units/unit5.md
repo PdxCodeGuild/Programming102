@@ -7,7 +7,7 @@
 ### Table of Contents
 
 - [Final Project](#final)
-- [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
+- [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/user_login.md)
 
 ---
 
