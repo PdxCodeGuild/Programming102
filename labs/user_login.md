@@ -13,6 +13,11 @@ Create a REPL which allows a user to 'login'.
     - `username`
     - `password`
 
+            profile = {
+                username: 'gandalfTheGrey',
+                password: 'noneShallPass!'
+            }
+
 - Define a function called `login()` which will have parameters for:
   -  `username`
   -  `password`
