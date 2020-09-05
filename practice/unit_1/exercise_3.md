@@ -1,6 +1,6 @@
 # Unit 1 Practice
 
-## **Exercise 1**
+## **Exercise 3**
 
 ```python
 print 'The last letter of 'elephant' is: {'elephant'[8]}')
