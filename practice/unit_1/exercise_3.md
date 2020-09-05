@@ -2,9 +2,11 @@
 
 ## **Exercise 1**
 
-    print 'The last letter of 'elephant' is: {'elephant'[8]}')
+```python
+print 'The last letter of 'elephant' is: {'elephant'[8]}')
+```
 
-Output: 
+Output:
 
     The last letter of "elephant" is: t
 

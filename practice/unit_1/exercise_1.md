@@ -1,14 +1,16 @@
 # Unit 1 Practice
 
 ## **Exercise 1**
+
 Find and correct all errors in the following:
 
-    print("Hello World!
+```python
+print("Hello World!
+```
 
 Output:
 
     Hello World!
-
 
 ### Exercise 1 [solution](solutions/exercise_1_solution.md)
 
