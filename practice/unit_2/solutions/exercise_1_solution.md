@@ -28,4 +28,8 @@ while True:
         break
 ```
 
-Keep in mind that this is just one potential solution.
+## Keep in mind that this is just one potential solution.
+
+## [< Exercise 1](../exercise_1.md) | [< Exercise 2](../exercise_2.md)
+
+### [<< Back to Unit 2 Practice Problems](/practice/unit_2/)

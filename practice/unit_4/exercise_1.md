@@ -1,4 +1,3 @@
-
 ## Clean Text
 
 Define a function called `clean_text()` that takes in some `text` as a parameter.
@@ -10,11 +9,9 @@ Define a function called `clean_text()` that takes in some `text` as a parameter
 
 Finally, `return` the list of lower case words with no punctuation.
 
-
     clean_text("How now, Brown Cow?")
 
     output:
     ['how', 'now', 'brown', 'cow']
 
-
-
+### [<< Back to Unit 4 Practice Problems](/practice/unit_4/)
