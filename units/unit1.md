@@ -6,24 +6,24 @@
 
 ### Table of Contents
 
--   [Variables](#variables)
--   [DataTypes](#datatypes)
--   [Conditional Statements](#conditionals)
--   [For / While Loops](#loops)
--   [Troubleshooting](#troubleshooting)
--   [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
--   [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
+- [Variables](#variables)
+- [DataTypes](#datatypes)
+- [Conditional Statements](#conditionals)
+- [For / While Loops](#loops)
+- [Troubleshooting](#troubleshooting)
+- [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
+- [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
 
 ---
 
 ### <a id="variables"></a> Variables
 
--   Variables in python are used to reference data. They make our code more readable if used correctly.
--   Variables are declared when you give them a name and assign them a value `name = "Anthony"`
--   Keep in mind there are a few rules when choosing your variable name:
-    -   Variables names are case sensitive (name and NAME are different variables)
-    -   Must start with a letter or underscore
-    -   Can have numbers but can not start with one
+- Variables in python are used to reference data. They make our code more readable if used correctly.
+- Variables are declared when you give them a name and assign them a value `name = "Anthony"`
+- Keep in mind there are a few rules when choosing your variable name:
+  - Variables names are case sensitive (name and NAME are different variables)
+  - Must start with a letter or underscore
+  - Can have numbers but can not start with one
 
 ---
 
@@ -102,6 +102,22 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 ### <a id="troubleshooting"></a> Troubleshooting
 
 ![troubleshooting](https://github.com/PdxCodeGuild/Programming102/blob/master/resources/troubleshooting.jpeg)
+
+| Exception           | Cause                                                                                            | Example                                                                |
+| ------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| AttributeError      | Attribute reference or assignment fails                                                          | [Example](https://repl.it/@dirtTastesGood/pythonattributeerrorexample) |
+| ImportError         | `import` statement has troubles trying to load a module                                          | EXAMPLE                                                                |
+| ModuleNotFoundError | `import` statement has troubles trying to load a module                                          | EXAMPLE                                                                |
+| IndexError          | sequence index is out of range                                                                   | EXAMPLE                                                                |
+| KeyError            | Referenced key is not in a dictionary                                                            | EXAMPLE                                                                |
+| KeyboardInterrupt   | Using `ctrl + c` to exit Python program                                                          | EXAMPLE                                                                |
+| NameError           | Variable or function name doesn't exist                                                          | EXAMPLE                                                                |
+| SyntaxError         | Many causes. Incorrect Python syntax.                                                            | EXAMPLE                                                                |
+| IndentationError    | Indendation too far left or right                                                                | EXAMPLE                                                                |
+| TypeError           | operation or function is applied to an object of inappropriate type.                             | EXAMPLE                                                                |
+| UnboundLocalError   | Variable isn't defined within the function                                                       | EXAMPLE                                                                |
+| ValueError          | an operation or function receives an argument that has the right type but an inappropriate value | EXAMPLE                                                                |
+| ZeroDivisionError   | Dividing by zero                                                                                 | EXAMPLE                                                                |
 
 ### [Quiz 1](https://forms.gle/CZcvDzegTWyq6quPA)
 
