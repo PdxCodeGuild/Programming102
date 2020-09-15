@@ -11,6 +11,7 @@
 - [Conditional Statements](#conditionals)
 - [For / While Loops](#loops)
 - [Troubleshooting](#troubleshooting)
+- [Error Types](#errors)
 - [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
 - [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
 
@@ -102,6 +103,8 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 ### <a id="troubleshooting"></a> Troubleshooting
 
 ![troubleshooting](https://github.com/PdxCodeGuild/Programming102/blob/master/resources/troubleshooting.jpeg)
+
+### <a id="errors"></a> Common Error Messages
 
 | Error               | Cause                                                                                            | Example                                                                                 |
 | ------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
