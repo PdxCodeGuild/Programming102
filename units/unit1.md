@@ -103,21 +103,21 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 
 ![troubleshooting](https://github.com/PdxCodeGuild/Programming102/blob/master/resources/troubleshooting.jpeg)
 
-| Exception           | Cause                                                                                            | Example                                                                     |
-| ------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
-| AttributeError      | Attribute reference or assignment fails                                                          | [Example](https://repl.it/@dirtTastesGood/pythonattributeerrorexample)      |
-| ImportError         | `import` statement has troubles trying to load a module                                          | [Example](https://repl.it/@dirtTastesGood/pythonimporterrorexample)         |
-| ModuleNotFoundError | `import` statement has troubles trying to load a module                                          | [Example](https://repl.it/@dirtTastesGood/pythonmodulenotfounderrorexample) |
-| IndexError          | sequence index is out of range                                                                   | [Example](https://repl.it/@dirtTastesGood/pythonindexerrorexample)          |
-| KeyError            | Referenced key is not in a dictionary                                                            | [Example](https://repl.it/@dirtTastesGood/pythonkeyerrorexample)            |
-| KeyboardInterrupt   | Using `ctrl + c` to exit Python program                                                          | [Example](https://repl.it/@dirtTastesGood/pythonkeyboardinterruptexample)   |
-| NameError           | Variable or function name doesn't exist                                                          | [Example](https://repl.it/@dirtTastesGood/pythonnameerrorexample)           |
-| SyntaxError         | Many causes. Incorrect Python syntax.                                                            | [Example](https://repl.it/@dirtTastesGood/pythonsyntaxerrorexample)         |
-| IndentationError    | Indendation too far left or right                                                                | [Example](https://repl.it/@dirtTastesGood/pythonindentationerrorexample)    |
-| TypeError           | operation or function is applied to an object of inappropriate type.                             | [Example](https://repl.it/@dirtTastesGood/pythontypeerrorexample)           |
-| UnboundLocalError   | Variable isn't defined within the function                                                       | [Example](https://repl.it/@dirtTastesGood/pythonunboundlocalerrorexample)   |
-| ValueError          | an operation or function receives an argument that has the right type but an inappropriate value | [Example](https://repl.it/@dirtTastesGood/pythonvalueerrorexample)          |
-| ZeroDivisionError   | Dividing by zero                                                                                 | [Example](https://repl.it/@dirtTastesGood/pythonzerodivisionerrorexample)   |
+| Exception           | Cause                                                                                            | Example                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| AttributeError      | Attribute reference or assignment fails                                                          | [AttributeError](https://repl.it/@dirtTastesGood/pythonattributeerrorexample)           |
+| ImportError         | `import` statement has troubles trying to load a module                                          | [ImportError](https://repl.it/@dirtTastesGood/pythonimporterrorexample)                 |
+| ModuleNotFoundError | `import` statement has troubles trying to load a module                                          | [ModuleNotFoundError](https://repl.it/@dirtTastesGood/pythonmodulenotfounderrorexample) |
+| IndexError          | sequence index is out of range                                                                   | [IndexError](https://repl.it/@dirtTastesGood/pythonindexerrorexample)                   |
+| KeyError            | Referenced key is not in a dictionary                                                            | [KeyError](https://repl.it/@dirtTastesGood/pythonkeyerrorexample)                       |
+| KeyboardInterrupt   | Using `ctrl + c` to exit Python program                                                          | [KeyboardInterrupt](https://repl.it/@dirtTastesGood/pythonkeyboardinterruptexample)     |
+| NameError           | Variable or function name doesn't exist                                                          | [NameError](https://repl.it/@dirtTastesGood/pythonnameerrorexample)                     |
+| SyntaxError         | Many causes. Incorrect Python syntax.                                                            | [SyntaxError](https://repl.it/@dirtTastesGood/pythonsyntaxerrorexample)                 |
+| IndentationError    | Indendation too far left or right                                                                | [IndentationError](https://repl.it/@dirtTastesGood/pythonindentationerrorexample)       |
+| TypeError           | operation or function is applied to an object of inappropriate type.                             | [TypeError](https://repl.it/@dirtTastesGood/pythontypeerrorexample)                     |
+| UnboundLocalError   | Variable isn't defined within the function                                                       | [UnboundLocalError](https://repl.it/@dirtTastesGood/pythonunboundlocalerrorexample)     |
+| ValueError          | an operation or function receives an argument that has the right type but an inappropriate value | [ValueError](https://repl.it/@dirtTastesGood/pythonvalueerrorexample)                   |
+| ZeroDivisionError   | Dividing by zero                                                                                 | [ZeroDivisionError](https://repl.it/@dirtTastesGood/pythonzerodivisionerrorexample)     |
 
 ### [Quiz 1](https://forms.gle/CZcvDzegTWyq6quPA)
 
