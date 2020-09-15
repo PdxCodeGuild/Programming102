@@ -103,7 +103,7 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 
 ![troubleshooting](https://github.com/PdxCodeGuild/Programming102/blob/master/resources/troubleshooting.jpeg)
 
-| Exception           | Cause                                                                                            | Example                                                                                 |
+| Error               | Cause                                                                                            | Example                                                                                 |
 | ------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------- |
 | AttributeError      | Attribute reference or assignment fails                                                          | [AttributeError](https://repl.it/@dirtTastesGood/pythonattributeerrorexample)           |
 | ImportError         | `import` statement has troubles trying to load a module                                          | [ImportError](https://repl.it/@dirtTastesGood/pythonimporterrorexample)                 |
