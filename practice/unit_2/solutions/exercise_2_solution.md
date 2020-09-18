@@ -99,6 +99,6 @@ Keep in mind that this is just one potential solution.
 
 ---
 
-## [< Exercise 2](../exercise_2.md)
+## [< Exercise 2](../exercise_2.md) | [Exercise 3 >](../exercise_3.md)
 
 ### [<< Back to Unit 2 Practice](/practice/unit_2/)

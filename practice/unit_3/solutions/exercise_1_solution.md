@@ -117,7 +117,7 @@ print(f'Grand Total: ${grand_total}')
 
 Keep in mind that this is just one potential solution.
 
-## [< Exercise 1](../exercise_1.md)
+## [< Exercise 1](../exercise_1.md) | [Exercise 2 >](../exercise_2.md)
 
 ---
 
