@@ -2,9 +2,15 @@
 
 This lab will involve writing a program that allows the user to convert a number between units.
 
+Each version should be accomplished using a **dictionary** and each can be completed without the use of `if`/`elif` statements.
+
 ## Version 1
 
-Ask the user for the number of feet, and print out the equivalent distance in meters. Hint: 1 ft is 0.3048 m. So we can get the output in meters by **multiplying the input distance by 0.3048**. Below is some sample input/output.
+Ask the user for the number of feet, and print out the equivalent distance in meters.
+
+Hint: 1 ft is 0.3048 m.
+
+So we can get the output in meters by **multiplying the input distance by 0.3048**. Below is some sample input/output.
 
 ```
 > what is the distance in feet? 12
@@ -13,7 +19,9 @@ Ask the user for the number of feet, and print out the equivalent distance in me
 
 ## Version 2
 
-Allow the user to also enter the units. Then depending on the units, convert the distance into meters. The units we'll allow are feet, miles, meters, and kilometers. **Hint:** Try using the unit as the key and the conversion as the value.
+Allow the user to also enter the units. Then depending on the units, convert the distance into meters. The units we'll allow are feet, miles, meters, and kilometers.
+
+**Hint:** Try using the unit as the key and the conversion as the value.
 
 ```
 1 ft is 0.3048 m
