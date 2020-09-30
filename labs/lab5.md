@@ -8,10 +8,7 @@ Create a REPL which allows a user to 'login'.
 
 - Create a dictionary called `user_profile`
 
-  The `user_profile` should contain **key : value** pairs for:
-
-  - `username`
-  - `password`
+  The `user_profile` should contain **key : value** pairs with keys of `username` and `password` and values of your choosing.
 
 - Define a function called `login()` which will have parameters for:
 
@@ -66,7 +63,7 @@ Output:
 
     Enter 'y' to try again, 'n' to quit: y
 
-    You have 2 login attempts remaining...
+    You have 2 login attempt(s) remaining...
 
     username: gandalfTheGrey
     password: foolOfATook!
@@ -75,7 +72,7 @@ Output:
 
     Enter 'y' to try again, 'n' to quit: y
 
-    You have 1 login attempts remaining...
+    You have 1 login attempt(s) remaining...
 
     username: gandalfTheGrey
     password: bilboBaggins!
@@ -84,20 +81,18 @@ Output:
 
     Your login has been unsuccessful three times! Try again later. Goodbye!
 
-### **5.4 - Advanced**
+### **5.4**
 
 Add support for **multiple** users.
 
 A few things will need to change:
 
-- Instead of one `profile`, you will need a **_list_** of `profiles`, which will be a **list** of `profile` **dictionaries**. Each dictionary will represent a `profile` and will contain **key : value** pairs for `username` and `password`.
-- The `login()` function will need a parameter called `profile` to receive each `profile` as we loop through `profiles`.
+- Instead of one `profile`, you will need a **_list_** of `profiles`. Each `profile` be a dictionary containing **key : value** pairs with they keys of `username` and `password`.
+- The `login()` function will now loop through each profile in the profiles list.
 
-- Define a function called `user_exists()` which will:
+- If the `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` in one of the profiles, the `login()` function will return that username. Otherwise, it will return `False`.
 
-  - loop through each `profile` in the `profiles` list
-  - check to see if the `username` the user entered already exists within one of the `profile` dictionaries.
-  - if the user already exists, `return True` otherwise, `return False`
+### **5.5 - Advanced**
 
 - Define a function called `create_user()` which:
 
@@ -105,13 +100,12 @@ A few things will need to change:
   - checks to see if the `username` already exists in the `profiles` list using the `user_exists()` function
   - If the `username` is unique and doesn't appear in the `profiles` list, `.append()` it to the `profiles` list.
 
-- The `login()` function will now:
+- Define a function called `user_exists()` which will:
 
-  - take in the list of `profiles` instead of just one `profile`.
+  - loop through each `profile` in the `profiles` list
+  - check to see if the `username` the user entered already exists within one of the `profile` dictionaries.
 
-  - need to loop through each `profile` in the `profiles` list and check the `username_attempt` and `password_attempt` against the values for `username` and `password` for each `profile` until one matches.
-
-  - If no `profile` is found whose `username` and `password` match those provided by the user, the login is unsucessful, `return False`. Otherwise, `return True`
+  If a user with that `username` already exists, `return True`, otherwise `return False`
 
 - Integrate the `create_user()` function into your REPL to allow the user to create a new username.
 
@@ -170,7 +164,7 @@ Output:
 
     Enter 'y' to try again, 'n' to quit: y
 
-    You have 2 login attempts remaining...
+    You have 2 login attempt(s) remaining...
 
         username: iAmSmeagol
         password: myPrecious!
