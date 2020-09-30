@@ -88,11 +88,11 @@ while True:
 
         # repeat the loop
         continue
-
-    # If the color is not already in the `colors` list,
-    # add it and tell the user it was added.
-    print(f'The color {color} was added to the list!')
-    colors.append(color)
+    else:
+        # If the color is not already in the colors list,
+        # add it and tell the user it was added.
+        print(f'The color {color} was added to the list!')
+        colors.append(color)
 ```
 
 Keep in mind that this is just one potential solution.
