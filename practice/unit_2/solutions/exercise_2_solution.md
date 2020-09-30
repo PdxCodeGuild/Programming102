@@ -47,9 +47,9 @@ colors.append(color)
 ### **2.2 Solution**
 
 ```python
-# Define a function `get_color()`
-# which prompts the user for a `color`
-# and then `returns` that `color`.
+# Define a function get_color()
+# which prompts the user for a color
+# and then returns that color.
 def get_color():
     '''
     Prompt the user for a color. Return the color.
