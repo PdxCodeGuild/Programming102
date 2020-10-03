@@ -17,6 +17,6 @@
 
 ## <a id="final"></a>Final Project
 
-### [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/user_login.md)
+### [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 [Back to top](#top)
