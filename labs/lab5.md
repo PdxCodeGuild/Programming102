@@ -2,22 +2,31 @@
 
 [Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
-Create a REPL which allows a user to 'login'.
+Create a REPL which allows a user to 'log in'.
+
+Please complete the sections **in order**. Create a working version of 5.1 before attempting 5.2, etc. This will make your life easier. You may also want to consider creating separate `.py` files for each version, so you can refer back to previous working versions.
 
 ### **5.1**
 
-- Create a dictionary called `user_profile`
+Create a dictionary called `profile`
 
-  The `user_profile` should contain **key : value** pairs with keys of `username` and `password` and values of your choosing.
+The `profile` should contain **two** **key : value** pairs with keys of `username` and `password` and values of your choosing. They will represent a `username` and `password` for a **single** user.
 
-- Define a function called `login()` which will have parameters for:
+    username - gandalfTheGrey
+    password - noneShallPass!
 
-  - `username_attempt`
-  - `password_attempt`
+**Do not** create your profile with the user's username as the key and their password as the value as below:
 
-  The `login()` function will `return True` if the values passed to the function for `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` found in the `profile`.
+    'gandalfTheGrey':'noneShallPass'
 
-  If the credentials don't match those in the `profile`, the `login()` function will `return False`
+Define a function called `login()` which will have parameters for:
+
+- `username_attempt`
+- `password_attempt`
+
+The `login()` function will `return True` if the values passed to the function for `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` found in the `profile`.
+
+If the credentials don't match those in the `profile`, the `login()` function will `return False`
 
 - Create variables for a `username_attempt` and `password_attempt` which will emulate a user's login attempt.
 
@@ -87,10 +96,12 @@ Add support for **multiple** users.
 
 A few things will need to change:
 
-- Instead of one `profile`, you will need a **_list_** of `profiles`. Each `profile` be a dictionary containing **key : value** pairs with they keys of `username` and `password`.
-- The `login()` function will now loop through each profile in the profiles list.
+- Instead of one `profile`, you will need a **_list_** of `profiles`. Each `profile` be a dictionary containing **key : value** pairs with the keys of `username` and `password`.
+- The `login()` function will require a third parameter, `profile`.
 
-- If the `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` in one of the profiles, the `login()` function will return that username. Otherwise, it will return `False`.
+- When the user enters their username and password attempts, loop through the list of `profiles`, pass each `profile` one at time into the `login()` function along with the `username_attempt` and `password_attempt`.
+
+- If the `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` current `profile`, the `login()` function will return that `True` and that user will be logged in. Otherwise, it will return `False`.
 
 ### **5.5 - Advanced**
 
