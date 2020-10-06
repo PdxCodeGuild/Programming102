@@ -7,8 +7,9 @@
 ### Table of Contents
 
 - [Final Project](#final)
-- [What Now?](#what-now)
 - [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
+- [What Now?](#what-now)
+- [Thanks!](#thanks)
 
 ---
 
@@ -43,5 +44,9 @@ If you've made it through all that and are still looking for more, check out the
 - [practicepython.org](www.practicepython.org)
 - [edabit.com](www.edabit.com)
 - [hackerrank.com](www.hackerrank.com)
+
+## <a id="thanks"></a>Thanks!
+
+Thank you for participating in the Programming 101 and 102 program at the PDX Code Guild. We love helping you learn code and we couldn't do what we do without you! You're amazing and your journey is just beginning. Be patient with yourself and don't give up! See you in the boot camp!
 
 [Back to top](#top)
