@@ -40,10 +40,10 @@ If you haven't done so already, go back through the Programming 101 and Programm
 
 If you've made it through all that and are still looking for more, check out the following sites for additional challenges
 
-- [codewars.com](www.codewars.com)
-- [practicepython.org](www.practicepython.org)
-- [edabit.com](www.edabit.com)
-- [hackerrank.com](www.hackerrank.com)
+- [codewars.com](http://www.codewars.com)
+- [practicepython.org](http://www.practicepython.org)
+- [edabit.com](http://www.edabit.com)
+- [hackerrank.com](http://www.hackerrank.com)
 
 ## <a id="thanks"></a>Thanks!
 
