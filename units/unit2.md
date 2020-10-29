@@ -12,7 +12,7 @@
 - [Passing Arguments to Functions](#arguments)
 - [Return](#return)
 - [main( )](#main)
-- [Exercise 2](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise2.md)
+- [Exercises](https://github.com/PdxCodeGuild/Programming102/blob/master/practice/unit_2/)
 - [Lab 2](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab2.md)
 
 ---
@@ -167,7 +167,7 @@ In this case our output would be:
 
 ---
 
-### [Exercise 2](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise2.md)
+### [Exercises](https://github.com/PdxCodeGuild/Programming102/blob/master/practice/unit_2)
 
 ### [Lab 2](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab2.md)
 

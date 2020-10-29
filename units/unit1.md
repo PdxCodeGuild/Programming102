@@ -6,14 +6,18 @@
 
 ### Table of Contents
 
-- [Variables](#variables)
-- [DataTypes](#datatypes)
-- [Conditional Statements](#conditionals)
-- [For / While Loops](#loops)
-- [Troubleshooting](#troubleshooting)
-- [Error Types](#errors)
-- [Exercise 1](https://github.com/PdxCodeGuild/Programming102/blob/master/exercises/exercise1.md)
-- [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
+- [<a id="top"></a>Unit 1 - Review](#unit-1---review)
+  - [Table of Contents](#table-of-contents)
+  - [<a id="variables"></a> Variables](#-variables)
+  - [<a id="datatypes"></a> DataTypes](#-datatypes)
+  - [<a id="conditionals"></a> Conditional Statements](#-conditional-statements)
+  - [<a id="loops"></a> For / While Loops](#-for--while-loops)
+    - [while loops](#while-loops)
+    - [for loops](#for-loops)
+  - [<a id="troubleshooting"></a> Troubleshooting](#-troubleshooting)
+  - [<a id="errors"></a> Common Error Messages](#-common-error-messages)
+  - [Exercises](#exercises)
+  - [Lab 1](#lab-1)
 
 ---
 
@@ -122,7 +126,9 @@ Loops can be used to run a block of code more than once. Python has two kinds of
 | ValueError          | an operation or function receives an argument that has the right type but an inappropriate value | [ValueError](https://repl.it/@dirtTastesGood/pythonvalueerrorexample)                   |
 | ZeroDivisionError   | Dividing by zero                                                                                 | [ZeroDivisionError](https://repl.it/@dirtTastesGood/pythonzerodivisionerrorexample)     |
 
-### [Quiz 1](https://forms.gle/CZcvDzegTWyq6quPA)
+---
+
+### [Exercises](https://github.com/PdxCodeGuild/Programming102/blob/master/practice/unit_1/)
 
 ### [Lab 1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)
 

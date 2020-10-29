@@ -15,11 +15,9 @@
 
 ### Congratulations, You made it!
 
-- The last day of class is finally here! We hope you've enjoyed yourself! Please help us make Programming 102 better by taking this [anonymous survey](https://forms.gle/D7vCyctcqUQFvSeA9).
+The last day of class is finally here! We hope you've enjoyed yourself! Please help us make Programming 101/102 better by taking this [anonymous survey](https://forms.gle/D7vCyctcqUQFvSeA9).
 
-## <a id="final"></a>Final Project
-
-### [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
+## [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 ## <a id="what-now"></a>What Now?
 
