@@ -7,17 +7,17 @@
 ### Table of Contents
 
 - [<a id="top"></a>Unit 1 - Review](#unit-1---review)
-  - [Table of Contents](#table-of-contents)
-  - [<a id="variables"></a> Variables](#-variables)
-  - [<a id="datatypes"></a> DataTypes](#-datatypes)
-  - [<a id="conditionals"></a> Conditional Statements](#-conditional-statements)
-  - [<a id="loops"></a> For / While Loops](#-for--while-loops)
-    - [while loops](#while-loops)
-    - [for loops](#for-loops)
-  - [<a id="troubleshooting"></a> Troubleshooting](#-troubleshooting)
-  - [<a id="errors"></a> Common Error Messages](#-common-error-messages)
-  - [Exercises](#exercises)
-  - [Lab 1](#lab-1)
+    - [Table of Contents](#table-of-contents)
+    - [<a id="variables"></a> Variables](#-variables)
+    - [<a id="datatypes"></a> DataTypes](#-datatypes)
+    - [<a id="conditionals"></a> Conditional Statements](#-conditional-statements)
+    - [<a id="loops"></a> For / While Loops](#-for--while-loops)
+      - [while loops](#while-loops)
+      - [for loops](#for-loops)
+    - [<a id="troubleshooting"></a> Troubleshooting](#-troubleshooting)
+    - [<a id="errors"></a> Common Error Messages](#-common-error-messages)
+    - [Exercises](#exercises)
+    - [Lab 1](#lab-1)
 
 ---
 
