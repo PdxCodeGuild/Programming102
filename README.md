@@ -4,7 +4,7 @@ Welcome to the five day course focused on strengthening your programming fundame
 
 ## Syllabus Overview
 
-While we don't expect you to complete all the advanced versions of the labs, we expect you to give it a try and ask questions when you are stuck.
+Advanced versions of labs are optional, but encouraged. Additional practice for each unit can be found in the Exercises column.
 
 | Unit                                                                                 | Concepts                                     | Excercises                                  | Labs                                                                            | Video           |
 | ------------------------------------------------------------------------------------ | -------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------- | --------------- |
