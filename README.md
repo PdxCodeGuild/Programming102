@@ -19,8 +19,9 @@ While we don't expect you to complete all the advanced versions of the labs, we 
 Below is a list of helpful links.
 | Resource | Link | Comment |
 | ------- |----------| -----|
-Class Chatroom | [Slack](https://app.slack.com/client/TH5A28SJ0/CH6DE8QK1) | for enrolled Intro students only. [directions on how to use Slack](https://github.com/PdxCodeGuild/Programming101/blob/master/docs/slack.md)
-Terminal Cheatsheet | [Terminal Cheatsheet](/docs/terminal_cheatsheet.md) | Command Prompt/Terminal/Powershell
+| Lab Submissions |[How to Submit Labs in Slack](/docs/slack.md) | For enrolled Intro students only |
+Terminal Cheatsheet | [Terminal Cheatsheet](/docs/terminal_cheatsheet.md) |
+|Flowcharts|[Flowcharts](/docs/flowcharts/)|Example flowcharts with corresponding code| Command Prompt/Terminal/Powershell
 VS Code Keyboard ShortCuts | [For Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) |
 VS Code Keyboard ShortCuts | [For macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) |
 Python Tutor | [Python Tutor](http://pythontutor.com/visualize.html#mode=edit) | online debugging tool
@@ -30,8 +31,5 @@ Compare two code snippets | [DiffChecker](https://www.diffchecker.com/) | great 
 Learning Resources | [Guide](https://github.com/PdxCodeGuild/IntroToProgramming/blob/master/documentation/resources.md)
 Future Intro Classes | [Eventbrite](https://www.eventbrite.com/o/pdx-code-guild-17959456298) |
 
-## What's next?
-
-Below are some additional resources to take your understanding off Python to the next level.
 
 [Back to top](#top)
