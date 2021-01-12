@@ -6,7 +6,9 @@
 
 - We are going to take an existing lab and try to solve all of the mistakes by looking at the error messages.
 - Copy and paste the following code into your own python file
-- There are 5 errors total for this lab, 4 will raise errors, one will not. 3 of them are easy to find, one of the error messages is not obvious as it's only triggered by a specific outcome.
+- There are 5 errors total for this lab, 4 will raise errors, one will not. 
+- Of the four errors which raise error messages, three are easy to find. However, one is not obvious as it's only triggered by a specific outcome of the game.
+- The error that doesn't raise an error message is also only triggered by a specific outcome of the game.
 - Please **leave a comment** after each error you correct
 
 ```python

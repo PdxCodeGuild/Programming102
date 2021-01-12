@@ -97,13 +97,14 @@ Add support for **multiple** users.
 A few things will need to change:
 
 - Instead of one `profile`, you will need a **_list_** of `profiles`. Each `profile` will be a dictionary containing **key : value** pairs with the keys of `username` and `password`.
+  
 - The `login()` function will require a third parameter, `profile`.
 
 - When the user enters their username and password attempts, loop through the list of `profiles`, pass each `profile` one at time into the `login()` function along with the `username_attempt` and `password_attempt`.
 
 - If the `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` current `profile`, the `login()` function will return that `True` and that user will be logged in. Otherwise, it will return `False`.
 
-### **5.5 - Advanced**
+### **5.5 - Extra Challenge**
 
 - Define a function called `create_user()` which:
 

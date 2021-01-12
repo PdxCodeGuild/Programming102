@@ -20,15 +20,15 @@ Write a program that lets the user enter two strings, and tells them if they are
 >>> 'dormitory' and 'dirtyroom' are anagrams
 ```
 
-# Advanced Version 1
+# Extra Challenge 1
 
 1. Convert each word to lower case (`lower`)
 2. Remove all the spaces from each word by replacing them with empty strings (`replace`)
 
-# Advanced Version 2
+# Extra Challenge 2
 
 Make your program ignore punctuation when checking anagrams.
 
-# Advanced Version 3
+# Extra Challenge 3
 
 Let the user enter as many words as they choose. If every word is an anagram of every other word, let the user know.

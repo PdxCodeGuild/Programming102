@@ -30,7 +30,7 @@ Below is some sample input/output.
 Add functionality for multiplication `*` and division `/`
 
 ---
-## Advanced Version 1
+## Extra Challenge 1
 
 Allow the user to have a running total, each command will perform an operation on that number.
 
@@ -45,7 +45,7 @@ Allow the user to have a running total, each command will perform an operation o
 ```
 
 ---
-## Advanced Version 2
+## Extra Challenge 2
 
 Allow the user to write an expression, alternating the numbers and operators. Evaluate the expression from left-to-right.
 
@@ -54,7 +54,7 @@ Allow the user to write an expression, alternating the numbers and operators. Ev
 > 14
 ```
 
-## Advanced Version 3
+## Extra Challenge 3
 
 ---
 
