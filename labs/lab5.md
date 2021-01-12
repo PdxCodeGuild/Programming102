@@ -96,7 +96,7 @@ Add support for **multiple** users.
 
 A few things will need to change:
 
-- Instead of one `profile`, you will need a **_list_** of `profiles`. Each `profile` be a dictionary containing **key : value** pairs with the keys of `username` and `password`.
+- Instead of one `profile`, you will need a **_list_** of `profiles`. Each `profile` will be a dictionary containing **key : value** pairs with the keys of `username` and `password`.
 - The `login()` function will require a third parameter, `profile`.
 
 - When the user enters their username and password attempts, loop through the list of `profiles`, pass each `profile` one at time into the `login()` function along with the `username_attempt` and `password_attempt`.
