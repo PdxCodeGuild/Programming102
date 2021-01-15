@@ -10,8 +10,8 @@ Two words are anagrams of each other if the letters of one can be rearranged to 
 
 Write a program that lets the user enter two strings, and tells them if they are anagrams of each other.
 
-1. Convert the strings into lists (`list`)
-2. Sort the letters of each word (`sort`)
+1. Convert the strings into lists
+2. Sort the letters of each list
 3. Check if the two are equal
 
 ```
@@ -19,6 +19,8 @@ Write a program that lets the user enter two strings, and tells them if they are
 >>> enter the second word: dirtyroom
 >>> 'dormitory' and 'dirtyroom' are anagrams
 ```
+
+One potential solution to this lab involves Python's built-in function `sorted()`, which will sort list items as well as characters in a string. However, for the sake of practice, please avoid using `sorted()` at first and try to follow steps 1-3 exactly as they're listed
 
 # Extra Challenge 1
 
