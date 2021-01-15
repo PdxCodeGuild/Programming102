@@ -12,7 +12,7 @@ Write a program that lets the user enter two strings, and tells them if they are
 
 1. Convert the strings into lists
 2. Sort the letters of each list
-3. Check if the two are equal
+3. Check if the two lists are equal
 
 ```
 >>> enter the first word: dormitory
