@@ -24,8 +24,8 @@ One potential solution to this lab involves Python's built-in function `sorted()
 
 # Extra Challenge 1
 
-1. Convert each word to lower case (`lower`)
-2. Remove all the spaces from each word by replacing them with empty strings (`replace`)
+1. Convert each word to lower case
+2. Remove all the spaces from each word by replacing them with empty strings
 
 # Extra Challenge 2
 
