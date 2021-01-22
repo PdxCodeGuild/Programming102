@@ -19,41 +19,37 @@ The `profile` should contain **two** **key : value** pairs with keys of `usernam
 
     'gandalfTheGrey':'noneShallPass'
 
-Define a function called `login()` which will have parameters for:
+Define a function called `login()` which will have three parameters for:
 
 - `username_attempt`
 - `password_attempt`
+- `profile`
 
-The `login()` function will `return True` if the values passed to the function for `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` found in the `profile`.
+If the values passed to the function for `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` found in the `profile`, The `login()` function will `return True`.
 
 If the credentials don't match those in the `profile`, the `login()` function will `return False`
 
 - Create variables for a `username_attempt` and `password_attempt` which will emulate a user's login attempt.
 
-- Pass the `username_attempt` and `password_attempt` to `login()` and tell the user whether their login attempt was successful.
+- Pass the `profile` dictionary, `username_attempt` and `password_attempt` to `login()`. Use the boolean that is returned to tell the user whether or not their login attempt was successful.
 
 Output:
+```
+# successful login
+username: gandalfTheGrey
+password: noneShallPass!
 
-    profile:
-        username: gandalfTheGrey
-        password: noneShallPass!
+Welcome, gandalfTheGrey!
 
+# unsuccessful login
+username: gandalfTheGrey
+password: myPrecious?
 
-    # successful login
-    username: gandalfTheGrey
-    password: noneShallPass!
-
-    Welcome, gandalfTheGrey!
-
-    # unsuccessful login
-    username: gandalfTheGrey
-    password: myPrecious?
-
-    Error! Your username or password was incorrect!
-
+Error! Your username or password was incorrect!
+```
 ### **5.2**
 
-Create a REPL that asks the user for their `username` and `password` and attempts to log them in.
+Create a REPL that asks the user for their `username_attempt` and `password_attempt` and attempts to log them in.
 
 If their login is **successful**, print a welcome message and end the program.
 
@@ -61,7 +57,7 @@ If their login is **unsuccessful**, ask if they'd like to try again.
 
 ### **5.3**
 
-Allow the user three attempts to login. If they exceed three attempts without a successful login, tell the user and end the program
+Allow the user **three attempts** to login. If they exceed three attempts without a successful login, tell the user and end the program
 
 Output:
 
@@ -98,8 +94,6 @@ A few things will need to change:
 
 - Instead of one `profile`, you will need a **_list_** of `profiles`. Each `profile` will be a dictionary containing **key : value** pairs with the keys of `username` and `password`.
   
-- The `login()` function will require a third parameter, `profile`.
-
 - When the user enters their username and password attempts, loop through the list of `profiles`, pass each `profile` one at time into the `login()` function along with the `username_attempt` and `password_attempt`.
 
 - If the `username_attempt` and `password_attempt` match the values at the keys of `username` and `password` current `profile`, the `login()` function will return that `True` and that user will be logged in. Otherwise, it will return `False`.
