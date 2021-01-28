@@ -65,59 +65,78 @@ colors = ['red', 'green']
 
 # ------------------------------------------------------- #
 
+"""
+import random
+# sometimes errors are triggered in a different file and will need to be hunted down
+# Line 77 will trigger an error in the random module
+# which will cause a 2-message traceback.
+random.choice(123)
+
+'''
+Traceback (most recent call last):
+
+  File "unit_1_review.py", line 19, in <module>
+    random.choice(123)
+  File "C:/.../random.py", line 288, in choice
+
+    i = self._randbelow(len(seq))
+TypeError: object of type 'int' has no len()
+'''
+"""
+
+# -------------------------------------------------------- #
+
 # Handling Errors
 
 # keywords: try / except / else / finally
+
 '''
 try:
-    # try to run this code block
-    number = input('Please enter a number: ')
+    # try to run the code in this block
+    # if an error is raised, it can be caught using 'except'
 
-    number = float(number)
-
-except ValueError:
-    # if a ValueError was raised in the try block, 
-    # run this block
-    print(f'Could not be converted to a float: {number}')
+except ErrorType: # 'ErrorType' will be the specific type of error you wish to catch
+    # run this code block if the error is raised
 
 else:
-    # if no error was raised in the try block,
-    # run this block
-    print(f'Successfully converted to float: {number}')
+    # run this block if no error was raised in the 'try' block
 
 finally:
     # run this block whether an error was raised or not
-    print('Yay Python!')
-    
 '''
 
+
 '''
-dividend = 100
+x = 100
 
 while True: # infinite loop
     try:
-        divisor = input("Please enter a number: ")
+        x = input("Please enter x: ")
+        y = input("Please enter y: ")
 
         # convert the string to float
-        divisor = float(divisor)
+        y = float(y)
 
         # divide the numbers
-        quotient = dividend / divisor
+        quotient = x / y
 
     # multiple except blocks can be used to catch different errors
     except ValueError: 
-        # if the divisor can't be converted:
-        print(f'Could not be converted to a float: {divisor}')
+        # if y can't be converted:
+        print(f'Could not be converted to a float: {y}')
     
     except ZeroDivisionError:
-        # if the user enters zero for the divisor
+        # if the user enters zero for y
         print('Cannot divide by zero!!!')
 
     else:
         # if no errors occur, print the result of division
-        print(f'{dividend} / {divisor} = {quotient}')
+        print(f'{x} / {y} = {quotient}')
 
         break # continue on to rest of code
+
+    finally:
+        print('<3 Math! <3)
 
 print('rest of code....')
 '''

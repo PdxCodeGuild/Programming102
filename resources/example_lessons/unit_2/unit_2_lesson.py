@@ -89,6 +89,9 @@ Functions
 - are like variables that store code blocks instead of single pieces of data
 '''
 
+# python built in functions
+# print(), input(), int(), float(), str(), bool(), len(), sum(), max(), min()
+
 # define a function with the keyword: def
 
 # functions are generally defined at the TOP of the file, after imports but before all other code
