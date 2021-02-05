@@ -6,13 +6,13 @@ Welcome to the five day course focused on strengthening your programming fundame
 
 Advanced versions of labs are optional, but encouraged. Additional practice for each unit can be found in the Exercises column.
 
-| Unit                                                                                 | Concepts                                     | Excercises                                  | Labs                                                                            | Video           |
-| ------------------------------------------------------------------------------------ | -------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------- | --------------- |
-| [Unit 01](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit1.md) | Review 101, Troubleshooting & error messages | [Unit 01](practice/unit_1)                  | [Lab1](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md) | [Coming Soon]() |
-| [Unit 02](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit2.md) | REPL, Functions                              | [Unit 02](practice/unit_2)                  | [Lab2](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab2.md) | [Coming Soon]() |
-| [Unit 03](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit3.md) | Dictionaries                                 | [Unit 03](practice/unit_3)                  | [Lab3](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab3.md) | [Coming Soon]() |
-| [Unit 04](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit4.md) | Modules                                      | [Clean Text](practice/unit_4/exercise_1.md) | [Lab4](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab4.md) | [Coming Soon]() |
-| [Unit 05](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit5.md) | Final Project                                |                                             | [Lab5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md) | [Coming Soon]() |
+| Unit | Concepts | Labs | Exercises |
+| ---- | -------- | -----| --------- |
+| [Unit 01](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit1.md) | Review 101, Troubleshooting & error messages |   [Lab 01](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab1.md)                | [Unit 01](practice/unit_1) |
+| [Unit 02](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit2.md) | REPL, Functions                              |              [Lab 02](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab2.md)      | [Unit 02](practice/unit_2)| 
+| [Unit 03](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit3.md) | Dictionaries                                 |         [Lab 03](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab3.md)           | [Unit 03](practice/unit_3)| 
+| [Unit 04](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit4.md) | Modules                                      | [Lab 04](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab4.md) | [Unit 04](practice/unit_4/exercise_1.md) |
+| [Unit 05](https://github.com/PdxCodeGuild/Programming102/blob/master/units/unit5.md) | Final Project                                |                                             | [Lab 05](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md) | 
 
 ## Quick Links
 
