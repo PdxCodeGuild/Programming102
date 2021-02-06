@@ -24,7 +24,9 @@ Ask the user for up to seven letters that will represent a Scrabble hand. Calcul
 **Output:**
 
 ```
-Letters: [  ]
+Please enter the letters on your tiles, separated by commas: K,B,D,A,E,V,M
+
+With the letters K, B, D, A, E, V, M the maximum possible score is 19 if all the tiles are played.
 ```
 
 ### **1.2**
