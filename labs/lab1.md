@@ -34,7 +34,7 @@ while True:
     user = ""
     # Continue looping while the user has not made a valid selection
     while user not in choices:
-        user = input("Choose either 'rock', 'paper', or 'scissors'").lower()
+        user = input("Choose either 'rock', 'paper', or 'scissors': ").lower()
 
         # if the user types done, we want to stop asking them
         if user == "done":
