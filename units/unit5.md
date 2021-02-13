@@ -7,9 +7,9 @@
 ### Table of Contents
 
 - [Final Project](#final)
-- [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 - [What Now?](#what-now)
 - [Thanks!](#thanks)
+- [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 ---
 
@@ -17,7 +17,6 @@
 
 The last day of class is finally here! We hope you've enjoyed yourself! Please help us make Programming 101/102 better by taking this [anonymous survey](https://forms.gle/D7vCyctcqUQFvSeA9).
 
-## [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 
 ## <a id="what-now"></a>What Now?
 
@@ -47,4 +46,5 @@ If you've made it through all that and are still looking for more, check out the
 
 Thank you for participating in the Programming 101 and 102 program at the PDX Code Guild. We love helping you learn code and we couldn't do what we do without you! You're amazing and your journey is just beginning. Be patient with yourself and don't give up! See you in the boot camp!
 
+## [Lab 5](https://github.com/PdxCodeGuild/Programming102/blob/master/labs/lab5.md)
 [Back to top](#top)
