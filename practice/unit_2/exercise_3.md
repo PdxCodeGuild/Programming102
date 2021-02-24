@@ -4,7 +4,7 @@
 
 Let's create a password generator. This will be just like the **[Password Generator](https://github.com/PdxCodeGuild/Programming101/blob/master/labs/password_generator.md)** from *Programming 101*, except this time we will write some functions to execute some of the repeated logic.
 
-### **2.1**
+### **3.1**
 
 Define a function called `generate_password()`. 
 
@@ -17,7 +17,7 @@ The character pool from which the ten characters are selected should contain upp
     Your password: 
     LV!uvg2mu5
 
-### **2.2**
+### **3.2**
 
 Allow the user to choose the number of characters they want in their password. Require a minimum of 8. 
 
@@ -32,10 +32,8 @@ If the user enters less than 8 for the character count, display a message and te
     Enter desired password length: 15
 
     Your password:
-    ow1vfxo8$aVFo?t
     
-
-### **2.3**
+### **3.3**
 
 Allow the user to choose how many letters, numbers, and punctuation characters they want in their password. Mix everything up using `list()`, `random.shuffle()`, and `''.join()`.
 
