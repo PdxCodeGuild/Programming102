@@ -1,4 +1,4 @@
-# <a id="top"></a>Lab 2 - 
+# <a id="top"></a>Lab 2 - Number Lists
 
 [Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
