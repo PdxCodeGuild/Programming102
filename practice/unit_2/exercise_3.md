@@ -58,6 +58,6 @@ No [**solution**](solutions/exercise_3_solution.md) provided because this is a 1
 
 ---
 
-## [< Exercise 2](exercise_2.md) 
+## [< Exercise 2](exercise_2.md) | [Exercise 4 >](exercise_4.md) 
 
 ### [<< Back to Unit 2 Practice](/practice/unit_2/)
