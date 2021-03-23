@@ -1,6 +1,6 @@
 # Unit 2 Practice Solutions
 
-## **Exercise 4**
+## **Exercise 4 - Calculator**
 
 ### **4.1**
 
@@ -93,7 +93,7 @@ total = None
 
 while True:
     # ask the user for the operation
-    operation = input("\nEnter the operation you would like to perform or 'done' to quit: ")
+    operation = input("\n\nEnter the operation you would like to perform or 'done' to quit: ")
 
     # check if the user would like to quit
     if operation == 'done':
@@ -133,7 +133,7 @@ while True:
         total = divide(operand_1, operand_2)
 
     # display the result
-    print(f'{operand_1} {operation} {operand_2} = {total}')
+    print(f'\n{operand_1} {operation} {operand_2} = {total}')
 ```
 
 ---

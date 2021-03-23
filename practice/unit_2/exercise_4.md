@@ -1,4 +1,4 @@
-# <a id="top"></a>Lab 2 - Simple Calculator
+# Exercise 4 - Calculator
 
 [Back to Syllabus](https://github.com/PdxCodeGuild/Programming102#top)
 
@@ -6,7 +6,7 @@
 
 ---
 
-Let's write a simple REPL (read, evaluate, print, loop) calculator that can handle addition and subtraction. 
+Let's write a REPL (read, evaluate, print, loop) calculator that can handle addition and subtraction. 
 
 Ask the user for an `operator` and each `operand`. Don't forget that `input` returns a `string`, which you can convert to a float using `float(user_input)` where `user_input` is the string you got from `input`. 
 
@@ -17,12 +17,21 @@ Pass the user's `operands` to the appropriate function based on the user's selec
 Below is some sample input/output.
 
 ```
-> what is the operation you would like to perform? +
-> what is the first number? 5
-> what is the second number? 7
-> 5 + 7 = 12
-> what is the operation you would like to perform? done
-> goodbye
+Enter the operation you would like to perform or 'done' to quit: +
+Enter the first operand: 1
+Enter the second operand: 2
+
+1.0 + 2.0 = 3.0
+
+Enter the operation you would like to perform or 'done' to quit: -
+Enter the first operand: 100
+Enter the second operand: 25
+
+100.0 - 25.0 = 75.0
+
+Enter the operation you would like to perform or 'done' to quit: done
+
+Goodbye!
 ```
 ---
 ## 4.2
@@ -35,13 +44,34 @@ Add functionality for multiplication `*` and division `/`
 Allow the user to have a running total, each command will perform an operation on that number.
 
 ```
-> what is the starting number? 15
-> enter an operation: + 5
-> 20
-> enter an operation: * 3
-> 60
-> enter an operation: done
-> Your total is 60. Goodbye.
+Enter the operation you would like to perform or 'done' to quit: +
+Enter the first operand: 1
+Enter the second operand: 02
+1.0 + 2.0 = 3.0
+
+Enter the operation you would like to perform or 'done' to quit: +
+
+3.0 + x:
+
+Enter x: 50
+
+3.0 + 50.0 = 53.0
+
+
+Enter the operation you would like to perform or 'done' to quit: -
+
+53.0 - x:
+
+Enter x: 7
+
+53.0 - 7.0 = 46.0
+
+
+Enter the operation you would like to perform or 'done' to quit: done
+
+Your final total was: 46.0
+
+Goodbye!
 ```
 
 ## 4.4
