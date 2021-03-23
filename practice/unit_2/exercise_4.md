@@ -44,6 +44,10 @@ Allow the user to have a running total, each command will perform an operation o
 > Your total is 60. Goodbye.
 ```
 
+## 4.4
+
+Use a dictionary rather than if/elif to decide which function should be called.
+
 ### Exercise 4 [solution](solutions/exercise_4_solution.md)
 
 ---

@@ -2,9 +2,7 @@
 
 ## **Exercise 1**
 
-### **1.1**
-
-**Solution**
+### **1.1 Solution**
 
 ```python
 # create a counter variable to

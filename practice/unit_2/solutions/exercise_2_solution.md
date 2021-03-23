@@ -2,9 +2,7 @@
 
 ## **Exercise 2**
 
-### **2.1**
-
-**Solution**
+### **2.1 Solution**
 
 ```python
 # create a blank list called colors
