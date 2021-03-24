@@ -13,24 +13,9 @@ Numbers: [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
 
 Sum: 53
 ```
+---
 
 ## 2.2
-
-Create a function called `remove_all` which takes in two parameters, `numbers` & `target`.
-
-The `numbers` parameter will be passed a list of numbers and the `target` parameter will be passed the number to remove from the list. 
-
-The function will return a new list containing only the numbers that are not the `target` number.
-
-```
-Numbers: [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
-
-Remove: 4
-Numbers: [5, 2, 10, 5, 8, 10]
-
-```
-
-## 2.3
 
 Using a Read, Evaluate, Print, Loop (REPL), build a list of numbers by asking the user to enter them one at a time. Add each number to a list.
 
@@ -65,8 +50,21 @@ Enter a number to remove it from the list: 4
 You entered [4, 5, 4, 7, 4, 9]
 
 The sum of the numbers is 28
-
-After removing all the 4s
-The numbers are [5, 7, 9]
 ```
+---
 
+## Extra Challenge
+
+Create a function called `remove_all` which takes in two parameters, `numbers` & `target`.
+
+The `numbers` parameter will be passed a list of numbers and the `target` parameter will be passed the number to remove from the list. 
+
+The function will return a new list containing only the numbers that are not the `target` number.
+
+```
+Numbers: [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
+
+Remove: 4
+Numbers: [5, 2, 10, 5, 8, 10]
+
+```
