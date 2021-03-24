@@ -4,7 +4,9 @@
 
 ## 2.1
 
-Create a function called `sum_list` which takes in the list of numbers and returns the sum of all the numbers in the list.
+Create a function called `sum_numbers` which will take in a single parameter, `numbers`, which will be passed a list of numbers as an argument when the function is called. 
+
+The function will return the sum of all the numbers in the list.
 
 ```
 Numbers: [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
@@ -14,7 +16,11 @@ Sum: 51
 
 ## 2.2
 
-Create a function called `remove_all` which takes in a list of numbers and a `target` number as parameters. The function will return a new list containing only the numbers that are not the `target` number.
+Create a function called `remove_all` which takes in two parameters, `numbers` & `target`.
+
+The `numbers` parameter will be passed a list of numbers and the `target` parameter will be passed the number to remove from the list. 
+
+The function will return a new list containing only the numbers that are not the `target` number.
 
 ```
 Numbers: [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
