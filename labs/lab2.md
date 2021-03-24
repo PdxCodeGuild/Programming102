@@ -17,7 +17,7 @@ Sum: 53
 
 ## 2.2
 
-Using a Read, Evaluate, Print, Loop (REPL), build a list of numbers by asking the user to enter them one at a time. Add each number to a list.
+Using a Read, Evaluate, Print, Loop (REPL), build a list of numbers by asking the user to enter them one at a time. Add each number to the list.
 
 Once the user enters 'done', ask the user to define the `target` number for the `remove_all` function. 
 
