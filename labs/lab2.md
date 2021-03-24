@@ -11,7 +11,7 @@ The function will return the sum of all the numbers in the list.
 ```
 Numbers: [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
 
-Sum: 51
+Sum: 53
 ```
 
 ## 2.2
@@ -40,34 +40,33 @@ Call the functions using the values the user provides.
 
 ```
 Enter a number or 'done' to quit:
-> 26
+> 4
 
 Enter a number or 'done' to quit:
-> 93
+> 5
 
 Enter a number or 'done' to quit:
-> 48
+> 4
 
 Enter a number or 'done' to quit:
-> 65
+> 7
 
 Enter a number or 'done' to quit:
-> 37
+> 4
 
 Enter a number or 'done' to quit:
-> 103
+> 9
 
 Enter a number or 'done' to quit:
 > done
 
+Enter a number to remove it from the list: 4
 
-What is the maximum number: 50
+You entered [4, 5, 4, 7, 4, 9]
 
-You entered [26, 93, 48, 65, 37, 103]
+The sum of the numbers is 28
 
-Those numbers to the power of 2 are: [676, 8649, 2304, 4225, 1369, 10609]
-
-The maximum is 50.
-The numbers below the maximum are [44, 28, 25]
+After removing all the 4s
+The numbers are [5, 7, 9]
 ```
 
