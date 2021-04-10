@@ -100,18 +100,19 @@ A few things will need to change:
 
 ### **5.5 - Extra Challenge**
 
-- Define a function called `create_user()` which:
-
-  - prompts the user for a `username` and `password`.
-  - checks to see if the `username` already exists in the `profiles` list using the `user_exists()` function
-  - If the `username` is unique and doesn't appear in the `profiles` list, `.append()` it to the `profiles` list.
-
 - Define a function called `user_exists()` which will:
 
   - loop through each `profile` in the `profiles` list
   - check to see if the `username` the user entered already exists within one of the `profile` dictionaries.
 
   If a user with that `username` already exists, `return True`, otherwise `return False`
+  
+- Define a function called `create_user()` which:
+
+  - prompts the user for a `username` and `password`.
+  - checks to see if the `username` already exists in the `profiles` list using the `user_exists()` function
+  - If the `username` is unique and doesn't appear in the `profiles` list, `.append()` it to the `profiles` list.
+
 
 - Integrate the `create_user()` function into your REPL to allow the user to create a new username.
 
