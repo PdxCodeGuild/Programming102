@@ -20,7 +20,7 @@ Write a program that lets the user enter two strings, and tells them if they are
 >>> 'dormitory' and 'dirtyroom' are anagrams
 ```
 
-One potential solution to this lab involves Python's built-in function `sorted()`, which will sort list items as well as characters in a string. However, for the sake of practice, please avoid using `sorted()` at first and try to follow steps 1-3 exactly as they're listed
+One potential solution to this lab involves Python's built-in function `sorted()`, which will sort list items as well as characters in a string. However, please use the **list method** for sorting the lists in this lab instead.
 
 # Extra Challenge 1
 
