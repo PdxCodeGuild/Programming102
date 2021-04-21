@@ -19,9 +19,7 @@ Sum: 53
 
 Using a Read, Evaluate, Print, Loop (REPL), build a list of numbers by asking the user to enter them one at a time. Add each number to the list.
 
-Once the user enters 'done', ask the user to define the `target` number for the `remove_all` function. 
-
-Call the functions using the values the user provides.
+Once the user enters 'done', pass the list to the `sum_numbers` function and display the sum.
 
 ```
 Enter a number or 'done' to quit:
@@ -44,8 +42,6 @@ Enter a number or 'done' to quit:
 
 Enter a number or 'done' to quit:
 > done
-
-Enter a number to remove it from the list: 4
 
 You entered [4, 5, 4, 7, 4, 9]
 
