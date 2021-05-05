@@ -8,6 +8,8 @@ Create a function called `sum_numbers` which will take in a single parameter, `n
 
 The function will return the sum of all the numbers in the list.
 
+Note: Please do ***not*** use the built-in function `sum()`. The goal is to write that function from scratch.
+
 ```
 Numbers: [4, 5, 4, 2, 7, 4, 4, 5, 8, 10]
 
