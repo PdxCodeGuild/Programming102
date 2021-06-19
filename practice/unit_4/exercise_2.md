@@ -96,7 +96,7 @@ Add additional stats `defense` and `stance` and add allow each the characters to
 
 <br>
 
-If a character chooses to defend, they will not attack.
+If a character chooses to defend, they will not attack this turn.
 
 If the character's stance is set to `'defend'` when their opponent attacks, the damage they receive is reduced. If the character's stance is set to `'attack'`, no change is made to the incoming damage.
 
