@@ -4,11 +4,14 @@
 
 Create two dictionaries, `hero` and `villain`. The items in each dictionary will represent each characters stats.
 
+<div align="center">
+
 |Stat|Datatype|Values|
 |-|-|-|
 |`name`| string| any|
 |`hp`| integer | 0 - 100|
 |`attack` | integer |1 - 10|
+</div>
 
 <br>
 <br>
