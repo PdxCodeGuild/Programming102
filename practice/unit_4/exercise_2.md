@@ -166,7 +166,7 @@ def defend(character, incoming_damage):
 
 ### <div id="extra-challenge">Extra Challenge</div>
 
-Add some more fun features. Pull from your favorite games or stories and get creative!. Some ideas might include:
+Add some more fun features. Pull from your favorite games or stories and get creative! Some ideas might include:
 
 - Special, stronger attacks. These could even require a few rounds to build up power before they're able to be used. 
 - randomized stats
