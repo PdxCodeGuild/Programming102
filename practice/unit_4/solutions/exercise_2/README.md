@@ -11,7 +11,7 @@
 ### [2.3](./exercise_2_3_solution.md)
 
 
-## [< Exercise 2](../exercise_2.md/)
+## [< Exercise 2](../../exercise_2.md/)
 ---
 
 ### [<< Back to Unit 4 Practice](/practice/unit_4/)
