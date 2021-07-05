@@ -41,22 +41,22 @@ def is_defeated(character):
     return character['hp'] <= 0
 
 
-def attack(attacker, opponent):
+def attack(active, opponent):
     '''
-    Apply battle damage to the opponent using the attacker's attack stat
+    Apply battle damage to the opponent using the active characters's attack stat
     If the opponent is defeated, return True, signifying the battle is over
     Otherwise return False, signifying the battle will continue for another round
     '''
-    print(f"{attacker['name']} has {attacker['hp']} hp!")
-    print(f"{villain['name']} has {villain['hp']} hp!")
+    print(f"{active['name']} has {active['hp']} hp!")
+    print(f"{opponent['name']} has {opponent['hp']} hp!")
 
     input("\nPress enter to battle!")
 
-    # attacker attacks
-    print(f"\n{attacker['name']} attacks!")
+    # active character attacks
+    print(f"\n{active['name']} attacks!")
 
-    # subtract attackers's attack strength from the opponents's hp
-    opponent['hp'] -= attacker['attack']
+    # subtract active character's attack strength from the opponents's hp
+    opponent['hp'] -= active['attack']
 
     # return True if the opponent is defeated, otherwise False
     return is_defeated(opponent)
@@ -82,9 +82,9 @@ while True:
     stat_keys = list(all_stats.keys()) # ['hero', 'villain']
 
     # get the key of the current warrior
-    attacker_key = stat_keys[turn_counter]
+    active_key = stat_keys[turn_counter]
     # get the stat dictionary of the current warrior
-    attacker = all_stats[attacker_key]
+    active = all_stats[active_key]
 
 
     # get the key of the current warrior
@@ -96,12 +96,12 @@ while True:
 
     # execute current round of battle
     # receive True if opponent is defeated, otherwise False
-    victorious = attack(attacker, opponent)
+    victorious = attack(active, opponent)
 
     # check the outcome of the battle. 
     # if the opponent was defeated, end the loop
     if victorious:
-        print(f"{opponent['name']} has been defeated! {attacker['name']} is victorious!")
+        print(f"{opponent['name']} has been defeated! {active['name']} is victorious!")
         break # end the loop
 
 
