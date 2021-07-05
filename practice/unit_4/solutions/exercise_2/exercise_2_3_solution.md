@@ -10,7 +10,7 @@
 
 <br><br>
 
-In this version, we're going to allow the active player to choose if they want to attack or defend that round. If they choose to defend, the next damage they receive will be reduced based on their `defense` stat.
+In this version, we're going to allow the active player to choose if they want to attack or defend each round. If they choose to defend, the next damage they receive will be reduced based on their `defense` stat.
 
 We'll be introducing two more functions, `set_stance()` and `defend()`.
 
