@@ -159,12 +159,14 @@ def defend(character, incoming_damage):
     Calculate the amount the incoming_damage will be reduced 
     based on the character's 'defense' stat. 
     
-    Return the 'reduced_damage' 
+    Return the amount the incoming_damage will be reduced
+    in a variable called 'damage_reduction'
+   
+    0 - 4 = 10%, 5 - 7 = 33%, 8 - 10 = 66%
     '''
 
-    # ... your code here ... 
-
-    return reduced_damage
+    # return the reduction amount, rounded to the nearest integer
+    return round(damage_reduction)
 ```
 
 <br>
