@@ -1,8 +1,6 @@
-# Programming 101
+# Programming 102
 
 ## Practice Problems
-
-### [Unit 0](unit_0/)
 
 ### [Unit 1](/unit_1/)
 
