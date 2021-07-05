@@ -107,7 +107,7 @@ def defend(character, incoming_damage):
     return round(damage_reduction)
 
 
-def attack(attacker, opponent):
+def attack(active, opponent):
     '''
     Apply battle damage to the opponent using the attacker's attack stat
     If the opponent is defeated, return True, signifying the battle is over
@@ -118,23 +118,23 @@ def attack(attacker, opponent):
     print("\n" + ("-" * 50)) # print a divider
 
     # display hp
-    print(f"\n{attacker['name']} has {attacker['hp']} hp!")
+    print(f"\n{active['name']} has {active['hp']} hp!")
     print(f"{opponent['name']} has {opponent['hp']} hp!")
 
     input("\nPress enter to battle!")
 
 
-    # attacker chooses stance
-    attacker = set_stance(attacker)
+    # active character chooses stance
+    active = set_stance(active)
 
     print("\n" + ("-" * 50)) # print a divider
     
-    if attacker['stance'] == 'attack':
-        # attacker attacks
-        print(f"\n{attacker['name']} attacks!")
+    if active['stance'] == 'attack':
+        # active character attacks
+        print(f"\n{active['name']} attacks!")
 
         # damage to be dealt to the opponent
-        damage = attacker['attack'] * 5 # multiply damage to speed up the game
+        damage = active['attack'] * 5 # multiply damage to speed up the game
 
         # if the opponent chose to defend last turn
         if opponent['stance'] == 'defend':
@@ -151,8 +151,8 @@ def attack(attacker, opponent):
 
         print(f"{opponent['name']} takes {damage} damage!")
 
-    elif attacker['stance'] == 'defend':
-        print(f"\n{attacker['name']}, the next damage you receive will be reduced!")
+    elif active['stance'] == 'defend':
+        print(f"\n{active['name']}, the next damage you receive will be reduced!")
 
     # return True if the opponent is defeated, otherwise False
     return is_defeated(opponent)
@@ -180,9 +180,9 @@ while True:
     stat_keys = list(all_stats.keys()) # ['hero', 'villain']
 
     # get the key of the current warrior
-    attacker_key = stat_keys[turn_counter]
+    active_key = stat_keys[turn_counter]
     # get the stat dictionary of the current warrior
-    attacker = all_stats[attacker_key]
+    active = all_stats[active_key]
 
 
     # get the key of the current warrior
@@ -194,12 +194,12 @@ while True:
 
     # execute current round of battle
     # receive True if opponent is defeated, otherwise False
-    victorious = attack(attacker, opponent)
+    victorious = attack(active, opponent)
 
     # check the outcome of the battle. 
     # if the opponent was defeated, end the loop
     if victorious:
-        print(f"\n{opponent['name']} has been defeated! {attacker['name']} is victorious!")
+        print(f"\n{opponent['name']} has been defeated! {active['name']} is victorious!")
         break # end the loop
 
 ```
