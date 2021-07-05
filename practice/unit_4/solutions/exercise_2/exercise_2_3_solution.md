@@ -2,7 +2,7 @@
 
 ## **Exercise 2 Solution**
 
-### **2.2**
+### **2.3**
 
 <div align="center">
 <img src="./flowcharts/exercise_2_3_flowchart.drawio.svg">
