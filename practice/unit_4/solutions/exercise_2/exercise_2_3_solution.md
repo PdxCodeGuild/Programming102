@@ -74,7 +74,8 @@ def set_stance(character):
 
     stance_number = input(prompt)
 
-    while stance_number not in ['1', '2']:
+    # make sure the user entered a valid selection
+    while stance_number not in stance_options.keys():
         print('\n!***! Invalid selection !***!')
         stance_number = input(prompt)
 
