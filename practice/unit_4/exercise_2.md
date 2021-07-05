@@ -45,10 +45,14 @@ Use the `is_defeated()` function to determine if the opponent has lost the battl
 
 An `input()` function can be used to slow the battle down a bit and allow the user to decide when the next round of the battle will be executed. This way the battle will be more interactive and won't happen instantaneously.
 
+<br>
+
+### [Exercise 2.1 Solution](./solutions/exercise_2/exercise_2_1_solution.md)
 
 <br>
 <br>
 
+---
 ## <div id="1-2">2.2</div>
 
 <br>
@@ -64,18 +68,22 @@ def attack(attacker, opponent):
     If the opponent is defeated, return True, signifying the battle is over
     Otherwise return False, signifying the battle will continue for another round
     '''
-    battle_over = False # set to True if the opponent is defeated 
-
     # ... your code here ... 
 
-    return battle_over
+    return # use is_defeated() to return True/False if the battle is over
 ```
 
 Subtract the value of the attacker's `attack` stat from the opponents `hp` stat. Return `True` if the opponent is defeated, otherwise return `False`. This boolean will be used to determine if the battle is over or if it will continue for another round.
 
 <br>
+
+### [Exercise 2.2 Solution](./solutions/exercise_2/exercise_2_2_solution.md)
+
+
+<br>
 <br>
 
+---
 ## <div id="1-3">2.3</div>
 
 
@@ -148,21 +156,26 @@ Below are the damage reduction rates for different `'defense'` stat levels:
 ```python
 def defend(character, incoming_damage):
     '''
-    Calculatehe amount the incoming_damage will be reduced 
+    Calculate the amount the incoming_damage will be reduced 
     based on the character's 'defense' stat. 
     
-    Return the amount the incoming_damage will be reduced
-    in a variable called 'damage_reduction'
+    Return the 'reduced_damage' 
     '''
 
     # ... your code here ... 
 
-    return damage_reduction
+    return reduced_damage
 ```
 
+<br>
+
+### [Exercise 2.3 Solution](./solutions/exercise_2/exercise_2_3_solution.md)
 
 
 <br>
+<br>
+
+---
 
 ### <div id="extra-challenge">Extra Challenge</div>
 
@@ -176,7 +189,6 @@ Add some more fun features. Pull from your favorite games or stories and get cre
 - add a third character
 - More than one `villain` (list of dictionaries). `hero` could level up with each opponent it defeats. 
 
-### Solution in progress...
 
 ---
 
