@@ -2,6 +2,8 @@
 
 ## **Exercise 2 - Hero Battle**
 
+## <div id="1-1">2.1</div>
+---
 Create two dictionaries, `hero` and `villain`. The items in each dictionary will represent each characters stats.
 
 <div align="center">
@@ -33,7 +35,6 @@ def is_defeated(character):
 <br>
 <br>
 
-## <div id="1-1">2.1</div>
 
 <br>
 
@@ -52,10 +53,9 @@ An `input()` function can be used to slow the battle down a bit and allow the us
 <br>
 <br>
 
----
 ## <div id="1-2">2.2</div>
+---
 
-<br>
 
 Chances are that there is a fair amount of reptition in the logic which performs each character's turn in the battle, since the same steps will need to be executed by each character during their turn.
 
@@ -83,8 +83,8 @@ Subtract the value of the attacker's `attack` stat from the opponents `hp` stat.
 <br>
 <br>
 
----
 ## <div id="1-3">2.3</div>
+---
 
 
 Add additional stats `defense` and `stance` and add allow each the characters to choose their `stance` each round.
@@ -187,7 +187,7 @@ Add some more fun features. Pull from your favorite games or stories and get cre
 - add `'heal'` as a possible `stance` option and increase the character's `hp` that round if chosen based on a `healing` stat
 - have the opponent's choices be made by code, rather than user input
 - add a third character
-- More than one `villain` (list of dictionaries). `hero` could level up with each opponent it defeats. 
+- More than one `villain` (list of dictionaries). The `hero` could `level_up()` with each opponent it defeats. 
 
 
 ---
