@@ -81,17 +81,17 @@ while True:
     # the turn_counter will alternate between 0 and 1 to decide whose turn it is
     stat_keys = list(all_stats.keys()) # ['hero', 'villain']
 
-    # get the key of the current warrior
+    # get the key of the active character
     active_key = stat_keys[turn_counter]
-    # get the stat dictionary of the current warrior
+    # get the stat dictionary of the active character
     active = all_stats[active_key]
 
 
-    # get the key of the current warrior
-    # -1 if turn_counter is 0
-    # 0 if the turn_counter is 1
+    # get the key of the opponent
+    # index -1 if turn_counter is 0
+    # index 0 if the turn_counter is 1
     opponent_key = stat_keys[turn_counter - 1]
-    # get the stat dictionary if the opponent
+    # get the stat dictionary of the opponent
     opponent = all_stats[opponent_key]
 
     # execute current round of battle
