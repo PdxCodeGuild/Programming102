@@ -185,11 +185,11 @@ while True:
     active = all_stats[active_key]
 
 
-    # get the key of the current warrior
+    # get the key of the current opponent
     # -1 if turn_counter is 0
     # 0 if the turn_counter is 1
     opponent_key = stat_keys[turn_counter - 1]
-    # get the stat dictionary if the opponent
+    # get the stat dictionary of the opponent
     opponent = all_stats[opponent_key]
 
     # execute current round of battle
