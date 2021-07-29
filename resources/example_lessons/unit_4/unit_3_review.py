@@ -7,150 +7,211 @@ Unit 3 Review
 
 blank_dictionary = {}
 
-to_do = {
-    # key:value,
-    'title': 'go grocery shopping',
-    'completed': False,
+todo = {
+    # key: value,
+    'title': 'Go grocery shopping',
+    'completed': False
 }
+
+# dict keys are usually strings
+# dict values can be ANY datatype, including other dicts
+
+# ---------------------------------------------------------------------------------- #
 
 # when accessing values with keys,
 # the keys go in SQUARE brackets
-title = to_do['title']
-# print(title) # go grocery shopping
+title = todo['title']
+# print(title) # Go grocery shopping
 
 # integers in square brackets generally mean lists
 # string in square brackets generally mean dictionaries
 
-# values can be added to keys that don't yet exist
-to_do['id'] = 1 # add a value at a key
-# print(to_do)
+# --------------------------------------------------------------------------------- #
 
 # cannot access a value at a non-existant key
-# to_do['tags'] # KeyError: 'tags'
+# todo['id'] # KeyError: 'id'
+
+# values can be added to keys that don't yet exist
+todo['id'] = 1
+# print(todo) # 'title': 'Go grocery shopping', 'completed': False, 'id': 1}
 
 # change the value at a key
-to_do['title'] = 'Walk the dog'
-# print(to_do)
-
 # the to do has been finished
-to_do['completed'] = True # yay!
-# print(to_do)
+todo['completed'] = True
+# print(todo) # {'title': 'Go grocery shopping', 'completed': True, 'id': 1}
 
-'''
-# keyword del for deleting key:value pairs
-del to_do['id']
-print(to_do)
-'''
+# keyword 'del' for deleting key:value pairs
+# del todo['id']
+# print(todo) # {'title': 'Go grocery shopping', 'completed': True}
 
-#.get(key, default) return the value at the key if it exists or the default if it doesn't
-# default default value is None
-tags = to_do.get('tags', 'No tags exist for this to do!')
-# print(tags) # No tags exist for this to do!
+# ----------------------------------------------------------------------------- #
 
-title = to_do.get('title', 'No title!')
-# print(title) # Walk the dog
+# .pop(key) delete the key:value pair at the key and return it
+todo_id = todo.pop('id')
+# print(todo_id, todo) # 1 {'title': 'Go grocery shopping', 'completed': True}
 
 
 # alternative to the .get() method:
-key = 'tags'
-# check if the key is in the dictionary
-if key in to_do:
-    # use the key to get the value
-    value = to_do[key]
-# if the key doesn't exist in the dictionary
+key = 'title'
+default = f"'{key}' is not a valid key in the dictionary."
+
+# check if the key is in the dictionary before using it
+if key in todo.keys():
+    value = todo[key]
+
 else:
-    value = 'No tags exist for this to do!'
+    value = default
 
 # print(value)
 
+# .get(key, default) - return the value at the key if it exists or the default if it doesn't
+
+key = 'id'
+default = f"'{key}' is not a valid key in the dictionary."
+
+value = todo.get(key, default)
+# print(value) # 'id' is not a valid key in the dictionary.
+
+# --------------------------------------------------------- #
+
+key = 'title'
+default = f"'{key}' is not a valid key in the dictionary."
+
+value = todo.get(key, default)
+# print(value) # Go grocery shopping
+
+# ------------------------------------------------------------------------- #
 
 # add items with methods
 #.update(new_dictionary) add the new_dictionary to the original
-to_do.update({
-    'id':1,
-    'tags': ['chores', 'pets'],
-    'user': 'kg'
+
+todo.update({
+    'id': 1,
+    'user': 'KG'
 })
-
-# print(to_do)
-
-# .pop(key) delete the key:value pair at the key and return it
-# tags = to_do.pop('tags') # remove the value at they key 'tags' and save it in the tags variable
-# print(tags, to_do)
+# print(todo) # {'title': 'Go grocery shopping', 'completed': True, 'id': 1, 'user': 'KG'}
 
 # ------------------------------------- #
 
+# Display the todo item
+todo_display = f"""
+{todo['id']}. {todo['title']}
+Created by: {todo['user']}
+Completed: {todo['completed']}"""
+
+# print(todo_display)
+
+# ---------------------------------------- #
+
 # looping dictionaries
-# .keys(), .values(), .items()
+# .keys(), .values(), .items() - access different parts of the a dictionary
 
-# loop through keys (two ways)
-for key in to_do.keys():
-    output = f'key: {key}'
-    # print(output)
+# print(todo.keys()) # dict_keys(['title', 'completed', 'id', 'user'])
 
-for key in to_do: # same as above with .keys()
+# loop through keys
+for key in todo.keys():
     # get the value at the current key
-    value = to_do[key]
-    output = f'{key}: {value}'
-    # print(output)
+    value = todo[key]
+    # print(f"{key}: {value}")
 
-# loop through the values
-for value in to_do.values():
-    output = f'value: {value}'
-    # print(output)
 
+# -------------------------------------------------------------------------- #
+
+# .values()
+# print(todo.values()) # dict_values(['Go grocery shopping', True, 1, 'KG'])
+'''
+for value in todo.values():
+    print(value)
+'''
+
+# ----------------------------------------------------------------------- #
 # loop through the key:value pairs (items)
-for item in to_do.items():
 
-    # use indices to get the key and value
+# tuple - unchangeable list, uses indices but cannot accept new values
+# print(todo.items()) # dict_items([('title', 'Go grocery shopping'), ('completed', True), ('id', 1), ('user', 'KG')])
+'''
+for item in todo.items():
     key = item[0]
     value = item[1]
+    print(f"{key}: {value}")
 
-    output = f'{key}: {value}'
-    # print(output)
-
-# 'unpack' items into TWO separate variables each loop
-for key, value in to_do.items():
-    output = f'{key}: {value}'
-    # print(output)
-
-
-display = f"""
-Created by: {to_do['user']}
-Todo #{to_do['id']} - {to_do['title']}
-Completed: {to_do['completed']}
-tags: {', '.join(to_do['tags'])}
-"""
-
-# print(display)
-
-
-# todo = {'title': 'Go grocery shopping', 'completed': True}
-​
+'''
 # -------------------------------------------------------- #
 
+# 'in' to check if a key is in the dictionary
+# print('title' in todo.keys())
+# print('completed' in todo) # .keys() is optional
+
+# -------------------------------------------------------- #
+
+# instead of multiple, individual todo item dictionaries, create a list of dictionaries instead
+todo_1 = {'title': 'Go grocery shopping', 'completed': False, 'id': 1}
+todo_2 = {'title': 'Water the garden', 'completed': True, 'id': 2}
+todo_3 = {'title': 'Master Python dictionaries', 'completed': False, 'id': 3}
+
+
 # list of dictionaries
-todos = [
-    {'title': 'Go grocery shopping', 'completed': True},
-    {'title': 'Walk the dog', 'completed': False},
-    {'title': 'Brush teeth', 'completed': True},
+todo_list = [
+    {'title': 'Go grocery shopping', 'completed': False, 'id': 1},
+    {'title': 'Water the garden', 'completed': True, 'id': 2},
+    {'title': 'Master Python dictionaries', 'completed': False, 'id': 3}
 ]
-​
+
+# list of dictionaries organized vertically
+todo_list = [
+    {
+        'title': 'Go grocery shopping',
+        'completed': False,
+        'id': 1
+    },
+    {
+        'title': 'Water the garden',
+        'completed': True,
+        'id': 2
+    },
+    {
+        'title': 'Master Python dictionaries',
+        'completed': False,
+        'id': 3
+    }
+]
+
 # pull out one dictionary at a time from the list
-for todo in todos:
-    output = f"{todo['title']}\nCompleted: {todo['completed']}\n"
-    # print(output)
-​
+# print(todo_list[0]) # {'title': 'Go grocery shopping', 'completed': False, 'id': 1}
+# print(todo_list[0]['title']) # Go grocery shopping
+
+# loop through the todo_list
+for todo in todo_list:
+    # if todo['completed'] == False:
+    if not todo['completed']: # same as line 168
+        todo_display = f"""
+            {todo['id']}. {todo['title']}
+            Completed: {todo['completed']}"""
+
+        # print(todo_display)
+
 # ------------------------------------------------------------ #
-​
+
 # nested dictionaries
-fruits = {
-    'banana': .5,
-    'apple': {'red': .55, 'yellow': .25, 'green': .45}
+
+fruit_prices = {
+    'apple': {
+        'green': 2.12,
+        'yellow': 3.13,
+        'red': {
+            'price': 4.14,
+            'inventory': 100
+        }
+    },
+    'grape': 3.13
 }
-​
-​
-apple_prices = fruits['apple']
-print(apple_prices['red'])
-# same as above:
-print(fruits['apple']['red']) # two keys next to each other
+
+# print(fruit_prices['apple']) # {'green': 2.12, 'yellow': 3.13, 'red': 4.14}
+
+apple_prices = fruit_prices['apple']
+# print(apple_prices['green']) # 2.12
+
+# print(fruit_prices['apple']['green']) # 2.12
+
+# print(fruit_prices['apple']['red']) # {'price': 4.14, 'inventory': 100}
+# print(fruit_prices['apple']['red']['price']) # 4.14
