@@ -47,7 +47,7 @@ Enter a number or 'done' to quit:
 
 You entered [4, 5, 4, 7, 4, 9]
 
-The sum of the numbers is 28
+The sum of the numbers is 33
 ```
 ---
 
