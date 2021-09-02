@@ -13,40 +13,40 @@
 ---
 
 ## Miscellaneous 
-- Create function which takes in a list of numbers and returns a list of the squares of those numbers.
+Create function which takes in a list of numbers and returns a list of the squares of those numbers.
 
 ```python
 print(get_squares([3, 4, 5])) # [9, 16, 25]
 print(get_squares([7, 8, 9])) # [49, 64, 81]
 ```
 
-- Create a function which takes in a string and returns a string in which each character of the first string is doubled.
+Create a function which takes in a string and returns a string in which each character of the first string is doubled.
 
 ```python
 print(double_string('abc')) # aabbcc
 print(double_string('hello')) # hheelllloo
 ```
 
-- Create a function that uses a loop to build a list of `n` random single letters from A-Z, where `n` is a positive integer. 
+Create a function that uses a loop to build a list of `n` random single letters from A-Z, where `n` is a positive integer. 
 
 ```python
 print(random_letters(10)) # ['H', 'M', 'E', 'D', 'M', 'Q', 'V', 'E', 'U', 'G'] 
 ```
 
-- Create a function that returns an integer represneting the number of vowels in a list or string.
+Create a function that returns an integer represneting the number of vowels in a list or string.
 
 ```python
 print(count_vowels(['A', 'X', 'C', 'E', 'M', 'I'])) # 3
 print(count_vowels('CONCATENATE')) # 5
 ```
 
-- Create a function that returns a list of `n` random integers between 1 and 100, where `n` is a positive integer. 
+Create a function that returns a list of `n` random integers between 1 and 100, where `n` is a positive integer. 
 
 ```python
 print(random_numbers(10)) # [12, 87, 62, 11, 36, 99, 35, 80, 38, 52]
 ```
 
-- Create a function that returns an integer representing the number of positive numbers in a list of numbers.
+Create a function that returns an integer representing the number of positive numbers in a list of numbers.
 
 ```python
 print(count_positives([7, -5, 1, -5, -9, -10, -7, 9, -2, 2])) # 4
