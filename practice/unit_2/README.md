@@ -13,22 +13,42 @@
 ---
 
 ## Miscellaneous 
-Write functions for the following:
-- Return a list containing the square of x (x^2) for values of x between 0 and 10. Then do 10 - 20.
+- Create function which takes in a list of numbers and returns a list of the squares of those numbers.
 
-- string which is each character of the first string doubled. abc -> aabbcc , hello ->hheelllloo 
+```python
+print(get_squares([3, 4, 5])) # [9, 16, 25]
+print(get_squares([7, 8, 9])) # [49, 64, 81]
+```
 
-- write a loop that builds a list of random single letters from A-Z ['H', 'M', 'E', 'D', 'M', 'Q', 'V', 'E', 'U', 'G'] 
+- Create a function which takes in a string and returns a string in which each character of the first string is doubled.
 
-- using the letters list, count the number of vowels / consonants 
+```python
+print(double_string('abc')) # aabbcc
+print(double_string('hello')) # hheelllloo
+```
 
-- write a loop that generates a list of random integers between 1 and 100. 
+- Create a function that uses a loop to build a list of `n` random single letters from A-Z, where `n` is a positive integer. 
 
-- loop through the list and count how many numbers are even/odd
-write
- 
-- a loop which loops through the list and creates two new lists, one of 
-all the numbers that are greater than 50 and one of all the numbers less than or equal to 50
+```python
+print(random_letters(10)) # ['H', 'M', 'E', 'D', 'M', 'Q', 'V', 'E', 'U', 'G'] 
+```
 
+- Create a function that returns an integer represneting the number of vowels in a list or string.
 
+```python
+print(count_vowels(['A', 'X', 'C', 'E', 'M', 'I'])) # 3
+print(count_vowels('CONCATENATE')) # 5
+```
+
+- Create a function that returns a list of `n` random integers between 1 and 100, where `n` is a positive integer. 
+
+```python
+print(random_numbers(10)) # [12, 87, 62, 11, 36, 99, 35, 80, 38, 52]
+```
+
+- Create a function that returns an integer representing the number of positive numbers in a list of numbers.
+
+```python
+print(count_positives([7, -5, 1, -5, -9, -10, -7, 9, -2, 2])) # 4
+```
 
