@@ -33,7 +33,7 @@ Create a function that uses a loop to build a list of `n` random single letters 
 print(random_letters(10)) # ['H', 'M', 'E', 'D', 'M', 'Q', 'V', 'E', 'U', 'G'] 
 ```
 
-Create a function that returns an integer represneting the number of vowels in a list or string.
+Create a function that returns an integer representing the number of vowels in a list or string.
 
 ```python
 print(count_vowels(['A', 'X', 'C', 'E', 'M', 'I'])) # 3
