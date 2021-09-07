@@ -1,9 +1,9 @@
 '''
+Programming 102
 Unit 2
-
-REPL
-Functions
 '''
+
+import random
 
 '''
 R ead
@@ -13,156 +13,172 @@ L oop
 '''
 
 '''
-# REPL
-play_again = 'yes' # loop control
+play_again = 'yes'
 
+# this loop will only loop if the user enters exactly 'yes'
 while play_again == 'yes':
-    # loop this
-    # code block
-
-    print('Welcome to the game!')
-
-    play_again = input('\nDo you want to play again? yes/no: ')
-'''
-
-# ------------------------------------------ #
-
-
-'''
-while True: # generic infinite loop
     # loop this code block
 
-    print('Welcome to the game!')
+    print('\nWelcome to the game!')
+
+    # ...
+    # ... other code ...
+    # ...
 
     # ask the user if they want to play again
-    play_again = input('\nDo you want to play again? y/n: ')
+    play_again = input("Do you want to play again? yes/no: ")
 
-    if play_again == 'n':
-        print('Thanks for playing!')
+else:
+    print("\nThanks for playing!")
+'''
+# ------------------------------------------------------------------------------- #
+
+'''
+while True: # infinite loop, requiring 'break' to end the loop
+    # ask the user for a color and give them the option to quit
+    color = input("\nEnter a color or 'done' to quit: ")
+
+    # check if the user wants to quit
+    if color == 'done':
+        print('Goodbye!')
         break # end the loop
 
-    elif play_again == 'y':
-        print("Okay, let's play!\n")
-'''
-# ------------------------------------------------ #
 
-'''
-while True:
-    # loop this code block
-
-
-    print("Welcome to the game!")
-
-    # ask the user if they want to play again
-    play_again = input('\nDo you want to play again? y/n: ')
-
-    # define valid responses
-    valid_yes = ['y', 'yes', 'yep']
-    valid_no = ['n', 'no', 'nope']
-    valid_responses = valid_yes + valid_no # combine yes and no reponses
-
-    # ensure the user has selected a valid response
-    while play_again not in valid_responses:
-        print("Invalid selection! Try again!")
-        print(f'Please choose from the following options: {valid_responses}')
-        play_again = input('\nDo you want to play again? y/n: ')
-
-    # check which list the users response is in
-    if play_again in valid_yes:
-        print("Okay, let's play!\n")
-    elif play_again in valid_no:
-        print("Game over!")
-        break
+    print(f"\nThanks for entering '{color}'")
+    
 '''
 
-# ------------------------------------------------------------------------ #
+# ------------------------------------------------------------------------------------------ #
 
-# FUNctions!!!
+# Functions!
+
+# built-in functions
+# print(), type(), input(), len(), str(), int(), float(), list(), bool(), range()
 
 '''
 Functions
 
-- are named blocks of code
-- run only when called upon
-- typically designed to perform a singular task
-- once defined, can be called as many times as needed
-- are like variables that store code blocks instead of single pieces of data
+- named code blocks
+- run only when called upon with parentheses after their name
+- typically designed to perform a single task
+- once defined, a function can be called as many times as needed with different data
+- receive data & return data after it's been manipulated
 '''
 
-# python built in functions
-# print(), input(), int(), float(), str(), bool(), len(), sum(), max(), min()
+# ---------------------------------------------------------------------------------- #
 
-# define a function with the keyword: def
-
-# functions are generally defined at the TOP of the file, after imports but before all other code
+# keyword 'def' to define a function
 '''
-def function_name(parameter1, parameter2, etc): # parameters are BLANK variables, waiting for data
-    # this code block
-    # is run when 
-    # the function is 'called'
+# parameters are empty variables in a function's definition which await data from the function call
+def function_name(parameter_1, parameter_2, ...):
+    # this code block will be run
+    # when the function is 'called'
 
-    # manipulate the parameter data somehow
+    # manipulate the parameters somehow
 
-    # send data back to where the function was called
-    return manipulate_paramters
+    # send the result back to where the function was called
+    # with the keyword 'return'
+    # if no return value is specified, a function will return 'None' by default
+    return manipulate_parameters
 
-# 'call' the function and save the return in a variable
-data_from_function = function_name(argument1, argument2, etc)
+# call the function and save the return value in a variable
+data_returned_from_function = function_name(argument_1, argument_2, ...)
+# data passed to functions to fill parameters are called 'arguments'
 '''
+# ----------------------------------------------------------------------------------- #
 
-def increment(x):
-    return x + 1
+# increment(number) - add one to the number and return the result
 
-# call the function with a value for x
+def increment(number):
+    result = number + 1
+    return result
 
-# since the function has parameters, they need data
-# increment() # TypeError: increment() missing 1 required positional argument: 'x'
-result = increment(39) # use 39 as the value for x and save the result of x + 1 in the variable 'result'
-# print(result) # 40
+# call the function with a value for 'number'
+result = increment(9)
+# print(result)
 
-# print(40 == increment(39)) # True
+result = increment(result)
+# print(result)
 
-n = 0
-while n < 10:
-    # print(n)
+# use the function in a loop
+x = 0
 
-    # pass the current value of x to increment()
-    # receive x + 1 as a result
-    n = increment(n)
+while x < 10:
+    # print(x)
+
+    # use the function to increment x
+    x = increment(x)
+
+# -------------------------------------------------------------------------------------- #
+
+# arguments MUST be passed to fill parameters (unless default values are provided)
+# increment() # TypeError: increment() missing 1 required positional argument: 'number'
+
+# ---------------------------------------------------------------------------------------- #
+
+# add(a, b) - return the sum of two numbers, 'a' and 'b'
+
+def add(a=1, b=1):
+    return a + b
+
+# if NO default values are provided for parameters:
+# add() # TypeError: add() missing 2 required positional arguments: 'a' and 'b'
+# add(9) # TypeError: add() missing 1 required positional argument: 'b'
+# print(add(9, 1)) # 10 - a=9, b=1
+
+# if default values ARE provided for parameters
+# print(add(10)) # 11 - (a=10, b=default)
+# print(add()) # 2 - (a=default, b=default)
+# print(add(5, 2)) # 7 - (a=5, b=2)
+# print(add(b=7)) # 8 - (a=default, b=7)
+# print(add(b=7, a=5)) # 12 - (a=5, b=7)
+
+# ------------------------------------------------------------------------------------- #
+
+# 'shred' a string and return a randomized list of its characters
+
+def shred_string(string):
+    # convert the string to a list of its characters
+    characters = list(string)
+
+    # randomize the list
+    random.shuffle(characters)
+
+    return characters
 
 
-# ----------------------------------- #
 
-# parameters can be given default values in the function definition
-def punctuate(text='Hi', punctuation='.'):
-    # print(text)
-    # print(punctuation)
+shredded = shred_string('hello world')
+# print(shredded)
 
-    return text + punctuation
+shredded = shred_string('ABCDEFG')
+# print(shredded)
 
-# arguments must be provided for ALL parameters if the parameters don't have default values
-# punctuate() # punctuate() missing 2 required positional arguments: 'text' and 'punctuation'
-# punctuate("I don't like spam") # TypeError: punctuate() missing 1 required positional argument: 'punctuation'
-# print(punctuate("I don't like spam", '!!!')) # I don't like spam!!!
-# print(punctuate("Welcome to Camelot", "???")) # Welcome to Camelot???
-# print(punctuate("No strong opinion")) # use default value for punctuation
-# print(punctuate()) # uses default values for BOTH parameters
+# -------------------------------------------------------------------------------------- #
 
-# ------------------------------------------------------------------------ #
+# generate a list of 'k' integers between 'low' and 'high'
 
-# absolute value of a number is how far it is from 0.
+def generate_random_numbers(k, low=0, high=100):
+    # create a blank list to store the numbers
+    numbers = []
 
-# the absolute value of -9 is 9. absolute value of 9 is ALSO 9, because it is also 9 away from 0
+    # loop 'k' times
+    for x in range(k):
+        # generate a random number between 'low' and 'high'
+        random_number = random.randint(low, high)
 
-def absolute_value(number):
-    if number < 0:
-        # flip the number's sign to positive
-        number *= -1
+        # add the number to the list
+        numbers.append(random_number)
 
-    return number
+    return numbers
 
-# print(absolute_value(-9)) # 9
-# print(absolute_value(44)) # 44
-# print(absolute_value(-44)) # 44
-# print(absolute_value(-191919)) # 191919
+
+random_numbers = generate_random_numbers(10)
+# print(random_numbers) # [80, 94, 71, 99, 3, 48, 74, 29, 41, 12]
+
+random_numbers = generate_random_numbers(3, 10, 20)
+# print(random_numbers) # [15, 17, 17]
+
+random_numbers = generate_random_numbers(1000, -100, 100)
+# print(random_numbers)
 
