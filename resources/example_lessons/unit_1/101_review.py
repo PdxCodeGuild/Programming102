@@ -1,210 +1,192 @@
-'''
-Programming 101 Review
-'''
-
-'''
-Unit 1
-'''
-
-# Welcome to Programming 102
-
-# single line comment
-
-# print('Hello world') # say hello to the world
-
-'''
-Multi-line
-comment
-with single quotes
-'''
-
 """
-Multi-line
-comment
-with double quotes
-"""
-
-# print() # built in function in Python for displaying data in the terminal
-
-# print('hello') # hello
-
-# print multiple items
-# print('pi:', 3.1415) # pi: 3.1415
-
-# ------------------------------------------- #
-
-# strings - textual data. Sequences of characters surrounded by quotes
-
-'' # blank string
-"" # blank string
-# print(type('')) # <class 'str'> - print the datatype of '' using type()
-
-'cat'
-"dog"
-"%^&*(&^^&8987678987789ib9b9  9 9 97 78"
-
-'''
-# print a multiline string
-print("""
-Welcome to
-    PDX Code Guild
 Programming 102
-""")
-'''
+101 Review
+"""
 
-# ------------------------------------------- #
+"""
+Units 1 & 2 - variables, strings & string operations, f-strings, input(), int/float
+"""
 
-# Concatenation - adding strings together
+import string
 
-# print('hello' + ' ' + 'world') # hello world (the space in between is in its own string)
+# = is the assignment operator. Assigns the value on the right to the variable on the left.
+# define a variable 'animal' and assign the string 'dog' to it using =
+animal = 'dog'
+# print(animal) # dog
 
-# -------------------------------------------- #
+# ------------------------------------------------------------------------------------- #
 
-# Datatype methods
-# A method is a function (executed with parentheses) that
-# manipulates the piece to which it is attached with a dot '.'
+# a "function" is a named code block that performs a specific task
+# functions are executed by placing parentheses () after their name
+# data can be passed into the function by placing it within the parentheses
+# functions will always return a value as well
 
-# print('abcdefg'.upper()) # ABCDEFG
+# type(object) - return the datatype of the object
+animal_datatype = type(animal)
+# print(animal_datatype) # <class 'str'>
 
-# print('hello'.replace('h', 'j')) # jello
+# string (str) - sequence of textual characters surrounded by quotes
+# --------------------------------------------------------------------------------------- #
 
-# methods can be chained. Each subsequent method operates on the result of the previous
-# print('hello'.replace('e', 'i').replace('l', 'p').upper()) # HIPPO
+# change the value within the variable 'animal' to 'cat'
+animal = 'cat'
+# print(animal) # cat
 
-# OOPS! Forgot the parentheses on the method call
-# print('hello'.upper) # <built-in method upper of str object at 0x000001C450583E30>
+# --------------------------------------------------------------------------------------- #
 
-# ------------------------------------------------ #
+# concatenation - adding strings together to form a single string
 
-# Escape characters
+# add the string 'fish' to the value within the variable 'animal'
+# redefined 'animal' with the result
+animal = animal + 'fish'
+# print(animal) # catfish
 
-# allow characters to be placed within a string that would normally break the code
-# allow strings to be formatted
+# --------------------------------------------------------------------------------------- #
 
-# escape characters are denoted with a backslash \
+# a 'method' is a function that manipulates only the object to which it belongs
+# an object's methods are accessed using a dot after the object's name
 
-# print("Hello "world"") # Quotes cancel each other
-# print('Hello "world"') # print double quotes within single
-# print("Hello \"world\"")
+# .upper() - return an uppercase version of the string
+# print(animal.upper()) # CATFISH
 
-# same as double quotes but with singles
-# print('I don\'t like spam!')
-# print("I don't like spam!")
+# .replace(old, new) - return a copy of the string with the old replaced with the new within it
+# print(animal.replace('c', 'b')) # batfish
 
-# print('hello\nworld') # \n - newline
+# methods can be chained. Each one operates on the return value of the previous
+# print(animal.replace('c', 'b').upper()) # BATFISH
 
-# print('hello\tworld') # \t - horizontal tab
+# ---------------------------------------------------------------------------------------------- #
 
-# ----------------------------------------------------- #
+"""
+Escape Characters
+- Denoted with a backslash \ before the character 
+- "Escape" the normal rules of strings to allow the characters to behave differently than normal
+"""
 
-'''
-Unit 2
-'''
+# print("hello "world"") # Error! Quotes cancel each other
 
-# Variables
-# are named storage spaces for data
-# store any datatype
-# become the datatype they store
-# data within a variable can change
+# Solution 1 - printing quotes with mismatched sets:
+# print('hello "world"') # hello "world"
 
-# store the string 'blue' in a variable called 'color'
-color = 'blue' # = is the assignment operator
-# print(color) # blue
+# Solution 2 - printing quotes with escape characters
+# print("hello \"world\"") # hello "world"
 
-# change the value within the variable color
-color = 'green'
-# print(color) # green
+# formatting string with escape characters
+# print("A\nB\nC") # \n - new line character
+# print("A\tB\tC") # \t - horizontal tab
 
-# string methods can be called on 'color', since it contains a string
-# print(color.capitalize()) # Green
-
-# concatenation with a string variable
-# print('My favorite color is ' + color)
-
-
-# Variable names
-# Must start with a letter or underscore character
-# cannot start with a numbers
-# can only contain alpa-numeric characters and underscores
-# are case sensitive (age, Age, AGE are THREE DIFFERENT variables)
-
-# this_is_snake_case # *** variable naming convention in Python ***
-# thisIsCamelCase
-# ThisIsTitleOrPascalCase
-
-city = 'Portland'
-year_moved = 2010
-current_year = 2020
-
-# cannot concatenate other datatypes into a string
-# any other datatypes need to be converted to string first with str()'
-# print('Someone who moved to ' + city + ' in ' + str(year_moved) + ' will have lived there for ' + str(current_year - year_moved) + ' years in ' + str(current_year))
-
-# f-strings - 'f' stands for 'formatted' because we're formatting other datatypes into a string
-# f-strings allow Python expressions (bits of code) to be placed within a string with curly brackets {}
-
-# print(f'Someone who moved to {city} in {year_moved} will have lived there for {current_year - year_moved} years in {current_year}')
-
-# ------------------------------------------------------------------- #
+# ------------------------------------------------------------------------------------------- #
 
 '''
-# input(prompt_message) - print the prompt and wait for the user to hit enter, returning their input string
-color = input('Enter a color: ')
-print(f"I like the color {color}.")
+Python Variable Names
+- must start with a letter or underscore
+- cannot start with a number
+- can only contain alphanumeric characters and underscores (A-z, 0-9 and _)
+- are case sensitive (age, Age, AGE are 3 different variables)
+'''
+
+# python_variable_and_function_names_use_snake_case
+# all lowercase words, separated with underscores
+
+# ThisIsPascalOrTitleCase - used for defining classes in Python
+# ALLCAPS - generally used for constant variables
+
+# for Python styling conventions check out PEP8 (Python Style Guide)
+
+# ----------------------------------------------------------------------------------------- #
+
+# f-strings
+# 'f' stands for 'formatted'. f-strings allow Python expressions to be formatted into strings
+
+# note: concatenation only works with strings
+# other datatypes will need to be "typecast" using str() before concatenation
+
+number = 99.5
+# output = 'The number is ' + str(number) + '!'
+
+# f-strings don't care about datatype
+output = f"The number is {number}!"
+# print(output) # The number is 99.5!
+
+# ----------------------------------------------------------------------------------------- #
+'''
+user_string = input(prompt_message)
+
+Print the prompt message and wait for the user to hit enter.
+Once the user hits enter, anything they typed in the terminal will be returned.
+Return value can be saved in a variable such as 'user_string'
+
+name = input('Enter your name: ')
+print(f"Welcome, {name}!")
+'''
+
+
+# ------------------------------------------------------------------------------------------ #
+'''
+# input() always returns a string
+
+# typecast to a number
+# int(object) - return the object as an integer, if possible
+# float(object) - return the object as a float, if possible
+
 '''
 
 '''
-# input() ALWAYS returns a string
 number = input("Enter a number: ")
 
-# convert to a number with float() or int()
+print(number, type(number)) # 9 <class 'str'>
+print(number * 10) # 9999999999
+
+# convert the number string to float
 number = float(number)
 
-print(number, type(number)) # 5.0 <class 'float'>
+print(number, type(number)) # 9.0 <class 'float'>
+print(number * 10) # 90.0
 '''
 
-# --------------------------------------------------- #
+# ----------------------------------------------------------------------------------------- #
 
-'''
-Unit 3
-'''
+# integer (int) - whole numbers
+# float (float) - decimal numbers
 
-x = 17
-y = 6
+# arithmetic operators
 
-# Arithmetic operators
-# print(x + y) # addition
-# print(x - y) # subtraction
-# print(x * y) # multiplication
-# print(x / y) # regular division (returns a float)
-# print(x // y) # floor division (always round down)
-# print(x ** y) # exponentiation x^y
-# print(x % y) # modulus remainder after division
+x = 5
+y = 3
 
-# ------------------------------------------------ #
+# print(x + y)  # addition +
+# print(x - y)  # subtraction -
 
-# print(x) # 17
-x + 2 # doesn't change x
-# print(x) # 17
+# print(x * y)  # multiplication *
+# print(x ** y) # exponentiation ** (x^y)
 
-# print(x + 2) # 19 - uses the current value of x but doesn't change it
-# print(x) # 17
+# print(x / y)  # 'regular' division / (results in a float)
+# print(x // y) # 'floor' division // (rounds down to the nearest integer)
 
-x = x + 2 # uses the current value of x, adds 2 and saves the result over the previous value
-# print(x) # 19
+# print(x % y)  # modulus % (remainder after division)
 
-# Re-Assignment Operators
+# ----------------------------------------------------------------------------------- #
+
+# ReAssignment Operators
+
+x = 4
+
+# ReAssignment Operators - combine the arithmetic and assignment operators
 x += 2 # x = x + 2
 x -= 2 # x = x - 2
 x *= 2 # x = x * 2
-x /= 2 # # x = x / 2
-x //= 2 # x = x // 2
 x **= 2 # x = x ** 2
-x %= 2 # # x = x % 2
+x /= 2 # x = x / 2
+x //= 2 # x = x // 2
+x %= 2 # x = x % 2
 
-# ----------------------------------------- #
+# ----------------------------------------------------------------------------------------- #
 
-# Datatype: Boolean
+'''
+Unit 3 - booleans, comparisons, logical statements, conditionals
+'''
+
+# datatype - boolean
 # True / False
 
 a = True
@@ -213,266 +195,302 @@ b = False
 # print(a, type(a)) # True <class 'bool'>
 # print(b, type(b)) # False <class 'bool'>
 
-# Truthy/Falsey - bool()
+# booleans in Python are Capitalized
+# b = false # NameError: name 'false' is not defined
 
-# pieces of data that have value are considered True
-# pieces of data with no value are considered False
+# -------------------------------------------------------------------------------------- #
 
-x = 0 # False
-y = 1 # True
+# typecast to boolean
+# bool(object) - return a boolean representation of the object
 
-x = '' # False - blank string
-y = 'a' # True - has at least one character
+# Truthy/Falsey
+# if an object has value, it will convert to True
+# if an object has no value, it will convert to False
+'''
+# Falsey values
+''    # blank string has no value
+[]    # blank list has no value
+0     # number 0 has no value
+None  # None has no value
+etc...
+'''
 
-x = [] # False - blank list
-y = [1, 2, 3] # True - has at least one item
+# -------------------------------------------------------------------------------------- #
 
-# print(bool(x), bool(y))
-# ---------------------------------------- #
+# Comparison Operators - compare two pieces of data and result in a boolean
 
-# Comparisons - compare the values of two or more pieces of data
+# All comparisons need two sides
+
 x = 5
 y = 5
 
-# print(x == y) # True - equality
-# print(x != y) # False - inequality
-# print(x < y) # False - less than
-# print(x <= y) # True - less than or equal to
-# print(x > y) # False - greater than
-# print(x >= y) # True - greater than or equal to
+# print(x == y)  # == check equality - True
+# print(x != y)  # != check inequality - False
 
-# ------------------------------------------- #
+# print(x < y) # < 'strictly' less than - False
+# print(x <= y) # <= less than or equal to - True
 
-# Logical operators - and / or / not
+# print(x > y) # > 'strictly' greater than - False
+# print(x >= y) # >= greater than or equal to - True
+
+# ---------------------------------------------------------------------------------------- #
+
+# Logical Operators - combine comparisons and result in a single boolean
+# and, or, not
+
+# logical statements need two comparisons
+
 x = 5
 y = 5
 
-# and - return True only if BOTH sides are True
-# print(x == y and x == 5) # True
-# print(x == y and x == 10) # False
+# and - True only if BOTH comparisons are True
+# print(x == 5 and y == 5) # True - both comparisons are True
+# print(x == 5 and y == 2) # False - left comparison (y == 2) is False
 
-# or - return True if AT LEAST ONE side is True
-# print(x == y or x == 10) # True
-# print(x != y or x == 10) # False
+# or - True if at least ONE comparison is True
+# print(x == 5 or y == 2)  # True - left comparison (x == 5) is True
+# print(x == 2 or y == 2)  # False - both comparisons are False
 
-# not - return the OPPOSITE boolean
-# print(x == y) # True
-# print(not x == y) # 
+# not - flip a boolean
+# print(x < 0) # False
+# print(not x < 0) # True
 
-# ---------------------------------------------- #
+# 'not' is often used with the keyword 'in' to check if an item is in a sequence
+# print(33 in [22, 33, 44]) # True
+# print(44 not in [11, 22, 33]) # False
 
-# Conditional statements - if / elif / else
+# ---------------------------------------------------------------------------------------- #
 
-# Run different blocks of code based on which condition is True
+'''
+Conditional Statements
+----------------------
+Run different code blocks based on the outcome of comparisons
+Keywords: if, elif, else
 
-x = 10
-y = 10
+Code Block:
+A section of code that executes together.
+In Python, code blocks are defined using horizontal indentation
+---------------------------------------------------------------------------------------
 
-# must start with if
-if x < y:
-    # if statement's 'code block' begins here
-    output = 'x is less than 10'
-elif x == 14:
-    output = 'x is 14'
-elif x > y: # elif will only be checked if the previous if or elifs are False
-    output = 'x is greater than 10'
+Conditional Rules:
+------------------
+- must start with if
+- all ifs will be checked
+- elif are only checked if the preceding if and other elifs were False
+- else is triggered if all other conditions were False
+- if/elif will only be checked until a True condition is found
+
+---------------------------------------------------------------------------------------
+Conditional Combinations:
+-------------------------
+if
+if / elif
+if / else
+if / elif / else
+if / elif / elif / ... / elif
+if / elif / elif / ... / else
+'''
+
+'''
+x = 5
+
+if x > 5:
+    print(f"{x} is greater than 5")
+
+elif x < 5:
+    print(f"{x} is less than 5")
+
 else:
-    # else is triggered if no other condition was True
-    output = 'x equals y. None of the other conditions were True.'
-
-
-# print(output)
+    print('x is 5')
 
 '''
-Unit 4
+# ------------------------------------------------------------------------------------------- #
+
+'''
+Unit 4 - lists / for loops
+------
+Datatype: list
+
+Lists are 'ordered' and 'changeable' sequences of items.
+Lists are created using square brackets []
+List items are separated with commas ,
 '''
 
-# datatype - lists
+# define a list of colors
+colors = ['red', 'green', 'blue']
 
-# lists are ordered and changeable sequences of items, 
-# separated by commas and surrounded by square brackets []
-
-numbers = [11, 22, 33] # list of integers
-colors = ['red', 'green', 'blue'] # list of strings
-
-# list items can be formatted vertically too
+# organized vertically
 colors = [
     'red',
     'green',
     'blue'
 ]
 
-# list items can be ANY datatype, including other lists
-jumble = ['cat', 6, 3.145, True, None, [1, 2, 3]]
+# print(colors) # ['red', 'green', 'blue']
 
-# list items can be referenced based on their position in the list
-# a item's position in the list is called its index
-# print(colors[0]) # red - list indices always start at 0
+# ------------------------------------------------------------------------------------------- #
+
+# list items can be retrieved using their positions in the list
+# an item's position in the list is called its 'index'
+
+# place the index of the item in square brackets
+# after the list's variable name to retrieve the item
+# list indices always start at 0
+# print(colors[0]) # red
 # print(colors[1]) # green
 # print(colors[2]) # blue
+
+# can't use non-existent indices
 # print(colors[3]) # IndexError: list index out of range
 
-# index of a lists last item is the length of the list minus 1
-
-# print(colors[-1]) # blue - index -1 is always the last item of the list
+# In Python, negative indices are allowed
+# -1 will always be the last index
+# print(colors[-1]) # blue
 # print(colors[-2]) # green
 # print(colors[-3]) # red
+
+# can't use non-existent indices
 # print(colors[-4]) # IndexError: list index out of range
 
-# change the value at index 1
-colors[1] = 'yellow' 
+# ------------------------------------------------------------------------------------ #
+
+# strings are ordered sequences as well
+ABCs = string.ascii_uppercase
+# print(ABCs[10]) # K
+
+# strings are NOT 'changeable'
+# ABCs[0] = 'Z' # TypeError: 'str' object does not support item assignment
+
+# lists ARE changable
+colors[1] = 'yellow'
 # print(colors) # ['red', 'yellow', 'blue']
 
-# index must exist to assign a value
-# colors[40] = 'purple' # IndexError: list assignment index out of range
+# ------------------------------------------------------------------------------------- #
 
-# adding items to a list
+# cannot add values this way
+# colors[3] = 'purple' # IndexError: list assignment index out of range
 
-# .append(item) add the item to the end of the list
+# items can be added using list methods
+
+# .append(item) - add a single item to the end of the list
 colors.append('purple')
 # print(colors) # ['red', 'yellow', 'blue', 'purple']
 
-# .insert(index, item) add the item at the index
-colors.insert(1, 'teal')
-# print(colors) # ['red', 'teal', 'yellow', 'blue', 'purple']
+# .insert(index, item) - add the item at the index
+colors.insert(0, 'magenta')
+# print(colors) # ['magenta', 'red', 'yellow', 'blue', 'purple']
 
-# remove items from the list
+# .extend(sequence) - add the items from the sequence to the end of the list
+colors.extend(['orange', 'yellow', 'cyan'])
+# print(colors) # ['magenta', 'red', 'yellow', 'blue', 'purple', 'orange', 'yellow', 'cyan']
 
-# .remove(item) remove the first occurrence of the item from the list
+# -------------------------------------------------------------------------------------- #
+
+# items can be removed with list methods as well
+
+# .remove(item) - remove the first occurrence of the item from the list
 colors.remove('yellow')
-# print(colors) # ['red', 'teal', 'blue', 'purple']
+# print(colors) # ['magenta', 'red', 'blue', 'purple', 'orange', 'yellow', 'cyan']
 
-# .pop(index) remove the item at the index
-colors.pop(0)
-# print(colors) # ['teal', 'blue', 'purple']
+# .pop(index) - remove the item at the index and return it. index defaults to -1 if not provided
+# colors.pop()
+# print(colors) # ['magenta', 'red', 'blue', 'purple', 'orange', 'yellow']
 
-# .sort() sort a list in ascending order (only works with numbers and strings)
-colors.sort()
-# print(colors) # ['blue', 'purple', 'teal']
+# colors.pop(1)
+# print(colors)  # ['magenta', 'blue', 'purple', 'orange', 'yellow']
 
-colors.reverse() # flip a lists order
-# print(colors) # ['teal', 'purple', 'blue']
+# ------------------------------------------------------------------------------------------- #
 
-# ----------------------------------------- #
+# .sort() - sort a list in ascending order (returns None)
+# colors.sort()
+# print(colors) # ['blue', 'cyan', 'magenta', 'orange', 'purple', 'red', 'yellow']
 
-import random
+# .sort() returns None
+# colors = colors.sort()
+# print(colors[0]) # TypeError: 'NoneType' object is not subscriptable
+# print(colors) # None
 
-# print a random color from the list
-# print(random.choice(colors))
+# ---------------------------------------------------------------------------------------------- #
 
-# ---------------------------------------- #
 
-# loops - code blocks that repeat based on a certain condition
+# loop - a code block that repeats until a certain condition is met
 
-# for loop
+# for item in sequence - loop through each item in the sequence
 
-# for item in sequence
+# for/in - Python operators
+# item - arbitrary variable name to store each item as the loop visits it
+# sequence - string, list or other 'iterable' (loopable) object
+'''
 for color in colors:
-    output = f'color: {color}'
-    # print(output)
+    print(color)
+'''
+# -------------------------------------------------------------------------------------------- #
 
-# ------------------------------ #
+numbers = [2, 4, 6]
 
-# print different things based on the color value
-for color in colors:
-    if color == 'blue':
-        output = f'Ew, {color}'
-    else:
-        output = f'I like the color {color}'
+numbers_squared = []
 
+for number in numbers:
+    # square the number and add it to the list
+    numbers_squared.append(number ** 2)
 
-    # print(output)
+# print(numbers_squared)
 
-# --------------------------------# 
+# ---------------------------------------------------------------------------------------------- # 
+# for x in range() - loop a certiain number of times
 
-# using indicies with strings
-# string at index 3
-# print('abcdefg'[3]) # d
-
-for letter in 'abcdefg':
-    output = f'letter: {letter}'
-    # print(output)
-
-# ------------------------------- #
-
-
-# for x in range() - loop a certain number of times
-
-# range() is a built in function in python which generates a range of numbers
+# range(stop) - return a range of numbers from 0 to stop-1
 # print(list(range(10))) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# range(stop) - 0 through stop-1 
-for x in range(10):
-    output = f'x: {x}'
-    # print(output)
 
-# len(sequence) returns the length of the sequence
-number_of_colors = len(colors)
-# print(number_of_colors)
+powers_of_2 = []
+for number in range(11):
+    powers_of_2.append(2 ** number)
 
-# loop over the indices of a list
-for index in range(number_of_colors):
-    color = colors[index] # grab the color at the current index
+# print(powers_of_2) # [1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024]
 
-    # print(f'{index}: {color}')
-
-
-# --------------------------------------------- # 
+# range(start, stop, step)
+'''
+for x in range(0, 101, 10):
+    print(x)
+'''
+# -------------------------------------------------------------------------------------- #
 
 # while loop
 
-counter = 0 
-while counter < 10: # loop while this is True
-    # print(counter)
+'''
+while some_condition == True:
+    # loop this
+    # code block
+'''
 
-    counter += 2
+# "for x in range(10)" with a while loop
 
-# ------------------------ #
+x = 0
 
-# generate a list of 10 random numbers between 1 and
-numbers = []
-while len(numbers) < 10: # loop while less than 10 items in a list
-    # generate a random integer between 1 and 100
-    number = random.randint(1, 100)
+while x < 10:
+    # print(x)
 
-    # add the numer to the list
-    numbers.append(number)
+    x += 1
 
-# print(numbers)
-
-# ----------------------------- #
+# -------------------------------------------------------------------------------------- #
 
 # loop controls
-# continue / break
-'''
-for x in range(10):
+# continue, break, else
 
-    if x == 3 or x == 6:
-        print('...')
-        continue # go to the top of the loop
+for x in range(10):
 
     if x == 8:
         print('goodbye')
-        break # end the loop
+        break # end the loop immediately
+
+    elif x == 3:
+        print('...')
+        continue # skip the rest of this iteration and begin the next
 
     print(x)
-'''
-
-# ----------------------------------------- #
-
-# else with loops
-'''
-import string
-
-# loop through the alphabet
-for letter in string.ascii_lowercase:
-    print(letter)
-
-    # if letter == 'q':
-    #     break # end the loop 'unnaturally'
 
 else:
-    # run this when a loop completes naturally
-    print('end of alphabet')
-
-'''
+    # else will be run if the loop makes it all the way through =
+    # i.e. if its condition becomes False
+    print("The loop ran all the way through")
