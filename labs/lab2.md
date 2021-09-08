@@ -4,9 +4,9 @@
 
 ## 2.1
 
-Create a function called `sum_numbers` which will take in a single parameter, `numbers`, which will be passed a list of numbers as an argument when the function is called. 
+Create a function called `sum`. The function will take in a single parameter, `numbers`, which will be passed a list of numbers as an argument when the function is called. 
 
-The function will return the sum of all the numbers in the list.
+The function will add up all the numbers in the list and return the sum the numbers.
 
 Note: Please do ***not*** use the built-in function `sum()`. The goal is to write that function from scratch.
 
