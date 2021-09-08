@@ -4,9 +4,11 @@
 
 ## 2.1
 
-Create a function called `sum`. The function will take in a single parameter, `numbers`, which will be passed a list of numbers as an argument when the function is called. 
+We're going to write Python's built-in function, `sum()`, from scratch.
 
-The function will add up all the numbers in the list and return the sum the numbers.
+Create a function called `sum` with a single parameter, `numbers`. Call the function and pass a list of numbers as an argument.
+
+The function will add up all the `numbers` in the list and `return` the sum the `numbers`.
 
 Note: Please do ***not*** use the built-in function `sum()`. The goal is to write that function from scratch.
 
