@@ -51,8 +51,9 @@ print(x) # IndentationError: expected an indented block
 
 # TypeError - wrong datatype was used for an operation
 # '5' + 5 # TypeError: can only concatenate str (not "int") to str
-# print['hello world'] # TypeError: 'builtin_function_or_method' object is not subscriptable
 # [10, 20, 30] / 10 # TypeError: unsupported operand type(s) for /: 'list' and 'int'
+# len(100) # TypeError: object of type 'int' has no len()
+
 
 # --------------------------------------------------------------------------------------- #
 
