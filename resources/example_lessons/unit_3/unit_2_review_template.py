@@ -72,7 +72,7 @@ def is_positive(number):
 # ------------------------------------------------------------------------------------------- #
 
 
-def generate_random_numbers(k, low=0, high=100):
+def generate_random_numbers():
     pass
 
 # process all the numbers in the list and count all the positive numbers:
