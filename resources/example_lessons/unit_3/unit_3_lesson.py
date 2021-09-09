@@ -1,148 +1,158 @@
 '''
-Unit 3 - Dictionaries!
+Programming 102
+Unit 3
 '''
 
 '''
-Dictionaries
+Dictionaries ('dict')
 
-- are one of the most powerful datatypes in Python
-- can be used to store large amounts of data and
-    make working with that data quick and easy
-- are collections of key:value pairs
+- one of the most powerful datatypes in Python
+- can be used to store large amounts of data and make accessing that data quick and easy
+- collections of key:value pairs
+- keys are used to access values
 
-keys and values are separated with colons, key:value PAIRS are separated with commas
-dictionaries are surrounded by curly brackets {}
+- are defined using curly brackets {}
+- keys and items are separated with colons
+- key:value pairs are called 'items'
+- items are separated with commas
 '''
 
 # blank dictionary
 blank_dictionary = {}
+# print(blank_dictionary, type(blank_dictionary)) # {} <class 'dict'>
 
-# print(blank_dictionary) # {}
-# print(type(blank_dictionary)) # <class 'dict'>
 
-example_dict = {'a': 11, 'b':22, 'c':33}
+# ------------------------------------------------------------------------------- #
+
+# dict keys are generally strings
+# dict values can be ANY datatype, including other dictionaries
+
+example_dict = {'a': 11, 'b': 22, 'c': 33}
 
 example_dict = {
-    # key:value,
-    'a':11,
-    'b':22,
-    'c':33
+    # key: value,
+    'a': 11,
+    'b': 22,
+    'c': 33
 }
 
-# keys are generally strings
-# values can be ANY datatype, including other dictionaries
+# print(example_dict) # {'a': 11, 'b': 22, 'c': 33}
 
-# pulling the value at a key by placing the key in square brackets
-# print(example_dict['a'])
-# print(example_dict['b'])
-# print(example_dict['c'])
+# ------------------------------------------------------------------------------- #
 
-# cannot get the value at a non-existent key
-# example_dict['d'] # KeyError: 'd'
+# dictionary values are retrieved by placing their keys
+# in SQUARE brackets after the dictionary's name
 
-vehicle = {
-    'make': 'Dodge',
-    'model': 'Dakota',
-    'year': 2004,
-    'color': 'beige',
+# print(example_dict['a']) # 11
+# print(example_dict['b']) # 22
+# print(example_dict['c']) # 33
+
+# ---------------------------------------------------------------------------- #
+
+# dictionaries are usually used to group related data
+
+address = {
+    "street": "123 Faux St.",
+    "city": "Portland",
+    "state": "Oregon",
+    "zipcode": 123456
 }
 
-# print(vehicle['make']) # Dodge
+# print(address['street'])
+# print(f"{address['city']}, {address['state']} {address['zipcode']}")
 
+# ------------------------------------------------------------------------------------------ #
 
-# cannot get the value at a non-existent key
-# vehicle['features'] # KeyError: 'features'
+book = {
+    'title': 'The Hobbit',
+    'author': 'JRR Tolkien',
+    'pages': 200
+}
 
-# new values CAN be added at at keys that don't exist
-vehicle['features'] = ['2WD', 'Auto Windows', 'Auto Locks']
+# print(f"The book {book['title']} has {book['pages']} pages and was written by {book['author']}")
 
-# print(vehicle['features'])
+# ----------------------------------------------------------------------------------------- #
 
-# add a feature to the list of features
-vehicle['features'].append('A/C')
-# print(vehicle)
+# cannot retrieve values at non-existent keys 
+# book['characters'] # KeyError: 'characters'
 
-# item at index 0 of list at key of 'features'
-# print(vehicle['features'][0])
+# add a value at the key of 'characters'
+book['characters'] = ['Bilbo', 'Gandalf', 'Smaug']
+# print(book['characters']) # ['Bilbo', 'Gandalf', 'Smaug']
 
-# loop through all the features
-# for feature in vehicle['features']:
-#     print(feature)
+# add a character to the list
+book['characters'].append('Balin')
+# print(book['characters']) # ['Bilbo', 'Gandalf', 'Smaug', 'Balin']
+
+# ---------------------------------------------------------------------------------------- #
 
 # change the value at a key
-vehicle['year'] = 1999
-# print(vehicle)
+book['pages'] = 199
+# print(book)
 
-# delete a key:value pair with the keyword: del
-# del vehicle['model'] # delete the key:value pair at the key 'model'
-# print(vehicle)
+# ------------------------------------------------------------------------------------------ #
 
-# ----------------------------- #
+# deleting a key:value pair
+# keyword 'del'
+# del book['pages']
+# print(book)
 
-# Dictionary methods
+# ------------------------------------------------------------------------------------------- #
 
-# vehicle['for_sale'] # KeyError: 'for_sale'
-'''
-desired_key = 'make'
+# dictionary methods
 
-# The following does the same a .get():
-# check if the key is in the dictionary
-if desired_key in vehicle:
-    value = vehicle[desired_key]
-else:
-    value = f"The key '{desired_key}' doesn't exist in the dictionary!"
+# .pop(key) - remove the key:value pair at the key and return the value
+pages = book.pop('pages')
+# print(pages, book)
 
-# print(value)
-'''
-# .get(desired_key, default_value_if_not_found)
-# return the value at the key, if found. Otherwise it will return the default
-# the default value is None if not specified
-value = vehicle.get('for_sale', f"The key 'for_sale' doesn't exist in the dictionary!")
-# print(value)
+# --------------------------------------------------------------------------------------------- #
 
-value = vehicle.get('make', f"The key 'make' doesn't exist in the dictionary!")
-# print(value)
+# .update(new_dict) - add the items from the new_dict to the original dictionary
+new_items = {
+    'pages': 200,
+    'isbn_number': 3456789876598765
+}
 
-# add multiple key:value pairs
-# .update(dictionary) adds the key value pairs in the new dictionary to the old dictionary
-vehicle.update({
-    'for_sale': True,
-    'mileage':120000,
-})
-# print(vehicle)
+# book.update(new_items)
+# print(book)
 
-# .pop(key) removes the key:value pair at the key
-vehicle.pop('for_sale')
-# print(vehicle)
+# ----------------------------------------------------------------------------------------------- #
 
-# -------------------------------------------- #
+# as of Python 3.9, we can use the 'merge' operator
 
+book = book | new_items
+
+# print(book)
+
+# ------------------------------------------------------------------------------------------------ #
+
+# Fruit Stand
 
 fruit_prices = {
-    'tomato': .55,
-    'pumpkin': 1.0,
-    'bell pepper': .75,
+    'apple': 2.33,
+    'banana': 1.76,
+    'peaches': 2.99
 }
 
 while True:
-    # ask the user which fruit they would like to buy
-    fruit_name = input('Please enter the name of the fruit you would like or done to quit: ')
+    # ask the user which fruit they want to buy
+    fruit_name = input("\nPlease enter the name of the fruit you want to buy or 'done' to quit: ")
 
     # exit if 'done'
     if fruit_name == 'done':
-        print('Goodbye')
-        break
+        print("\nThanks for shopping!")
+        break # end the loop
 
-    # use the user's input as they key to get the price
+    # get the price of the user's fruit_name
     price_per = fruit_prices[fruit_name]
 
-    # ask how many the user wants
-    quantity = input(f'How many {fruit_name}s would you like? ')
-
-    # convert to integer
+    # ask the use how many they want
+    quantity = input("Enter the quantity: ")
+    
+    # convert the quantity to integer
     quantity = int(quantity)
 
     # calculate the total
     total = quantity * price_per
-
-    print(f'{quantity} {fruit_name} @ {price_per} each - ${total}')
+    
+    print(f'{quantity} {fruit_name} @ ${price_per} each - ${round(total, 2)}')
