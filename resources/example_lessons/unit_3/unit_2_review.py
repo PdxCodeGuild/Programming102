@@ -1,6 +1,9 @@
 '''
+Programming 102
 Unit 2 Review
 '''
+
+import random
 
 '''
 R ead
@@ -9,169 +12,227 @@ P rint
 L oop
 '''
 
+# -------------------------------------------------------------------------------- #
+
+# This REPL will only loop if the user enters exactly 'yes'
 '''
+again = 'yes'
+
+while again == 'yes':
+    print("\nWelcome to the game!")
+
+    # other code ...
+
+    # ask the user if they want to play again
+    again = input('Do you want to play again? yes/no: ')
+'''
+# ------------------------------------------------------------------------------- #
+'''
+# This REPL displays different things for 'y','n' and invalid options
+# but will loop unless the user enters 'n'
 while True: # infinite loop
+    print("\nWelcome to the game!")
 
-    # ask the user to enter their name or to quit
-    name = input('\nPlease enter your name or "done" to quit: ')
+    # other code ...
 
-    # if the user entered 'done'
-    if name == 'done':
-        print('Goodbye')
+    # ask the user if they want to play again
+    again = input('Do you want to play again? y/n: ')
+
+    # check the user's input
+    if again == 'y':
+        print("\nOkay! Let's play again!")
+
+    elif again == 'n':
+        print("\nGoodbye!")
         break # end the loop
 
-    # main body of code goes here
-    # ...
-    # ...
-    print(f'Thanks for playing, {name}!')
+    else:
+        print("\nInvalid selection!")
 '''
-
+# ------------------------------------------------------------------------------ #
 '''
-while True: # infinite loop
-    print('Welcome to the program!')
+# This REPL will ensure that the user enters a valid choice
+# and will output a message accordingly.
 
-    again = input("Do you want to play again? y/n: ")
+valid_yes = ['yes', 'y', 'yep']
+valid_no = ['no', 'n', 'nope']
 
-    if again == 'n':
-        print("Goodbye!")
-        break
-'''
+valid_choices = []
+valid_choices.extend(valid_yes)
+valid_choices.extend(valid_no)
 
-'''
-# Ask the user for a list of colors with no duplicates
-colors = [] # blank list to hold colors
+
 while True:
-    # ask the user for a color
-    color = input("Please enter a color or 'done' to quit: ")
+    print("\nWelcome to the game!")
 
-    # if the user enters 'done', break the loop
-    if color == 'done':
-        print(f'You entered: {colors}')
+    # other code ...
+
+    # ask the user if they want to play again
+    again = input('Do you want to play again? y/n: ')
+
+
+    # check to make sure the user has entered a valid choice, using another REPL
+    # loop until the user enters a valid choice for the 'again' variable
+    while again not in valid_choices:
+        print("\nInvalid selection!")
+        print(f"Valid choices: {', '.join(valid_choices)}") # display the choices to the user
+        again = input("Please enter a valid selection: ")
+
+    # once the code reaches this point,
+    # the user is guaranteed to have entered a valid choice
+
+    # check which list contains the user's choice
+    if again in valid_yes:
+        print("\nOkay, let's play again!")
+
+    elif again in valid_no:
+        print("\nGoodbye!")
         break
-
-    # ensure the user enters a color that isn't in the list
-    while color in colors:
-        print(f'Color already in the list: {color}')
-        color = input("Please enter a color: ")
-    
-    # once the user enters a color that isn't in the list
-    # add it to the list
-    print(f'Color added to the list: {color}')
-    colors.append(color)
-    print(colors)
-
-    # exits at 5 colors
-    if len(colors) == 5:
-        print(colors)
-        break
-
 '''
 
-'''
-limit = input('How many numbers do you want to add to the list: ')
-limit = int(limit)
-
-numbers = []
-for x in range(limit): # while len(numbers) < limit
-    number = input('Please enter a number: ')
-
-    # convert number to float
-    number = float(number)
-
-    numbers.append(number)
-    print(f'{number} added to the list')
-
-print(numbers)
-'''
-
-# ------------------------------------------------ #
+# ------------------------------------------------------------------------------------- #
 
 # Functions
 
-# absolute value is a numbers distance, positive or negative, from 0
-def absolute_value(number):
-    if number < 0:
-        number *= -1
+# named code blocks that perform specific tasks
+# take in data, manipulate it and return the result to where the function was called
+# must be executed with parentheses after their name
 
-    return number
+# keyword 'def' to define a function
 
-# print(absolute_value(-9))
-# print(absolute_value(-123123))
-# print(absolute_value(123123))
-
-# ----------------------------------------------------- #
-
-def add(a = 2, b = 2):
-    '''
-    DOCSTRING - short explanation of the function.
-    
-    Returns the sum of two numbers, 'a' and 'b'
-    '''
-    return a + b
-
-# print(add(2, 9))
-# print(add())         # a = 1, b = 0 (both defaults used)
-# print(add(9, 2))     # a = 9, b = 2
-# print(add(6))        # a = 6, b = default
-# print(add(b=6))      # a = default, b = 6
-# print(add(b=6, a=4)) # b = 6, a = 4
-
-num1 = 6
-num2 = 6
-# print the return from a function within an f-string
-# print(f'{num1} + {num2} = {add(num1, num2)}')
-
-# -------------------------------------------------------- #
+# variables in the parentheses in the function's definition are called 'parameters'
+# parameters are empty variables, awaiting data (can also be given default values)
+def multiply(a, b):
+    return a * b
 
 
-# *args (arguments) / **kwargs (keyword arguments)
-# * - each arg is one piece of data
-# ** - each kwarg is two pieces of data (variable_name = value)
-def print_args_kwargs(*args, **kwargs):
-    print(args)
+# define a variable using the sum of the
+# return values from two function calls
+product_sum = multiply(2, 10) + multiply(2, 3)
+# print(product_sum) # 26
 
-    # loop through all arguments (args)
-    for arg in args:
-        print(arg)
+# A function call is equal to its return value
+# print(multiply(2, 10) == 20) # True
 
-    print(kwargs)
+# 'arguments' must be passed to fill parameters if no default values are provided
+# multiply() # TypeError: multiply() missing 2 required positional arguments: 'a' and 'b'
 
-# print_args_kwargs(3.14, 'cat', True, word1 = 'fish', word2 = 'dog', word3='zebra')
+# ----------------------------------------------------------------------------------------- #
 
-# ----------------------------------------------------- #
+def punctuate(text='Hi', punctuation='.'):
+    return text + punctuation
 
-# take in any number of numbers and add them together
-def add_em_up(*nums):
-    '''
-    Return the sum of any arbitritrary number of numbers (*nums)
-    '''
-    total = 0 # starting total
+# print(punctuate('Hello', '!!!')) # Hello!!! (text='Hello', punctuation='!!!')
+# print(punctuate('Goodbye')) # Goodbye. (text="Goodbye", punctuation=default)
+# print(punctuate()) # Hi. (text=default, punctuation=default)
+# print(punctuate(punctuation='???')) # Hi??? (text=default, punctuation='???')
 
-    # loop through all numbers and add them to the total
-    for num in nums:
-        total += num
+# ------------------------------------------------------------------------------------------ #
 
-    return total
+# Return True/False based on whether the 'number' is positive or not
+# this function has two return statements, but will only run one or the other
+def is_positive(number):
+    if number <= 0:
+        return False
+    else:
+        return True
 
-# print(add_em_up(34, 54, 99, 10, 14, 10, 5, 1919191, 213930493))
 
-# ----------------------------------------------------- #
+# print(is_positive(-9)) # False
+# print(is_positive(9)) # True
 
-# SCOPE - 'bubbles' where variables exist
-# all the way to the left is called the 'global scope'
+'''
+# Display different messages for positive and negative numbers
+x = 10
 
-# y is defined in the global scope
-y = 99
+if is_positive(x): # == True: (optional)
+    print(f"{x} is positive")
+else:
+    print(f"{x} is negative")
+'''
+# ------------------------------------------------------------------------------------------- #
 
-# subtract() is also defined in the global scope
-def subtract(a, b):
-    # print(y)
-    
-    # y += 1 # UnboundLocalError because y isn't defined within the function
 
-    x = 5 # x is defined in the scope of the function subtract()
+def generate_random_numbers(k, low=0, high=100):
+    # create a blank list to store the numbers
+    numbers = []
 
-    return a + b
+    # loop 'k' times
+    for x in range(k):
+        # generate a random number between 'low' and 'high'
+        random_number = random.randint(low, high)
 
-# print(x) # x only exists inside subtract()
-# print(subtract(1,2))
+        # add the number to the list
+        numbers.append(random_number)
+
+    return numbers
+
+numbers = generate_random_numbers(100, -100, 100)
+
+# process all the numbers in the list and count all the positive numbers:
+
+# set the initial total to 0
+total_positive = 0
+
+# loop through all the numbers and count the positive numbers
+for number in numbers:
+    # if the return value from is_postive() is True
+    if is_positive(number):
+        # add one to the total
+        total_positive += 1
+
+
+# print(f"There are {total_positive} positive numbers in the list")
+# print(f"There are {100 - total_positive} negative numbers in the list")
+
+# ------------------------------------------------------------------- #
+# Scope - Four 'layers' in which variables exist
+
+# built-in, global, enclosed, local
+
+# Built-in scope = all built in functions, error messages, etc
+
+x = 'global scope'
+
+def outer_function():
+    x = 'enclosed scope'
+
+    def inner_function():
+        x = 'local scope'
+
+        return x
+
+    x = inner_function()
+
+    return x
+x = outer_function()
+
+# print(x) # local scope
+
+
+# ---------------------------------------------------------------------------------- #
+
+
+numbers = []
+
+'''
+# Don't do this
+def add_number_to_list(number):
+    # Since the numbers list isn't being passed 
+    # through the parameters, it is confusing 
+    # because it's not obvious where the numbers
+    # variable is coming from 
+    numbers.append(number)
+'''
+
+
+
+'''
+# Do this instead
+def add_number_to_list(number, numbers):
+    # Now it is obvious where the numbers variable
+    # is coming from. It is passed through the 
+    # parameters, manipulated and returned 
+    numbers.append(number)
+    return numbers
+'''
