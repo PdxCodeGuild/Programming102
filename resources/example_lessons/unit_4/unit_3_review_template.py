@@ -30,7 +30,7 @@ Unit 3 Review
 # ----------------------------------------------------------------------------- #
 '''Dictionary Methods'''
 
-# .pop(key) delete the key:value pair at the key and return it
+# .pop(key) delete the key:value pair at the key and return the value
 
 # ----------------------------------------------------------------------------- #
 
