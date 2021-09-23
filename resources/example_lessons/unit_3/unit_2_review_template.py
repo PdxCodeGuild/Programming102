@@ -61,13 +61,13 @@ def punctuate():
 
 # ------------------------------------------------------------------------------------------ #
 
-# Return True/False based on whether the 'number' is positive or not
-def is_positive(number):
+# Return True if the 'number' is between 'low' and 'high'. Otherwise return False.
+def is_in_bounds(number, low, high):
     pass
 
 
 
-# Display different messages for positive and negative numbers
+# display different messages if the number is in bounds or not
 
 # ------------------------------------------------------------------------------------------- #
 
