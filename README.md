@@ -21,6 +21,7 @@ Below is a list of helpful links.
 | ------- |----------| -----|
 | Lab Submissions |[How to Submit Labs in Slack](/docs/slack.md) | For enrolled Intro students only |
 Terminal Cheatsheet | [Terminal Cheatsheet](/docs/terminal_cheatsheet.md) |
+|Vocab|[Vocab List](/docs/vocab.md/)|A collection of programming terms and their definitions|
 |Flowcharts|[Flowcharts](/docs/flowcharts/)|Example flowcharts with corresponding code| Command Prompt/Terminal/Powershell
 VS Code Keyboard ShortCuts | [For Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) |
 VS Code Keyboard ShortCuts | [For macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) |
