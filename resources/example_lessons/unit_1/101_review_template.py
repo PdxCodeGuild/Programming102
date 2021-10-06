@@ -159,14 +159,8 @@ x = 4
 # x = x + 2
 # print(x)
 
-# x = x - 2
-# x = x * 2
-# x = x ** 2
-# x = x / 2
-# x = x // 2
-# x = x % 2
-
 # ReAssignment operators exist for each arithmetic operators
+# -=, *=, **=, /=, //=, %=
 
 # ----------------------------------------------------------------------------------------- #
 
@@ -180,6 +174,8 @@ Unit 3 - booleans, comparisons, logical statements, conditionals
 # booleans in Python are Capitalized
 
 # -------------------------------------------------------------------------------------- #
+
+# THIS CAN BE SKIPPED, IF NEEDED
 
 # typecast to boolean
 # bool(object) - return a boolean representation of the object
@@ -258,15 +254,12 @@ Conditional Rules:
 
 ---------------------------------------------------------------------------------------
 
-Conditional Combinations:
--------------------------
+Conditional Statements Will Always Have:
+------------------------------------------
+- 1 if
+- 0 -> infinity elifs
+- 0 or 1 else
 
-if
-if / elif
-if / else
-if / elif / else
-if / elif / elif / ... / elif
-if / elif / elif / ... / else
 '''
 
 # ------------------------------------------------------------------------------------------- #

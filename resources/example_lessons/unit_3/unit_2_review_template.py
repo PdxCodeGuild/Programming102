@@ -75,7 +75,7 @@ def is_in_bounds(number, low, high):
 def generate_random_numbers():
     pass
 
-# process all the numbers in the list and count all the positive numbers:
+# process all the numbers in the list and count all the numbers that are in a particular range:
 
 
 # ------------------------------------------------------------------- #

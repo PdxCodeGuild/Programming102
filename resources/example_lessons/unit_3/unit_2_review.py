@@ -129,26 +129,28 @@ def punctuate(text='Hi', punctuation='.'):
 
 # ------------------------------------------------------------------------------------------ #
 
-# Return True/False based on whether the 'number' is positive or not
+# Return True if the 'number' is between 'low' and 'high'. Otherwise return False.
 # this function has two return statements, but will only run one or the other
-def is_positive(number):
-    if number <= 0:
+def is_in_bounds(number, low, high):
+    if number >= low and number <= high:
         return False
     else:
         return True
 
 
-# print(is_positive(-9)) # False
-# print(is_positive(9)) # True
+# print(is_in_bounds(5, 1, 10)) # True
+# print(is_in_bounds(100, 1, 10)) # False
 
 '''
 # Display different messages for positive and negative numbers
-x = 10
+x = 5
+low = 0
+high = 10
 
-if is_positive(x): # == True: (optional)
-    print(f"{x} is positive")
+if is_in_bounds(x, low, high): # == True: (optional)
+    print(f"{x} is between {low} and {high}")
 else:
-    print(f"{x} is negative")
+    print(f"{x} is not between {low} and {high}")
 '''
 # ------------------------------------------------------------------------------------------- #
 
@@ -169,21 +171,19 @@ def generate_random_numbers(k, low=0, high=100):
 
 numbers = generate_random_numbers(100, -100, 100)
 
-# process all the numbers in the list and count all the positive numbers:
+# process all the numbers in the list and count all the numbers that are within a particular range:
 
 # set the initial total to 0
-total_positive = 0
+total_in_bounds = 0
 
 # loop through all the numbers and count the positive numbers
 for number in numbers:
     # if the return value from is_postive() is True
-    if is_positive(number):
+    if is_in_bounds(number, 40, 60):
         # add one to the total
-        total_positive += 1
+        total_in_bounds += 1
 
 
-# print(f"There are {total_positive} positive numbers in the list")
-# print(f"There are {100 - total_positive} negative numbers in the list")
 
 # ------------------------------------------------------------------- #
 # Scope - Four 'layers' in which variables exist

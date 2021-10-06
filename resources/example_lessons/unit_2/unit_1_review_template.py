@@ -86,16 +86,10 @@ colors = ['red','green','blue']
 # sometimes errors are triggered in other files and need to be tracked down
 # random.choice(100)
 
-"""
-Traceback (most recent call last):
-  File "C:/Users/keego/Desktop/pdx_code/programming_102/unit_2/unit_1_review.py", line 86, in <module>     
-    random.choice(100)
-  File "C:/Users/keego/AppData/Local/Programs/Python/Python39/lib/random.py", line 346, in choice
-    return seq[self._randbelow(len(seq))]
-TypeError: object of type 'int' has no len()
-"""
 
 # ---------------------------------------------------------------------------------- #
+
+### THIS CAN BE SKIPPED, IF NEEDED
 
 """
 Error Handling

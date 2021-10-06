@@ -1,158 +1,162 @@
 '''
+Programming 102
 Unit 1 Review
 '''
+import random
 
-'''
+
+"""
 Anatomy of an Error Message
+---------------------------
 
-File "<FILENAME>.py", line number
-    troublesome code (approximately)
+Traceback (most recent call last):
+  File "<FILENAME>.py", line number (approx)
+    troublesome code (approx)
                    ^
 
 ErrorType: specific error message
+"""
+
+# SyntaxError - a piece of code is missing or misused
+# 10 / # SyntaxError: invalid syntax
+# 'abc # SyntaxError: EOL (end of line) while scanning string literal (missing closing quote)
+# print('hello world'] # SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+# ------------------------------------------------------------------------------ #
+
+# NameError - variable or function name was used that isn't defined
+# balloon # NameError: name 'balloon' is not defined
+# Print() # NameError: name 'Print' is not defined
+
+# ------------------------------------------------------------------------------ #
+
+# IndentationError - inconsistent horizontal placement
+
+# too far right - unexpected indent
+# too far left - unindent does not match any outer indentation leve
 '''
+ x = 4 # IndentationError: unexpected indent
 
-# SyntaxError - something is mistyped
-# 4 + # SyntaxError: invalid syntax
-# print('hello) # missing quote - SyntaxError: EOL (end of line) while scanning string literal
-# print('hello' # SyntaxError: unexpected EOF (end of file) while parsing
-
-# NameError - a variable name was used that isn't defined
-# a + b # NameError: name 'a' is not defined
-# imaginary_function() # NameError: name 'imaginary_function' is not defined
-
-# IndendationError - horizontal placement is off
-'''
-x = 5
 if x < 10:
     print('hello')
-#    print('hey') # (too far left) IndentationError: unindent does not match any outer indentation level
-    #  print('howdy') # (too far right) IndentationError: unexpected indent
+   print('hello') # IndentationError: unindent does not match any outer indentation leve
+     print('hello') # IndentationError: unexpected indent
+
+
+for x in range(10):
+    # blank code block
+    # 
+    # keyword 'pass' will avoid empty code block errors
+
+print(x)
 '''
 
-'''
-if x < 10:
-    # empty code block - IndentationError: expected an indented block
-
-print('hello')
-'''
+# ----------------------------------------------------------------------------- #
 
 # TypeError - wrong datatype was used for an operation
-# print('5' + 5) # TypeError: can only concatenate str (not "int") to str
-colors = ['red', 'green']
-# colors() # TypeError: 'list' object is not callable
+# '5' + 5  # TypeError: can only concatenate str (not "int") to str
+# print['hello world'] # TypeError: 'builtin_function_or_method' object is not subscriptable
+# [10, 20, 30] / 10 # TypeError: unsupported operand type(s) for /: 'list' and 'int'
 
-# IndexError - index doesn't exist in a sequence
+# ----------------------------------------------------------------------------- #
+
+# IndexError - index doesn't exist in a sequence (list, string, etc...)
+colors = ['red', 'green', 'blue']
+
 # colors[3] # IndexError: list index out of range
-# 'abc'[10] # IndexError: string index out of range
+# 'abc'[3] # IndexError: string index out of range
 
-# AttributeError - variable or function or method doesn't belong to a piece of data
-# 'hello'.append('x') # AttributeError: 'str' object has no attribute 'append'
-# [11, 22, 33].capitalize() # AttributeError: 'list' object has no attribute 'capitalize'
+# colors[3] = 'purple' # IndexError: list assignment index out of range
 
-# ModuleNotFoundError - trying to import a non-existent module
-# import imaginary_module # ModuleNotFoundError: No module named 'imaginary_module'
+# ------------------------------------------------------------------------------ #
 
-# ImportError
-# from .. import imaginary_module #ImportError: attempted relative import with no known parent package
+# AttributeError - variable, function or method doesn't belong to an object
+# random.imaginary_function() # AttributeError: module 'random' has no attribute 'imaginary_function'
+# 'abc'.append('d') # AttributeError: 'str' object has no attribute 'append'
+# colors.capitalize() # AttributeError: 'list' object has no attribute 'capitalize'
 
-# ZeroDivisionError - divinding by zero
+# -------------------------------------------------------------------------------- #
+
+# ValueError - proper datatype, but improper value was used
+# int('abc') # ValueError: invalid literal for int() with base 10: 'abc'
+# float('abc') # ValueError: could not convert string to float: 'abc'
+
+# ------------------------------------------------------------------------------- #
+
+# ZeroDivisionError - division by 0
 # 1/0 # ZeroDivisionError: division by zero
 
-# ValueError - improper value passed to a function
-# float('fish') # ValueError: could not convert string to float: 'fish'
-# int('3.14') # ValueError: invalid literal for int() with base 10: '3.14'
+# --------------------------------------------------------------------------------- #
 
-# ------------------------------------------------------- #
+# sometimes errors are triggered in different files and will need to be tracked down
+
+# random.choice(123)
 
 """
-import random
-# sometimes errors are triggered in a different file and will need to be hunted down
-# Line 77 will trigger an error in the random module
-# which will cause a 2-message traceback.
-random.choice(123)
-
-'''
 Traceback (most recent call last):
-
-  File "unit_1_review.py", line 19, in <module>
+  File "C:/Users/keego/Desktop/pdx_code/programming_102/unit_2/unit_1_review.py", line 93, in <mo
+dule>
     random.choice(123)
-  File "C:/.../random.py", line 288, in choice
+  File "C:/Users/keego/AppData/Local/Programs/Python/Python39/lib/random.py", line 346, in choice
 
-    i = self._randbelow(len(seq))
+    return seq[self._randbelow(len(seq))]
 TypeError: object of type 'int' has no len()
-'''
 """
 
-# -------------------------------------------------------- #
+# -------------------------------------------------------------------------------------------- #
 
-# Handling Errors
+"""
+Error Handling
+Keywords: try, except, else, finally
 
-# keywords: try / except / else / finally
 
-'''
 try:
     # try to run the code in this block
-    # if an error is raised, it can be caught using 'except'
+    # if an error is raised in this block,
+    # it can be caught and handled using an 'except' block
 
-except ErrorType: # 'ErrorType' will be the specific type of error you wish to catch
-    # run this code block if the error is raised
+except ErrorType:
+    # 'ErrorType' is the specific type of error we wish to catch
+    # run this code block if the specified ErrorType was raised
 
 else:
-    # run this block if no error was raised in the 'try' block
+    # run this code block if no error occurred in the 'try' block
 
 finally:
-    # run this block whether an error was raised or not
+    # run this code block no matter what
+
+"""
+
+# ----------------------------------------------------------------------------------------------- #
+
+# Divide two numbers provided by the user. 
+# Before dividing, validate that the user has entered proper numbers
 '''
-
-
-'''
-x = 100
-
-while True: # infinite loop
+while True: # infinite loop, requiring 'break' to end
     try:
-        x = input("Please enter x: ")
-        y = input("Please enter y: ")
+        x = input("Enter number for x: ")
+        y = input("Enter number for y: ")
 
-        # convert the string to float
+        # try to convert the numbers to float
+        x = float(x)
         y = float(y)
 
-        # divide the numbers
+        # try to divide the numbers
         quotient = x / y
 
-    # multiple except blocks can be used to catch different errors
-    except ValueError: 
-        # if y can't be converted:
-        print(f'Could not be converted to a float: {y}')
-    
+    except ValueError:
+        print(f'\nOne of the numbers could not be converted to float: {x}, {y}')
+
+    # multiple except blocks for multiple errors
     except ZeroDivisionError:
-        # if the user enters zero for y
-        print('Cannot divide by zero!!!')
+        print('\nCannot divide by zero!!!')
 
     else:
-        # if no errors occur, print the result of division
-        print(f'{x} / {y} = {quotient}')
-
-        break # continue on to rest of code
+        # if no error was raised
+        print(f'\n{x} / {y} = {x / y}')
+        break # end the loop once the user enters two valid numbers
 
     finally:
-        print('<3 Math! <3)
-
-print('rest of code....')
-'''
-
-'''
-# Raise our own error
-# keyword: raise
-color = input('Please enter a color: ')
-
-try: 
-    if color == 'green':
-        # if the user enters 'green', raise a ValueError
-        raise ValueError(f'I don\'t like the color {color}!!!')
-except ValueError as error: # save the custom error message in a variable called error
-    print(error)
-
-else:
-    print(f'I like the color {color}')
+        print("\nYay, Python!")
+        
 '''

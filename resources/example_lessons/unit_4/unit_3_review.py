@@ -40,10 +40,6 @@ todo['id'] = 1
 todo['completed'] = True
 # print(todo) # {'title': 'Go grocery shopping', 'completed': True, 'id': 1}
 
-# keyword 'del' for deleting key:value pairs
-# del todo['id']
-# print(todo) # {'title': 'Go grocery shopping', 'completed': True}
-
 # ----------------------------------------------------------------------------- #
 
 # .pop(key) delete the key:value pair at the key and return it

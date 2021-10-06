@@ -25,8 +25,6 @@ Unit 3 Review
 # change the value at a key
 # the todo has been finished
 
-# keyword 'del' for deleting key:value pairs
-
 # ----------------------------------------------------------------------------- #
 '''Dictionary Methods'''
 
@@ -41,7 +39,7 @@ Unit 3 Review
 
 # ------------------------------------------------------------------------- #
 
-#.update(new_dictionary) add the new_dictionary to the original
+# .update(new_dictionary) add the new_dictionary to the original
 # ------------------------------------- #
 
 # Display the todo item
@@ -72,32 +70,15 @@ Unit 3 Review
 
 # instead of multiple, individual todo item dictionaries, create a list of dictionaries instead
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# list of dictionaries
+# list of dictionaries. List is organized vertically, dictionaries organized horizontally.
 
 # list of dictionaries organized vertically
 
-# pull out one dictionary at a time from the list
+# pull out a single dictionary from the list using an index
 
 # loop through the todo_list
 
 # ------------------------------------------------------------ #
 
 # nested dictionaries
+ 
