@@ -12,7 +12,7 @@ Dictionaries ('dict')
 - keys are used to access values
 
 - are defined using curly brackets {}
-- keys and items are separated with colons
+- keys and values are separated with colons
 - key:value pairs are called 'items'
 - items are separated with commas
 '''

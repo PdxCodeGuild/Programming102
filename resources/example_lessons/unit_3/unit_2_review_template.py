@@ -42,6 +42,7 @@ L oop
 def multiply():
     pass
 
+# define a variable using the return value from the function
 
 # define a variable using the sum of the
 # return values from two function calls
@@ -71,6 +72,7 @@ def is_in_bounds(number, low, high):
 
 # ------------------------------------------------------------------------------------------- #
 
+### THIS CAN BE SKIPPED, IF NEEDED
 
 def generate_random_numbers():
     pass
@@ -79,6 +81,8 @@ def generate_random_numbers():
 
 
 # ------------------------------------------------------------------- #
+### THIS CAN BE SKIPPED IF NEEDED
+
 # Scope - Four 'layers' in which variables exist
 
 # built-in, global, enclosed, local
@@ -87,7 +91,7 @@ def generate_random_numbers():
 
 
 # ---------------------------------------------------------------------------------- #
-
+### THIS CAN BE SKIPPED IF NEEDED
 
 numbers = []
 
@@ -100,8 +104,6 @@ def add_number_to_list(number):
     # variable is coming from 
     numbers.append(number)
 '''
-
-
 
 '''
 # Do this instead

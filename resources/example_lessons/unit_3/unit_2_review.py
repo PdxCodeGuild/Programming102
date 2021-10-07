@@ -105,6 +105,9 @@ while True:
 def multiply(a, b):
     return a * b
 
+# define a variable using the return value from the function
+product = multiply(2, 3)
+print(product)
 
 # define a variable using the sum of the
 # return values from two function calls
@@ -142,7 +145,7 @@ def is_in_bounds(number, low, high):
 # print(is_in_bounds(100, 1, 10)) # False
 
 '''
-# Display different messages for positive and negative numbers
+# Display different messages based on whether a number is in bounds
 x = 5
 low = 0
 high = 10
