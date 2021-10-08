@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="fchy0uA2SKZ-re4_fWbH" name="Page-1">
-        <mxGraphModel dx="547" dy="1451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="912" dy="1685" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -21,7 +21,7 @@
                 <mxCell id="47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="48" target="50">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="Type in URL in address bar" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;fillColor=#b0e3e6;fontStyle=1;fontColor=#212121;" vertex="1" parent="1">
+                <mxCell id="48" value="Pass URL to 'requests' module" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#0e8088;fillColor=#b0e3e6;fontStyle=1;fontColor=#212121;" vertex="1" parent="1">
                     <mxGeometry x="70" y="-560" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#333333;" edge="1" parent="1" source="50" target="46">
@@ -48,7 +48,7 @@
                         <mxPoint x="130" y="-280" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="55" value="&lt;p style=&quot;line-height: 16.8px&quot;&gt;&lt;b&gt;Status Code:&lt;/b&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;line-height: 0px&quot;&gt;200&lt;/p&gt;&lt;p style=&quot;line-height: 16.8px&quot;&gt;&lt;b&gt;Data:&lt;/b&gt;&amp;nbsp;HTML, CSS, Javascript&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0e8088;fillColor=#b0e3e6;fontColor=#212121;" vertex="1" parent="1">
+                <mxCell id="55" value="&lt;p style=&quot;line-height: 16.8px&quot;&gt;&lt;b&gt;Status Code:&lt;/b&gt;&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;line-height: 0px&quot;&gt;200&lt;/p&gt;&lt;p style=&quot;line-height: 16.8px&quot;&gt;&lt;b&gt;Data:&lt;/b&gt;&amp;nbsp;JSON (JavaScript Object Notation)&lt;/p&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0e8088;fillColor=#b0e3e6;fontColor=#212121;" vertex="1" parent="1">
                     <mxGeometry x="380" y="-310" width="120" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="57">
