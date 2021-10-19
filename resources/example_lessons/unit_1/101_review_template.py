@@ -40,7 +40,7 @@ Units 1 & 2 - variables, strings & string operations, f-strings, input(), int/fl
 
 # .upper() - return an uppercase version of the string
 
-# .center(width, fillchar) - return a string of width characters, using the fillchar as padding
+# .replace(old, new) - return a copy of the string with the old replaced with the new within it
 
 # methods can be chained. Each one operates on the return value of the previous
 
