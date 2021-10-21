@@ -136,9 +136,9 @@ def punctuate(text='Hi', punctuation='.'):
 # this function has two return statements, but will only run one or the other
 def is_in_bounds(number, low, high):
     if number >= low and number <= high:
-        return False
-    else:
         return True
+    else:
+        return False
 
 
 # print(is_in_bounds(5, 1, 10)) # True
@@ -189,6 +189,18 @@ for number in numbers:
 
 
 # ------------------------------------------------------------------- #
+'''
+1. DEFINE x IN THE GLOBAL SCOPE. PRINT x
+2. DEFINE outer_function() IN THE GLOBAL SCOPE, DEFINE x WITHIN IT AND 
+   PRINT x WITHIN outer_function(), CALL outer_function()
+3. DEFINE inner_function() INSIDE outer_function(), 
+   DEFINE x WITHIN inner_function(), PRINT x WITHIN inner_function(), 
+   CALL inner_function() WITHIN outer_function()
+4. EXPLAIN THAT VARIABLES IN OUTER SCOPES ARE AVAILABLE TO INNER SCOPES,
+   BUT VALUES NEED TO BE RETURNED IN ORDER TO BE AVAILABLE TO OUTER SCOPES
+5. RETURN x INSIDE inner_function() ALL THE WAY BACK TO THE GLOBAL SCOPE
+   AND PRINT x FROM THE GLOBAL SCOPE
+'''
 # Scope - Four 'layers' in which variables exist
 
 # built-in, global, enclosed, local
@@ -202,15 +214,24 @@ def outer_function():
 
     def inner_function():
         x = 'local scope'
+        print(x) # local scope
+        
+        # return x # return x back to the enclosed scope
 
-        return x
+    inner_function()
+    print(x) # enclosed scope
 
-    x = inner_function()
+    # x = inner_function() # redefine x with the return value from the local scope
+    # return x # return x back to the global scope
 
-    return x
-x = outer_function()
+outer_function()
+print(x) # global scope
 
+# x = outer_function() # # redefine x with the return value from the enclosed scope
 # print(x) # local scope
+
+
+
 
 
 # ---------------------------------------------------------------------------------- #
