@@ -20,9 +20,10 @@ Below is a list of helpful links.
 | Resource | Link | Comment |
 | ------- |----------| -----|
 | Lab Submissions |[How to Submit Labs in Slack](/docs/slack.md) | For enrolled Intro students only |
-Terminal Cheatsheet | [Terminal Cheatsheet](/docs/terminal_cheatsheet.md) |
+Terminal Cheatsheet | [Terminal Cheatsheet](/docs/terminal_cheatsheet.md) | List of terminal commands|
 |Vocab|[Vocab List](/docs/vocab.md/)|A collection of programming terms and their definitions|
-|Flowcharts|[Flowcharts](/docs/flowcharts/)|Example flowcharts with corresponding code| Command Prompt/Terminal/Powershell
+|Flowcharts|[Flowcharts](/docs/flowcharts/)|Example flowcharts with corresponding code| 
+|Career Services|[Career Services](/docs/career_services.md/)|Example flowcharts with corresponding code| 
 VS Code Keyboard ShortCuts | [For Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) |
 VS Code Keyboard ShortCuts | [For macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) |
 Python Tutor | [Python Tutor](http://pythontutor.com/visualize.html#mode=edit) | online debugging tool
