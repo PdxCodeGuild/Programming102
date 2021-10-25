@@ -23,15 +23,14 @@ Below is a list of helpful links.
 Terminal Cheatsheet | [Terminal Cheatsheet](/docs/terminal_cheatsheet.md) | List of terminal commands|
 |Vocab|[Vocab List](/docs/vocab.md/)|A collection of programming terms and their definitions|
 |Flowcharts|[Flowcharts](/docs/flowcharts/)|Example flowcharts with corresponding code| 
-|Career Services|[Career Services](/docs/career_services.md/)|Example flowcharts with corresponding code| 
+|Career Services|[Career Services](/docs/career_services.md/)|About Career Services at PDX Code Guild| 
 VS Code Keyboard ShortCuts | [For Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf) |
 VS Code Keyboard ShortCuts | [For macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) |
-Python Tutor | [Python Tutor](http://pythontutor.com/visualize.html#mode=edit) | online debugging tool
+Python Tutor | [Python Tutor](http://pythontutor.com/visualize.html#mode=edit) | Online debugging tool
 Stuck? | [Debugging Errors Guide](https://github.com/PdxCodeGuild/IntroToProgramming/blob/master/documentation/troubleshooting.md) |
-Online Code Editor | [Repl](https://repl.it) | cloud based editor and interpreter
-Compare two code snippets | [DiffChecker](https://www.diffchecker.com/) | great tool to compare 2 files of code side by side|
-Learning Resources | [Guide](https://github.com/PdxCodeGuild/IntroToProgramming/blob/master/documentation/resources.md)
-Future Intro Classes | [Eventbrite](https://www.eventbrite.com/o/pdx-code-guild-17959456298) |
+Online Code Editor | [Repl](https://repl.it) | Cloud-based editor and interpreter
+Compare two code snippets | [DiffChecker](https://www.diffchecker.com/) | Great tool to compare two files of code side by side|
 
+<br>
 
 [Back to top](#top)
