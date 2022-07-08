@@ -2,7 +2,9 @@
 
 This lab will involve writing a program that allows the user to convert a number between units.
 
-Each version should be accomplished using a **dictionary** and each can be completed without the use of `if`/`elif` statements.
+Each version should be accomplished using a **dictionary** and each must be completed without the use of `if`/`elif` statements.
+
+You do NOT need to use a while loop
 
 ## Version 1
 
