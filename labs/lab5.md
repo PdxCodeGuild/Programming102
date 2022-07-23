@@ -47,7 +47,7 @@ password: myPrecious?
 
 Error! Your username or password was incorrect!
 ```
-### **5.2 - Extra Challenge**
+### **5.2**
 
 Create a REPL that asks the user for their `username_attempt` and `password_attempt` and attempts to log them in.
 
@@ -55,7 +55,7 @@ If their login is **successful**, print a welcome message and end the program.
 
 If their login is **unsuccessful**, ask if they'd like to try again.
 
-### **5.3**
+### **5.3 - Extra Challenge**
 
 Allow the user **three attempts** to login. If they exceed three attempts without a successful login, tell the user and end the program
 
