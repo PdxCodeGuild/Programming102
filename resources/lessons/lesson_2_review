@@ -1,0 +1,252 @@
+'''
+Programming 102
+Unit 2 Review
+'''
+
+from math import prod
+import random
+
+'''
+R ead
+E valuate
+P rint
+L oop
+'''
+
+# -------------------------------------------------------------------------------- #
+
+# This REPL will only loop if the user enters exactly 'yes'
+'''
+again = 'yes'
+
+while again == 'yes':
+    print('\nWelcome to the game!')
+    
+    # other code ...
+    
+    # ask the user if they want to play again
+    again = input('Do you want to play again? yes/no: ')
+'''  
+
+# ------------------------------------------------------------------------------- #
+
+# This REPL displays different things for 'y','n' and invalid options
+# but will loop unless the user enters 'n'
+
+'''
+while True: # infinite loop
+    print('\nWelcome to the game!')
+    
+    # other code ...
+    
+    # ask the user if they want to play again
+    again = input('Do you want to play again? y/n: ')
+    
+    if again == 'y':
+        print("\nOkay! Let's play again!")
+        
+    elif again == 'n':
+        print('\nGoodbye!')
+        break # end the loop
+    
+    else:
+        print('\nInvalid selection!')
+        
+'''        
+
+# ------------------------------------------------------------------------------ #
+'''
+# This REPL will ensure that the user enters a valid choice
+# and will output a message accordingly.
+
+valid_yes = ['yes', 'y', 'yep']
+valid_no = ['no', 'n', 'nope']
+
+valid_choices = []
+valid_choices.extend(valid_yes)
+valid_choices.extend(valid_no)
+
+while True:
+    print('\nWelcome to the game!')
+    
+    # other code ...
+    
+    # ask the user if they want to play again
+    again = input('Do you want to play again? y/n: ')
+    
+    
+    # check to make sure the user has entered a valic choice, using another REPL
+    while again not in valid_choices:
+        print('\nInvalid selection!')
+        print(f"Valid choices: {', '.join(valid_choices)}")
+        again = input('Please enter a valid selection: ')
+        
+    # once the code reaches this point, 
+    # the user is guaranteed to have entered a valid 
+    
+    # check which list contains the user's choice
+    
+    if again in valid_yes:
+        print("\nOkay, let's play again!")
+        
+    elif again in valid_no:
+        print('\nGoodbye!')
+        break
+'''
+
+# ------------------------------------------------------------------------------------- #
+
+# Functions
+
+# named code blocks that perform specific tasks
+# take in data, manipulate it and return the result to where the function was called
+# must be executed with parentheses after their name
+
+# keyword 'def' to define a function
+
+# variables in the parentheses in the function's definition are called 'parameters'
+# parameters are empty variables, awaiting data (can also be given default values)
+def multiply(a, b):
+    return a * b
+
+# define a variable using the return value from the function
+# product = multiply(2, 3)
+# print(product)
+
+# define a variable using the sum of the
+# return values from two function calls
+product_sum = multiply(2, 10) + multiply(2, 3)
+# print(product_sum) # 26
+
+
+# A function call is equal to its return value
+# print(multiply(2, 10) == 20) # True
+
+
+# 'arguments' must be passed to fill parameters if no default values are provided
+# multiply() # TypeError: multiply() missing 2 required positional arguments: 'a' and 'b'
+
+
+# ----------------------------------------------------------------------------------------- #
+
+def punctuate(text='Hi', punctuation='.'):
+    return text + punctuation
+
+# print(punctuate('Hello', '!!!'))  # Hello!!! (text='Hello', punctuation='!!!')
+# print(punctuate('Goodbye')) # Goodbye. (text="Goodbye", punctuation=default)
+# print(punctuate()) # Hi. (text=default, punctuation=default)
+# print(punctuate(punctuation='???')) # Hi??? (text=default, punctuation='???')
+
+# ------------------------------------------------------------------------------------------ #
+
+
+# Return True if the 'number' is between 'low' and 'high'. Otherwise return False.
+# this function has two return statements, but will only run one or the other
+
+def is_in_bounds(number, low, high):
+    if number >= low and number <= high:
+        return True
+    else:
+        return False
+
+# print(is_in_bounds(5, 1, 10)) # True
+# print(is_in_bounds(100, 1, 10)) # False
+
+'''
+# display different messages if the number is in bounds or not
+x = 15
+low = 0
+high = 10
+
+if is_in_bounds(x, low, high): # == True
+    print(f'{x} is between {low} and {high}')
+else:
+    print(f'{x} is not between {low} and {high}')
+'''    
+
+# ------------------------------------------------------------------------------------------- #
+
+### THIS CAN BE SKIPPED, IF NEEDED
+
+def generate_random_numbers():
+    pass
+
+# process all the numbers in the list and count all the numbers that are in a particular range:
+
+
+# ------------------------------------------------------------------- #
+
+# Scope - Four 'layers' in which variables exist
+
+# built-in, global, enclosed, local
+
+# Built-in scope = all built in functions, error messages, etc
+
+
+# ---------------------------------------------------------------------------------- #
+def generate_random_numbers(k, low=0, high=100):
+    
+    #create a blank list to store the numbers
+    numbers = []
+    
+    
+    # loop 'k' times
+    for x in range(k):
+        # generate a random number between 'low' and 'high'
+        
+        random_number = random.randint(low, high)
+        
+        
+        # add the number to the list
+        
+        numbers.append(random_number)
+
+    return numbers
+
+numbers = generate_random_numbers(100, -100, 100)
+
+
+# process all the numbers in the list and count all the numbers that are within a particular range:
+
+
+# set the inital total to 0
+
+total_in_bounds = 0
+
+# loop through all the numbers and count the positive numbers
+
+for number in numbers:
+    if is_in_bounds(number, 40, 60):
+        #add one to the total
+        total_in_bounds += 1
+        
+
+
+
+
+
+# ---------------------------------------------------------------------------------- #
+
+numbers = []
+
+'''
+# Don't do this
+def add_number_to_list(number):
+    # Since the numbers list isn't being passed 
+    # through the parameters, it is confusing 
+    # because it's not obvious where the numbers
+    # variable is coming from 
+    numbers.append(number)
+'''
+
+'''
+# Do this instead
+def add_number_to_list(number, numbers):
+    # Now it is obvious where the numbers variable
+    # is coming from. It is passed through the 
+    # parameters, manipulated and returned 
+    numbers.append(number)
+    return numbers
+
+add_number_to_list(0, numbers)
+'''
