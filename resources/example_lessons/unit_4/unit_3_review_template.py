@@ -49,7 +49,7 @@ Unit 3 Review
 # .keys(), .values(), .items() - access different parts of the a dictionary
 # -------------------------------------------------------------------------- #
 
-# .keys() - access a dictionary's values
+# .keys() - access a dictionary's keys
 
 # loop through keys
 
