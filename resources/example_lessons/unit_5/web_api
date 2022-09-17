@@ -15,8 +15,6 @@ payload = {'term': joke}
 # make an HTTP GET request to the url and save the HTTP response in a variable
 response = requests.get(
     url, headers={'Accept': 'application/json'}, params=payload)
-data = json.loads(response.text)
-
 
 # JSON - JavaScript Object Notation (JS's version of a dictionary)
 # convert the response data from JSON to Python dictionary
