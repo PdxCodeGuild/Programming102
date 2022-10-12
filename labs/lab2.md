@@ -8,7 +8,7 @@ We're going to write Python's built-in function, `sum()`, from scratch.
 
 Create a function called `sum` with a single parameter, `numbers`. Call the function and pass a list of numbers as an argument.
 
-The function will add up all the `numbers` in the list and `return` the sum the `numbers`.
+The function will add up all the `numbers` in the list and `return` the sum of the `numbers`.
 
 Note: Please do ***not*** use the built-in function `sum()`. The goal is to write that function from scratch.
 
