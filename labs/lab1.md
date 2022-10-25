@@ -39,11 +39,7 @@ while True:
         # if the user types done, we want to stop asking them
         if user == "done":
             break
-
-    # if user equals done, we want to end the game
-    if user == "done":
-        break
-
+            
     # if the user and computer are the same it is a tie
     if users == computer:
         print("Looks like a tie"
