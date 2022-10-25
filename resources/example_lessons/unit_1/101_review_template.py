@@ -139,28 +139,17 @@ Return value can be saved in a variable such as 'user_string'
 
 x = 4
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# multiply x by 2 and redefine x with the result
-
 # ReAssignment Operators - combine the arithmetic and assignment operators
-# x = x + 2
-# print(x)
 
 # ReAssignment operators exist for each arithmetic operators
-# -=, *=, **=, /=, //=, %=
+x += 2 # x = x + 2
+x -= 2 # x = x - 2
+x *= 2 # x = x * 2
+x **= 2 # x = x ** 2
+x /= 2 # x = x / 2
+x //= 2 # x = x // 2
+x %= 2 # x = x % 2
+
 
 # ----------------------------------------------------------------------------------------- #
 
