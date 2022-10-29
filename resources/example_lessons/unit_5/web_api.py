@@ -1,4 +1,4 @@
-# API - application programming interface (website for robots)
+# API - application programming interface
 
 # requests module is used to make HTTP requests to websites
 import requests, json
