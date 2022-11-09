@@ -21,7 +21,7 @@ Sum: 53
 
 ## 2.2
 
-Using a Read, Evaluate, Print, Loop (REPL), build a list of numbers by asking the user to enter them one at a time. Add each number to the list.
+Using a Read, Evaluate, Print, Loop (REPL), build a list of numbers by asking the user to enter them one at a time. Add each number to a list.
 
 Once the user enters 'done', pass the list to the `sum` function from version 2.1 and display the sum that's returned.
 
