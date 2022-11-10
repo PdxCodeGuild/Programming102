@@ -19,6 +19,4 @@ We will consistently work to compile new resources and to provide clear and conc
 
 If you have questions about transitioning into a career in tech, we're here for you! 
 
-Feel free to reach out to our Career Services Advisor, Keegan Good via Slack or email (keegan@pdxcodeguild.com).
-
 We look forward to working with each and every one of you. You’ve got the skills, now let’s put them to work! 
