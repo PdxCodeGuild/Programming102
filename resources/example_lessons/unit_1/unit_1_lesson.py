@@ -17,7 +17,7 @@ ErrorType: specific error message
 
 # SyntaxError - a piece of code is missing or misused
 # 4 + # SyntaxError: invalid syntax
-# 'hello # SyntaxError: EOL (end of line) while scanning string literal (missing closing quote)
+# 'hello # SyntaxError: unterminated string literal (missing closing quote)
 """
 print('hello'        # missing closing parenthesis
 
