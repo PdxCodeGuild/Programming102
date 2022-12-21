@@ -88,11 +88,11 @@ def increment(number):
     return result
 
 # call the function with a value for 'number'
-result = 10
-# print(result)
+result = increment(9)
+# print(result) # 9
 
 result = increment(result)
-# print(result)
+# print(result) # 10
 
 
 # use the function in a loop
