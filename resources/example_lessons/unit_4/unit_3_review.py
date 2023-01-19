@@ -78,7 +78,6 @@ value = todo.get(key, default)
 
 # ------------------------------------------------------------------------- #
 
-# add items with methods
 #.update(new_dictionary) add the new_dictionary to the original
 
 todo.update({
